@@ -15,13 +15,13 @@
 
 
 site_name: 'MkDocs Tau Delta'
-site_url: 'https://docs.csnzoo.com/tdumitrescu/mkdocs-tau-delta/'
-site_author: Teodor Dumitrescu <tdumitrescu@wayfair.com>
-repo_url: https://git.csnzoo.com/tdumitrescu/mkdocs-tau-delta/
-repo_name: tdumitrescu/mkdocs-tau-delta
+site_url: https://TheodoreAD.github.io/mkdocs-taudelta
+site_author: Teodor Dumitrescu <teodor.dumitrescu@gmail.com>
+repo_url: https://github.com/TheodoreAD/mkdocs-taudelta
+repo_name: TheodoreAD/mkdocs-taudelta
 # TODO: make the edit icon smaller, the rest of the content is now smaller
 edit_uri: edit/master/docs
-docs_dir: docs
+docs_dir: gh-pages
 site_dir: html
 
 # pip install mkdocs-bootstrap386
