@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Teodor Dumitrescu &lt;teodor.dumitrescu@gmail.com&gt;" name="author"/>
+<link href="https://TheodoreAD.github.io/mkdocs-taudelta/basic-markdown/" rel="canonical"/>
+<link href="../img/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.0.6" name="generator"/>
+<title>Basic Markdown - MkDocs Tau Delta</title>
+<link href="../assets/stylesheets/main.2c0c5eaf.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.7fa14f5b.min.css" rel="stylesheet"/>
+<meta content="#2094f3" name="theme-color"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../extra.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="orange" data-md-color-primary="blue" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#basic-markdown">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="MkDocs Tau Delta" class="md-header__button md-logo" data-md-component="logo" href=".." title="MkDocs Tau Delta">
+<img alt="logo" src="../img/logo.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            MkDocs Tau Delta
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Basic Markdown
+            
+          </span>
+</div>
+</div>
+</div>
+<div class="md-header__options">
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/TheodoreAD/mkdocs-taudelta/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="MkDocs Tau Delta" class="md-nav__button md-logo" data-md-component="logo" href=".." title="MkDocs Tau Delta">
+<img alt="logo" src="../img/logo.svg"/>
+</a>
+    MkDocs Tau Delta
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/TheodoreAD/mkdocs-taudelta/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../live-editor/">
+        Live Editor
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic Markdown
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Basic Markdown
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-considerations">
+    General considerations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#headings-followed-by-headings-surrounded-by-horizontal-rulers">
+    Headings followed by headings, surrounded by horizontal rulers
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../enhanced-markdown/">
+        Enhanced Markdown
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../enhanced-markdown-code/">
+        Enhanced Markdown Code
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../admonition-blocks/">
+        Admonition Blocks
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mermaid/">
+        Mermaid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../emoji/">
+        Emoji
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../unicode/">
+        Unicode
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../charts/">
+        Charts [STUB]
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../favicon-and-logo/">
+        Favicon and Logo
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../material-icons/">
+        Material Icons [STUB]
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../font-awesome/">
+        Font Awesome [STUB]
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../markdown-resources/">
+        Markdown Resources
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#general-considerations">
+    General considerations
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#headings-followed-by-headings-surrounded-by-horizontal-rulers">
+    Headings followed by headings, surrounded by horizontal rulers
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/TheodoreAD/mkdocs-taudelta/edit/master/docs/basic-markdown.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="basic-markdown">Basic Markdown<a class="headerlink" href="#basic-markdown" title="Permanent link">¶</a></h1>
+<h2 id="general-considerations">General considerations<a class="headerlink" href="#general-considerations" title="Permanent link">¶</a></h2>
+<p>This page contains only basic Markdown. Information on enhancements can be found in sibling pages.</p>
+<p>The <a href="https://daringfireball.net/projects/markdown/syntax">official specification</a> from the creator of Markdown can be found <a href="https://daringfireball.net/projects/markdown/syntax">here</a>.
+A <a href="https://www.markdownguide.org/basic-syntax">good alternative tutorial</a> can be found <a href="https://www.markdownguide.org/basic-syntax">here</a>.</p>
+<p>To test official, basic Markdown syntax, one can use
+<a href="http://markdownlivepreview.com/">Markdown Live Preview</a> which can be found <a href="http://markdownlivepreview.com/">here</a>.</p>
+<p>MkDocs Tau Delta is designed to avoid unnecessary complexity in writing documents,
+which is why there will be no information provided regarding inline HTML.
+If you decide to use it, be adivsed that some limitations apply
+and consider reading the documentation above before proceeding.</p>
+<p>A <a href="https://github.com/mundimark/awesome-markdown">comprehensive list of Markdown resources</a> can be found <a href="https://github.com/mundimark/awesome-markdown">here</a>.</p>
+<p>A <a href="https://boostnote.io/">Markdown note-keeping tool</a> can be found <a href="https://boostnote.io/">here</a>.</p>
+<h2 id="headings-followed-by-headings-surrounded-by-horizontal-rulers">Headings followed by headings, surrounded by horizontal rulers<a class="headerlink" href="#headings-followed-by-headings-surrounded-by-horizontal-rulers" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>***
+
+# Heading of lines, first of its name
+
+## Heading of lines, second of its name
+
+### Heading of lines, third of its name
+
+#### Heading of lines, fourth of its name
+
+##### Heading of lines, fifth of its name
+
+###### Heading of lines, sixth of its name
+
+* * *
+</code></pre></div>
+</details>
+<hr/>
+<h1 id="heading-of-lines-first-of-its-name">Heading of lines, first of its name<a class="headerlink" href="#heading-of-lines-first-of-its-name" title="Permanent link">¶</a></h1>
+<h2 id="heading-of-lines-second-of-its-name">Heading of lines, second of its name<a class="headerlink" href="#heading-of-lines-second-of-its-name" title="Permanent link">¶</a></h2>
+<h3 id="heading-of-lines-third-of-its-name">Heading of lines, third of its name<a class="headerlink" href="#heading-of-lines-third-of-its-name" title="Permanent link">¶</a></h3>
+<h4 id="heading-of-lines-fourth-of-its-name">Heading of lines, fourth of its name<a class="headerlink" href="#heading-of-lines-fourth-of-its-name" title="Permanent link">¶</a></h4>
+<h5 id="heading-of-lines-fifth-of-its-name">Heading of lines, fifth of its name<a class="headerlink" href="#heading-of-lines-fifth-of-its-name" title="Permanent link">¶</a></h5>
+<h6 id="heading-of-lines-sixth-of-its-name">Heading of lines, sixth of its name<a class="headerlink" href="#heading-of-lines-sixth-of-its-name" title="Permanent link">¶</a></h6>
+<hr/>
+<h2 id="headings-followed-by-paragraphs-surrounded-by-horizontal-rulers">Headings followed by paragraphs, surrounded by horizontal rulers<a class="headerlink" href="#headings-followed-by-paragraphs-surrounded-by-horizontal-rulers" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>---
+
+Heading of lines, first of its name
+===================================
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Heading of lines, second of its name
+------------------------------------
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Heading of lines, third of its name
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+#### Heading of lines, fourth of its name ####
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+##### Heading of lines, fifth of its name #
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+###### Heading of lines, sixth of its name ######
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- - -
+</code></pre></div>
+</details>
+<hr/>
+<h1 id="heading-of-lines-first-of-its-name_1">Heading of lines, first of its name<a class="headerlink" href="#heading-of-lines-first-of-its-name_1" title="Permanent link">¶</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 id="heading-of-lines-second-of-its-name_1">Heading of lines, second of its name<a class="headerlink" href="#heading-of-lines-second-of-its-name_1" title="Permanent link">¶</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h3 id="heading-of-lines-third-of-its-name_1">Heading of lines, third of its name<a class="headerlink" href="#heading-of-lines-third-of-its-name_1" title="Permanent link">¶</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h4 id="heading-of-lines-fourth-of-its-name_1">Heading of lines, fourth of its name<a class="headerlink" href="#heading-of-lines-fourth-of-its-name_1" title="Permanent link">¶</a></h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h5 id="heading-of-lines-fifth-of-its-name_1">Heading of lines, fifth of its name<a class="headerlink" href="#heading-of-lines-fifth-of-its-name_1" title="Permanent link">¶</a></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h6 id="heading-of-lines-sixth-of-its-name_1">Heading of lines, sixth of its name<a class="headerlink" href="#heading-of-lines-sixth-of-its-name_1" title="Permanent link">¶</a></h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<hr/>
+<h2 id="body-text-inline-formatting">Body text, inline formatting<a class="headerlink" href="#body-text-inline-formatting" title="Permanent link">¶</a></h2>
+<div class="admonition todo">
+<p class="admonition-title">Todo</p>
+<p>Add strikethrough and make provisions for different syntax caused by other extensions
+Try to get as close to GFM as possible</p>
+</div>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>Within body text, `inline code` is `monospaced` and *emphasized* by having a **different** `background`.
+Both types of emphasis work inside words: I*TALI*C and B**OL**D.
+
+`One paragraph` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+`Still just one paragraph` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+`First of two paragraphs` `Italic font` *Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.*
+`Still italic font` _Ut enim ad minim veniam, quis nostrud exercitation
+ ullamco laboris nisi ut aliquip ex ea commodo consequat._
+
+`Second of two paragraphs` `Bold font` **Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.**
+`Still bold font` __Ut enim ad minim veniam, quis nostrud exercitation
+ ullamco laboris nisi ut aliquip ex ea commodo consequat.__
+</code></pre></div>
+</details>
+<p>Within body text, <code>inline code</code> is <code>monospaced</code> and <em>emphasized</em> by having a <strong>different</strong> <code>background</code>.
+Both types of emphasis work inside words: I<em>TALI</em>C and B<strong>OL</strong>D.</p>
+<p><code>One paragraph</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p><code>Still just one paragraph</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p><code>First of two paragraphs</code> <code>Italic font</code> <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em>
+<code>Still italic font</code> <em>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p>
+<p><code>Second of two paragraphs</code> <code>Bold font</code> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong>
+<code>Still bold font</code> <strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong></p>
+<h2 id="unordered-lists">Unordered Lists<a class="headerlink" href="#unordered-lists" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>A basic `unordered list` with proper indentation syntax, which allows multiple paragraphs:
+
+-   first list item
+    -   first sub-list item
+    -   second sub-list item
+-   *first paragraph* of second list item
+    *still first paragraph* of second list item
+
+    *second paragraph* of second list item
+
+-   third list item
+
+An `unordered list` with `nesting`, the lazy syntax does not allow multiple paragraphs:
+
+- Ilúvatar
+- Ainur
+    - Valar
+        - Melkor, the first
+        - Manwë
+        - Varda (Elbereth)
+        - Mandos
+    * Maiar
+        + Úmaiar
+            - Sauron
+            - a Balrog
+        + Istari
+            - Gandalf the Grey
+            - Saruman the White
+- Children of Ilúvatar
+    - Elves (Firstborn)
+    * Dwarves
+    + Men
+
+Another `unordered list` with `nesting:`
+
+* first list item
+* second list item
+  * first sublist item
+  * second sublist item
+    * first sub-sublist item
+    * second sub-sublist item
+</code></pre></div>
+</details>
+<p>A basic <code>unordered list</code> with proper indentation syntax, which allows multiple paragraphs:</p>
+<ul>
+<li>first list item<ul>
+<li>first sub-list item</li>
+<li>second sub-list item</li>
+</ul>
+</li>
+<li>
+<p><em>first paragraph</em> of second list item
+    <em>still first paragraph</em> of second list item</p>
+<p><em>second paragraph</em> of second list item</p>
+</li>
+<li>
+<p>third list item</p>
+</li>
+</ul>
+<p>An <code>unordered list</code> with <code>nesting</code>, the lazy syntax does not allow multiple paragraphs:</p>
+<ul>
+<li>Ilúvatar</li>
+<li>Ainur<ul>
+<li>Valar<ul>
+<li>Melkor, the first</li>
+<li>Manwë</li>
+<li>Varda (Elbereth)</li>
+<li>Mandos</li>
+</ul>
+</li>
+<li>Maiar<ul>
+<li>Úmaiar<ul>
+<li>Sauron</li>
+<li>a Balrog</li>
+</ul>
+</li>
+<li>Istari<ul>
+<li>Gandalf the Grey</li>
+<li>Saruman the White</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Children of Ilúvatar<ul>
+<li>Elves (Firstborn)</li>
+<li>Dwarves</li>
+<li>Men</li>
+</ul>
+</li>
+</ul>
+<p>Another <code>unordered list</code> with <code>nesting</code>:</p>
+<ul>
+<li>first list item</li>
+<li>second list item</li>
+<li>first sublist item</li>
+<li>second sublist item<ul>
+<li>first sub-sublist item</li>
+<li>second sub-sublist item</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Indentation rules are not being observed for 2 spaces, only for 4</p>
+<p>Mixed - and * do not create cohesive lists</p>
+</div>
+<h2 id="ordered-lists">Ordered Lists<a class="headerlink" href="#ordered-lists" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>A basic `ordered list` with proper indentation syntax, which allows multiple paragraphs:
+
+1.  I am a winner paragraph.
+    I am still a winner paragraph.
+
+    I am second best paragraph.
+
+2.  Coming in second is best when there is a also...
+
+3.  ... a third
+
+An `ordered list` with `nesting`:
+
+1. first list item
+2. second list item
+    1. first sub-list item
+    2. second sub-list item
+        1. first sub-sub-list item
+        2. second sub-sub-list item
+        3. third sub-sub-list item
+            1. the secret fourth level of nesting
+3. third list item
+    1. first sub-list item
+
+Another `ordered list` using random numbers in syntax:
+
+999. first list item
+42. second list item
+0. third list item
+    5. first sub-list item
+    5. second sub-list item
+
+Escape characters to avoid body text being converted into a list:
+
+&gt; 1999\. The year before the Y2K apocalypse.
+&gt;
+&gt; 2020\. The year of best vision.
+&gt;
+&gt; \- Mark Clockworth, "The Counting of Years"
+</code></pre></div>
+</details>
+<p>A basic <code>ordered list</code> with proper indentation syntax, which allows multiple paragraphs:</p>
+<ol>
+<li>
+<p>I am a winner paragraph.
+    I am still a winner paragraph.</p>
+<p>I am second best paragraph.</p>
+</li>
+<li>
+<p>Coming in second is best when there is a also…</p>
+</li>
+<li>
+<p>… a third</p>
+</li>
+</ol>
+<p>An <code>ordered list</code> with <code>nesting</code>:</p>
+<ol>
+<li>first list item</li>
+<li>second list item<ol>
+<li>first sub-list item</li>
+<li>second sub-list item<ol>
+<li>first sub-sub-list item</li>
+<li>second sub-sub-list item</li>
+<li>third sub-sub-list item<ol>
+<li>the secret fourth level of nesting</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>third list item<ol>
+<li>first sub-list item</li>
+</ol>
+</li>
+</ol>
+<p>Another <code>ordered list</code> using random numbers in syntax:</p>
+<ol>
+<li>first list item</li>
+<li>second list item</li>
+<li>third list item<ol>
+<li>first sub-list item</li>
+<li>second sub-list item</li>
+</ol>
+</li>
+</ol>
+<p>Escape characters to avoid body text being converted into a list:</p>
+<blockquote>
+<p>1999. The year before the Y2K apocalypse.</p>
+<p>2020. The year of best vision.</p>
+<p>- Mark Clockworth, “The Counting of Years”</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Indentation rules are not being observed for 2 spaces, only for 4</p>
+</div>
+<h2 id="code-blocks">Code blocks<a class="headerlink" href="#code-blocks" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>A `code block`:
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.
+</code></pre></div>
+</details>
+<p>A <code>code block</code>:</p>
+<div class="highlight"><pre><span></span><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat.
+</code></pre></div>
+<h2 id="block-quotes">Block quotes<a class="headerlink" href="#block-quotes" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>A `block quote` with `nesting`:
+
+&gt; `First level` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&gt;
+&gt;&gt; `Second level, quote within quote` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&gt;
+&gt; `Back to first level` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+&gt; `Still part of same block quote` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+A `block quote` with `other Markdown elements:`
+
+&gt; ### Heading ###
+&gt;
+&gt; Another `heading`:
+&gt;
+&gt; #### Heading ####
+&gt;
+&gt; A `text pargraph`:
+&gt;
+&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&gt;
+&gt; An `unordered list`:
+&gt;
+&gt; - first list item
+&gt;     - first sub-list item
+&gt;     - &gt; second sub-list item as block quote
+&gt;
+&gt; An `ordered list`:
+&gt;
+&gt; 1. first list item
+&gt;     1. first sub-list item
+&gt;
+&gt; A `code block`:
+&gt;
+&gt;     First line of code
+&gt;     Second line of code
+</code></pre></div>
+</details>
+<p>A <code>block quote</code> with <code>nesting</code>:</p>
+<blockquote>
+<p><code>First level</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<blockquote>
+<p><code>Second level, quote within quote</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+<p><code>Back to first level</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p><code>Still part of same block quote</code> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+<p>A <code>block quote</code> with <code>other Markdown elements:</code></p>
+<blockquote>
+<h3 id="heading">Heading<a class="headerlink" href="#heading" title="Permanent link">¶</a></h3>
+<p>Another <code>heading</code>:</p>
+<h4 id="heading_1">Heading<a class="headerlink" href="#heading_1" title="Permanent link">¶</a></h4>
+<p>A <code>text pargraph</code>:</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p>An <code>unordered list</code>:</p>
+<ul>
+<li>first list item<ul>
+<li>first sub-list item</li>
+<li>
+<blockquote>
+<p>second sub-list item as block quote</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>An <code>ordered list</code>:</p>
+<ol>
+<li>first list item<ol>
+<li>first sub-list item</li>
+</ol>
+</li>
+</ol>
+<p>A <code>code block</code>:</p>
+<div class="highlight"><pre><span></span><code>First line of code
+Second line of code
+</code></pre></div>
+</blockquote>
+<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">¶</a></h2>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>Table with `alignment` and `inline formatting`:
+
+|    Center     | Left       |         Right |
+| :-----------: | :--------- | ------------: |
+| **Alpha One** | B1         |            C1 |
+|      A2       | *Beta Two* |            C2 |
+|      A3       | B3         | `Gamma Three` |
+
+Same table with `no header` and implicitly tight content wrapping:
+
+|               |            |               |
+| :-----------: | :--------- | ------------: |
+| **Alpha One** | B1         |            C1 |
+|      A2       | *Beta Two* |            C2 |
+|      A3       | B3         | `Gamma Three` |
+</code></pre></div>
+</details>
+<p>Table with <code>alignment</code> and <code>inline formatting</code>:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Center</th>
+<th align="left">Left</th>
+<th align="right">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Alpha One</strong></td>
+<td align="left">B1</td>
+<td align="right">C1</td>
+</tr>
+<tr>
+<td align="center">A2</td>
+<td align="left"><em>Beta Two</em></td>
+<td align="right">C2</td>
+</tr>
+<tr>
+<td align="center">A3</td>
+<td align="left">B3</td>
+<td align="right"><code>Gamma Three</code></td>
+</tr>
+</tbody>
+</table>
+<p>Same table with <code>no header</code> and implicitly tight content wrapping:</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="left"></th>
+<th align="right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Alpha One</strong></td>
+<td align="left">B1</td>
+<td align="right">C1</td>
+</tr>
+<tr>
+<td align="center">A2</td>
+<td align="left"><em>Beta Two</em></td>
+<td align="right">C2</td>
+</tr>
+<tr>
+<td align="center">A3</td>
+<td align="left">B3</td>
+<td align="right"><code>Gamma Three</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">¶</a></h2>
+<h3 id="inline-style">Inline style<a class="headerlink" href="#inline-style" title="Permanent link">¶</a></h3>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>Create automatic links for URLs and email addresses by surrounding the URL or email address
+with angle brackets to show the actual text of a URL or email address as a clickable link:
+
+- Click &lt;http://example.com/&gt; to open a browser tab.
+- Click &lt;john.smith@example.com&gt; to open a mail editor compose window.
+
+Refer to an online resource using the URL:
+
+- [This link](http://example.net/) has no title attribute.
+- This is [an example](http://example.com/ "Title") inline link with a title attribute.
+
+Refer to a local resource on the same server using the relative path as an URL:
+
+- See the [Enhanced Markdown](enhanced-markdown.md#inline-text-formatting) page for all fun features.
+- See the [Enhanced Markdown Inline Text Formatting](enhanced-markdown.md#inline-text-formatting) tag
+  in the [Enhanced Markdown](enhanced-markdown.md#inline-text-formatting) page for a specific fun feature.
+</code></pre></div>
+</details>
+<p>Create automatic links for URLs and email addresses by surrounding the URL or email address
+with angle brackets to show the actual text of a URL or email address as a clickable link:</p>
+<ul>
+<li>Click <a href="http://example.com/">http://example.com/</a> to open a browser tab.</li>
+<li>Click <a href="mailto:john.smith@example.com">john.smith@example.com</a> to open a mail editor compose window.</li>
+</ul>
+<p>Refer to an online resource using the URL:</p>
+<ul>
+<li><a href="http://example.net/">This link</a> has no title attribute.</li>
+<li>This is <a href="http://example.com/" title="Title">an example</a> inline link with a title attribute.</li>
+</ul>
+<p>Refer to a local resource on the same server using the relative path as an URL:</p>
+<ul>
+<li>See the <a href="../enhanced-markdown/#inline-text-formatting">Enhanced Markdown</a> page for all fun features.</li>
+<li>See the <a href="../enhanced-markdown/#inline-text-formatting">Enhanced Markdown Inline Text Formatting</a> tag
+  in the <a href="../enhanced-markdown/#inline-text-formatting">Enhanced Markdown</a> page for a specific fun feature.</li>
+</ul>
+<div class="admonition todo">
+<p class="admonition-title">Move to Enhanced Markdown</p>
+<p><code>MkDocs</code> allows us to refer to a local resource on the same server using the relative path as an <code>.md</code> file:</p>
+<p>See the <a href="../enhanced-markdown/">Enhanced Markdown</a> page for all the fun features.
+Specific features can’t be targeted with this method because it doesn’t support tags.</p>
+</div>
+<h3 id="reference-style">Reference style<a class="headerlink" href="#reference-style" title="Permanent link">¶</a></h3>
+<div class="admonition todo">
+<p class="admonition-title">Todo</p>
+<p>Add active content</p>
+<p>Research the many enhancements provided by the MagicLink <a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">extension</a>.</p>
+</div>
+<p>Reference-style links use a second set of square brackets (with an optional leading space)
+with a label inside that must by defined anywhere in the document on a line by itself.</p>
+<div class="highlight"><pre><span></span><code>This is [an example][id] reference-style link. This is a [space-delimited example] [id].
+
+[id]: http://example.com/  "Optional Title Here"
+</code></pre></div>
+<p>The definition must contain, exactly in this order:</p>
+<ul>
+<li>square brackets containing the label (optionally left indented by up to three spaces)</li>
+<li>a colon</li>
+<li>one or more spaces</li>
+<li>the URL for the link</li>
+<li>optionally a title attribute for the link, enclosed in double quotes, single quotes or parentheses</li>
+</ul>
+<p>The following three link definitions are equivalent:</p>
+<div class="highlight"><pre><span></span><code>[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+</code></pre></div>
+<p>NOTE: There is a known bug in Markdown.pl 1.0.1 which prevents single quotes from being used to delimit link titles.</p>
+<p>The link URL may, optionally, be surrounded by angle brackets:</p>
+<div class="highlight"><pre><span></span><code>[id]: &lt;http://example.com/&gt;  "Optional Title Here"
+</code></pre></div>
+<p>You can put the title attribute on the next line and use extra spaces or tabs for padding,
+which tends to look better with longer URLs:</p>
+<div class="highlight"><pre><span></span><code>[id]: http://example.com/longish/path/to/resource/here
+    "Optional Title Here"
+</code></pre></div>
+<p>Link definition names may consist of letters, numbers, spaces, and punctuation and are case insensitive:</p>
+<div class="highlight"><pre><span></span><code>[Link text][a] and [Link text][A] are equivalent.
+</code></pre></div>
+<p>The <code>implicit link name shortcut</code> allows you to omit the name of the link in the second set of square brackets
+and use the link text itself as the name. The link names may contain spaces.</p>
+<div class="highlight"><pre><span></span><code>[Google][] and [Stack Overflow][] are a programmer's best friend.
+
+[Google]: https://google.com/
+[Stack Overflow]: https://stackoverflow.com/
+</code></pre></div>
+<p>The two examples below produce the same results:</p>
+<div class="highlight"><pre><span></span><code>I get 10 times more traffic from [Google] [1] than from [Yahoo] [2] or [MSN] [3].
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"
+
+I get 10 times more traffic from [Google][] than from [Yahoo][] or [MSN][].
+
+[google]: http://google.com/        "Google"
+[yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+[msn]:    http://search.msn.com/    "MSN Search"
+</code></pre></div>
+<p>Link definitions are ideally placed immediately after the paragraph in which they’re used
+or all at the end of your document, like footnotes.</p>
+<div class="admonition quote philosophy">
+<p class="admonition-title">Quote</p>
+<p>The point of reference-style links is not that they’re easier to write.
+The point is that with reference-style links, your document source is vastly more readable.
+Compare the above examples: using reference-style links, the paragraph itself is only 81 characters long;
+with inline-style links, it’s 176 characters; and as raw HTML, it’s 234 characters.
+In the raw HTML, there’s more markup than there is text.</p>
+</div>
+<h3 id="escaped-characters">Escaped characters<a class="headerlink" href="#escaped-characters" title="Permanent link">¶</a></h3>
+<details class="info"><summary><code>Source Code</code></summary><div class="highlight"><pre><span></span><code>Markdown provides backslash escapes for the following characters:
+
+- \\ backslash
+- \` backticks \`
+- \* asterisks \*
+- \_ underscores \_
+- \{ curly braces \}
+- \[ square brackets \]
+- \( parentheses \)
+- \# hash mark
+- \+ plus sign
+- \- minus sign (hyphen)
+- \. dot
+- \! exclamation mark
+</code></pre></div>
+</details>
+<p>Markdown provides backslash escapes for the following characters:</p>
+<ul>
+<li>\ backslash</li>
+<li>` backticks</li>
+<li>* asterisks *</li>
+<li>_ underscores _</li>
+<li>{ curly braces }</li>
+<li>[ square brackets ]</li>
+<li>( parentheses )</li>
+<li># hash mark</li>
+<li>+ plus sign</li>
+<li>- minus sign (hyphen)</li>
+<li>. dot</li>
+<li>! exclamation mark</li>
+</ul>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a class="md-footer__link md-footer__link--prev" href="../live-editor/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Live Editor
+            </div>
+</div>
+</a>
+<a class="md-footer__link md-footer__link--next" href="../enhanced-markdown/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Enhanced Markdown
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.a1c7c35e.min.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
