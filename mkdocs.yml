@@ -219,12 +219,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-#      alt: short
-#      options:
-#          attributes:
-#              align: top
-#              height: 20px
-#              width: 20px
+      alt: short
+      options:
+          attributes:
+              align: top
+#              align: absmiddle
+              height: 20px
+              width: 20px
 #          image_path: https://assets-cdn.github.com/images/icons/emoji/unicode/
 #          non_standard_image_path: https://assets-cdn.github.com/images/icons/emoji/
 
