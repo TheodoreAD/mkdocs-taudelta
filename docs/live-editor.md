@@ -1,12 +1,19 @@
-# Live Editor [PROPOSAL]
+# Live Editor
 
 ## What this is
 
 ### Philosophy
 
-The point of `MkDocs Tau Delta` is to make `Markdown` the language of choice among engineers writing documentation.
+The point of `MkDocs Tau Delta` is to make `Markdown` the language of choice
+among engineers writing documentation.
 
-An additional goal is to address a larger group of users beyond the ones creating documentation. If meeting minutes, roadmaps, speeches, presentation notes could be created on-the-fly and saved to a site where stakeholders can read and contribute to the documents easily, then senior engineers, team leads and project/product/department managers would become part of the target audience, leading to significantly increased product proliferation.
+An additional goal is to address a larger group of users
+beyond the ones creating documentation.
+If meeting minutes, roadmaps, speeches, presentation notes could be created
+on-the-fly and saved to a site where stakeholders can read and contribute
+to the documents easily, then senior engineers, team leads and
+project/product/department managers would become part of the target audience,
+leading to significantly increased product proliferation.
 
 Success depends on at least four factors:
 
@@ -15,7 +22,8 @@ Success depends on at least four factors:
 - ease of setup
 - ease of use
 
-This section is an attempt to improve the ease of use through the cunning use of a free live editor, which is naturally not a part of the project.
+This section is an attempt to improve the ease of use through the cunning use
+of a free live editor, which is naturally not a part of the project.
 
 ### Requirements
 
@@ -32,9 +40,11 @@ This would enable the use of Markdown for note-taking as well as for documentati
 
 ### StackEdit
 
-StackEdit is a full-featured, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
+StackEdit is a full-featured, open-source Markdown editor based on PageDown,
+the Markdown library used by Stack Overflow and the other Stack Exchange sites.
 
-It is an open source project. Its [repository][stackedit-repo] can be found [here][stackedit-repo]. Its [web application][stackedit-app] can be found [here][stackedit-app].
+It is an open source project. Its [repository][stackedit-repo] can be found [here][stackedit-repo].
+Its [web application][stackedit-app] can be found [here][stackedit-app].
 
 [stackedit-repo]: https://github.com/benweet/stackedit
 [stackedit-app]: https://stackedit.io/app
@@ -43,7 +53,8 @@ It is an open source project. Its [repository][stackedit-repo] can be found [her
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
 
-It is an open source project. Its [repository][dillinger-repo] can be found [here][dillinger-repo]. Its [web application][dillinger-app] can be found [here][dillinger-app].
+It is an open source project. Its [repository][dillinger-repo] can be found [here][dillinger-repo].
+Its [web application][dillinger-app] can be found [here][dillinger-app].
 
 [dillinger-repo]: https://github.com/joemccann/dillinger
 [dillinger-app]: https://dillinger.io/
@@ -57,9 +68,12 @@ It is an open source project. Its [repository][dillinger-repo] can be found [her
 
 ### Pandoc
 
-Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
+Pandoc is a Haskell library for converting from one markup format to another,
+and a command-line tool that uses this library.
 
-It is an open source project. Its [repository][pandoc-repo] can be found [here][pandoc-repo]. Its [web application][pandoc-app] can be found [here][pandoc-app]. Its [website][pandoc-site] can be found [here][pandoc-site].
+It is an open source project. Its [repository][pandoc-repo] can be found [here][pandoc-repo].
+Its [web application][pandoc-app] can be found [here][pandoc-app].
+Its [website][pandoc-site] can be found [here][pandoc-site].
 
 [pandoc-site]: https://pandoc.org/index.html
 [pandoc-repo]: https://github.com/jgm/pandoc
@@ -69,9 +83,11 @@ It is an open source project. Its [repository][pandoc-repo] can be found [here][
 
 Turndown is an HTML to Markdown converter written in JavaScript.
 
-It is an open source project. Its [repository][turndown-repo] can be found [here][turndown-repo]. Its [web application][turndown-app] can be found [here][turndown-app].
+It is an open source project. Its [repository][turndown-repo] can be found [here][turndown-repo].
+Its [web application][turndown-app] can be found [here][turndown-app].
 
-It also has a [GitHub Flavored Markdown plugin][turndown-gfm-plugin-repo] that can be found [here][turndown-gfm-plugin-repo].
+It also has a [GitHub Flavored Markdown plugin][turndown-gfm-plugin-repo]
+that can be found [here][turndown-gfm-plugin-repo].
 
 [turndown-repo]: https://github.com/domchristie/turndown
 [turndown-app]: http://domchristie.github.io/turndown/

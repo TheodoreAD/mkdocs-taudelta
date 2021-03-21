@@ -5,7 +5,8 @@ Uses the `Admonition` [extension][markdown-admonition].
 [markdown-admonition]: https://squidfunk.github.io/mkdocs-material/extensions/admonition/
 
 !!! todo
-    find a way to have notes without title but with an icon on a colored background on the left of the text box instead of on the top
+    find a way to have notes without title but with an icon on a colored background
+    on the left of the text box instead of on the top
 
     a good example is another MkDocs theme that can be found at:
 

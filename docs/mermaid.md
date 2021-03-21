@@ -10,7 +10,8 @@ The official [documentation site][mermaid_docs] can be found [here][mermaid_docs
 
 The [repository][mermaid_docs_repo] of the documentation site can be found [here][mermaid_docs_repo].
 
-To write and preview side-by-side without a locally installed editor, an online [live editor][mermaid-live-editor] can be found [here][mermaid-live-editor].
+To write and preview side-by-side without a locally installed editor,
+an online [live editor][mermaid-live-editor] can be found [here][mermaid-live-editor].
 
 Visual Studio Code is a highly recommended editor for Markdown and Mermaid, and Admonition.
 

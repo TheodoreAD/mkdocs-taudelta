@@ -2,30 +2,33 @@
 
 ## MkDocs
 
-`MkDocs` is a static site generator that's geared towards building project documentation. Documentation source files are written in Markdown, and configured with a single YAML configuration file.
+`MkDocs` is a static site generator that's geared towards building project documentation.
+Documentation source files are written in Markdown, and configured with a single YAML configuration file.
 
-It is an open source project. Its [repository][mkdocs-repo] can be found [here][mkdocs-repo]. Its [website][mkdocs-site] can be found [here][mkdocs-site].
+It is an open source project. Its [repository][mkdocs-repo] can be found [here][mkdocs-repo].
+Its [website][mkdocs-site] can be found [here][mkdocs-site].
 
-[mkdocs-repo]: https://github.com/mkdocs/mkdocs
+[mkdocs-repo]: https://github.com/mkdocs/mkdocs/
 [mkdocs-site]: https://www.mkdocs.org/
 
 ## MkDocs Tau Delta
 
 `Material` is a theme for `MkDocs` built using Google's [Material Design][material-design] guidelines.
 
-It is an open source project. Its [repository][mkdocs-material-repo] can be found [here][mkdocs-material-repo]. Its [website][mkdocs-material-site] can be found [here][mkdocs-material-site].
+It is an open source project. Its [repository][mkdocs-material-repo] can be found [here][mkdocs-material-repo].
+Its [website][mkdocs-material-site] can be found [here][mkdocs-material-site].
 
 Other [MkDocs supported themes][mkdocs-themes-site] can be found [here][mkdocs-themes-site].
 
 `MkDocs Tau Delta` is a modified version of the `MkDocs Material` theme.
 
-It is an inner source project. Its [repository][mkdocs-tau-delta-repo] can be found [here][mkdocs-tau-delta-repo].
+It is an open source project. Its [repository][mkdocs-tau-delta-repo] can be found [here][mkdocs-tau-delta-repo].
 
 [material-design]: https://material.io/design/
-[mkdocs-themes-site]: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
-[mkdocs-material-repo]: https://github.com/squidfunk/mkdocs-material
+[mkdocs-themes-site]: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes/
+[mkdocs-material-repo]: https://github.com/squidfunk/mkdocs-material/
 [mkdocs-material-site]: https://squidfunk.github.io/mkdocs-material/
-[mkdocs-tau-delta-repo]: https://git.csnzoo.com/tdumitrescu/mkdocs-tau-delta/
+[mkdocs-tau-delta-repo]: https://github.com/TheodoreAD/mkdocs-taudelta/
 
 ## Why "Tau Delta"
 
@@ -38,7 +41,8 @@ In the interest of having a proper name beyond the initials:
 
 Philosophically:
 
-- `T` stands for `Tight`, because font size is smaller and lines are tighter together, both in text and in tables. The pupose was to have a result closer to [Read The Docs][readthedocs] than [vanilla Material][mkdocs-material-guide].
+- `T` stands for `Tight`, because font size is smaller and lines are tighter together, both in text and in tables.
+  The purpose was to have a result closer to [Read The Docs][readthedocs] than [vanilla Material][mkdocs-material-guide].
 - `D` stands for `Diverse`, because it has a number of features added, such as:
     - a plethora of [Markdown and PyMdown extensions](enhanced-markdown.md)
     - [Admonition blocks](admonition-blocks.md)
@@ -78,27 +82,38 @@ Philosophically:
 
 ### Configuration files
 
-The following components are customized and are the only files you need to include to have the docs site up and running:
+The following components are customized and are the only files
+you need to include to have the docs site up and running:
 
 - mandatory:
     - `mkdocs.yml` file for most site settings in `/` (root)
     - `extra.css` for font size and spacing settings in `/docs/`
-    - `gilab-ci.yml` for autoloading in GitLab in `/` (root)
+    - `publish_on_push.yml` for automatic publish on push in GitHub in `/.github/workflows/`
+
 - optional:
     - `favicon.ico` in `/docs/img/`
     - `logo.svg` in `/docs/img/`
 
-By adding the files above to your repo, `https://git.csnzoo.com/USER/REPO/`, the site should become available at `https://docs.csnzoo.com/USER/REPO/`.
+By adding the files above to your repo, `https://github.com/{{ USER }}/{{ REPO }}`,
+the site should become available at `https://{{ USER }}.github.io/{{ REPO }}`.
 
-A local article on [how to make your own favicon.ico and logo.svg](favicon-and-logo.md) can be found [here](favicon-and-logo.md).
+A local article on [how to make your own favicon.ico and logo.svg](favicon-and-logo.md)
+can be found [here](favicon-and-logo.md).
 
 ### Colors
 
-Primary color is used for top bar and hyperlinks. It is set `primary: 'blue'`. The default `indigo` was replaced with `blue` for better visibility of inline hyperlinks, `blue` vs `black` is better than `indigo` vs `black`.
+Primary color is used for top bar and hyperlinks. It is set `primary: 'blue'`.
+The default `indigo` was replaced with `blue` for better visibility of inline hyperlinks,
+`blue` vs `black` is better than `indigo` vs `black`.
 
-Accent color is used for hyperlinks on hover. It is set `accent: 'blue'`. The default `indigo` was replaced with `orange` for better visibility of hyperlinks on hover, and is also a good choice if the primary color is restored to `indigo`.
+Accent color is used for hyperlinks on hover. It is set `accent: 'blue'`.
+The default `indigo` was replaced with `orange` for better visibility of hyperlinks on hover,
+and is also a good choice if the primary color is restored to `indigo`.
 
-The options for can be found in the table below. They have been compiled from [here][mkdocs-yml-theme-color-primary] for [primary colors][mkdocs-yml-theme-color-primary] and from [here][mkdocs-yml-theme-color-accent] for [accent colors][mkdocs-yml-theme-color-accent].
+The options for can be found in the table below.
+They have been compiled from [here][mkdocs-yml-theme-color-primary]
+for [primary colors][mkdocs-yml-theme-color-primary]
+and from [here][mkdocs-yml-theme-color-accent] for [accent colors][mkdocs-yml-theme-color-accent].
 
 | mkdocs.yml  | scss                  | primary | accent |
 | ----------- | --------------------- | :-----: | :----: |

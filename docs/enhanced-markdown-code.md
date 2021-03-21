@@ -14,7 +14,8 @@ This code `function human_test() { if empty($soul) { return 'php'; } else { retu
 
 ### Highlighted inline code
 
-Uses the `Pymdown InlineHilite` [extension][pymdown-inlinehilite] and the `Pymdown Highlight` [extension][pymdown-highlight].
+Uses the `Pymdown InlineHilite` [extension][pymdown-inlinehilite]
+and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 [pymdown-inlinehilite]: https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
 [pymdown-highlight]: https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
@@ -59,7 +60,8 @@ function human_test() {
 
 ### With syntax highlighting (language declared)
 
-Uses the `Pymdown SuperFences` [extension][pymdown-superfences] and the `Pymdown Highlight` [extension][pymdown-highlight].
+Uses the `Pymdown SuperFences` [extension][pymdown-superfences]
+and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 [pymdown-superfences]: https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
 
@@ -88,7 +90,8 @@ function human_test() {
 
 ### With syntax highlighting, code line highlighting and line numbers
 
-Uses the `Pymdown SuperFences` [extension][pymdown-superfences] and the `Pymdown Highlight` [extension][pymdown-highlight].
+Uses the `Pymdown SuperFences` [extension][pymdown-superfences]
+and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 #### Regular
 
@@ -148,7 +151,8 @@ function human_test() {
 
 ### Tabbed code blocks
 
-Uses the `Pymdown SuperFences` [extension][pymdown-superfences] and the `Pymdown Highlight` [extension][pymdown-highlight].
+Uses the `Pymdown SuperFences` [extension][pymdown-superfences]
+and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 ??? info "`Source Code`"
     ````

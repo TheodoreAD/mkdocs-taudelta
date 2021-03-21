@@ -4,11 +4,16 @@
 
 This page contains only basic Markdown. Information on enhancements can be found in sibling pages.
 
-The [official specification][markdown_spec] from the creator of Markdown can be found [here][markdown_spec]. A [good alternative tutorial][markdownguide_syntax] can be found [here][markdownguide_syntax].
+The [official specification][markdown_spec] from the creator of Markdown can be found [here][markdown_spec].
+A [good alternative tutorial][markdownguide_syntax] can be found [here][markdownguide_syntax].
 
-To test official, basic Markdown syntax, one can use [Markdown Live Preview][markdown-live-preview] which can be found [here][markdown-live-preview].
+To test official, basic Markdown syntax, one can use
+[Markdown Live Preview][markdown-live-preview] which can be found [here][markdown-live-preview].
 
-MkDocs Tau Delta is designed to avoid unnecessary complexity in writing documents, which is why there will be no information provided regarding inline HTML. If you decide to use it, be adivsed that some limitations apply and consider reading the documentation above before proceeding.
+MkDocs Tau Delta is designed to avoid unnecessary complexity in writing documents,
+which is why there will be no information provided regarding inline HTML.
+If you decide to use it, be adivsed that some limitations apply
+and consider reading the documentation above before proceeding.
 
 A [comprehensive list of Markdown resources][awesome_markdown] can be found [here][awesome_markdown].
 

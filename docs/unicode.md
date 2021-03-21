@@ -1,6 +1,7 @@
 # Unicode
 
-All the content on this page is from the [Wikipedia article][unicode-wikipedia-article] that can be found [here][unicode-wikipedia-article].
+All the content on this page is from the [Wikipedia article][unicode-wikipedia-article]
+that can be found [here][unicode-wikipedia-article].
 
 [unicode-wikipedia-article]: https://en.wikipedia.org/wiki/List_of_Unicode_characters
 

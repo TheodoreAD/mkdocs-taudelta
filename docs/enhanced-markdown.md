@@ -3,9 +3,11 @@
 Extension sources:
 
 - `Markdown` extension [documentation][markdown-extensions-site]
-- `PyMdown` extension [documentation][pymdown-extensions-site], [repository][pymdown-extensions-repo] and [related MkDocs documentation][mkdocs-pymdown-extensions-site]
+- `PyMdown` extension [documentation][pymdown-extensions-site], [repository][pymdown-extensions-repo]
+  and [related MkDocs documentation][mkdocs-pymdown-extensions-site]
 - test `.md` file from the `PyMdown` [repository][md-example-pymdown]
-- example `mkdocs.yml` files from the `PyMdown` [repository][mkdocs-yml-example-pymdown] and the `pymdown-extensions` [repository][mkdocs-yml-example-pymdown-extesnions]
+- example `mkdocs.yml` files from the `PyMdown` [repository][mkdocs-yml-example-pymdown]
+  and the `pymdown-extensions` [repository][mkdocs-yml-example-pymdown-extesnions]
 
 [markdown-extensions-site]: https://python-markdown.github.io/extensions/
 [pymdown-extensions-site]: https://facelessuser.github.io/pymdown-extensions/
@@ -52,7 +54,8 @@ Uses the `PyMdown Caret` [extension][pymdown-caret] and the `PyMdown Tilde` [ext
 
 ### Subscript and Superscript
 
-Uses the `PyMdown Caret` [extension][pymdown-caret] and the `PyMdown Tilde` [extension][pymdown-tilde] (syntax follows Pandoc style).
+Uses the `PyMdown Caret` [extension][pymdown-caret]
+and the `PyMdown Tilde` [extension][pymdown-tilde] (syntax follows Pandoc style).
 
 [pymdown-caret]: https://facelessuser.github.io/pymdown-extensions/extensions/caret/
 [pymdown-tilde]: https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
@@ -212,7 +215,10 @@ Uses the `Abbreviations` [extension][markdown-abbreviations].
 
 ??? info "`Source code`"
     ```
-    Bewildering *[abbreviations][abbreviation-disambiguation]* such as Mssr. and its jocund plural, Mssrs., *[initialisms][abbreviation-disambiguation]* such as PHP or *[acronyms][abbreviation-disambiguation]* such as ATLAS can be defined and end up inside `<abbr>` tags.
+    Bewildering *[abbreviations][abbreviation-disambiguation]* such as Mssr. and its jocund plural, Mssrs.,
+    *[initialisms][abbreviation-disambiguation]* such as PHP or
+    *[acronyms][abbreviation-disambiguation]* such as ATLAS, LISP and FORTRAN
+    can be defined and end up inside `<abbr>` tags.
 
     *[Mssr]: Monsieur
     *[Mssrs]: Messieurs
@@ -222,7 +228,8 @@ Uses the `Abbreviations` [extension][markdown-abbreviations].
 
 Bewildering *[abbreviations][abbreviation-disambiguation]* such as Mssr. and its jocund plural, Mssrs.,
 *[initialisms][abbreviation-disambiguation]* such as PHP or
-*[acronyms][abbreviation-disambiguation]* such as ATLAS, LISP and FORTRAN can be defined and end up inside `<abbr>` tags.
+*[acronyms][abbreviation-disambiguation]* such as ATLAS, LISP and FORTRAN
+can be defined and end up inside `<abbr>` tags.
 
 *[Mssr]: Monsieur
 *[Mssrs]: Messieurs
@@ -242,26 +249,28 @@ Uses the `DefinitionLists` [extension][markdown-definition-lists].
 ??? info "`Source code`"
     ```
     LISP
-    :   A family of computer programming languages with a long history and a distinctive, fully parenthesized prefix notation.
-        Originally specified in 1958, LISP is the second-oldest high-level programming language in widespread use today.
+    :   A family of computer programming languages with a long history and a distinctive,
+        fully parenthesized prefix notation. Originally specified in 1958, LISP is
+        the second-oldest high-level programming language in widespread use today.
         Only Fortran is older, by one year.
-
+    
         `#!lisp (apply 'append (mapcar '(lambda ( x ) (list (car x) (cadr x) (cons 40 swd) (cons 41 (setq swd (+ swd (* del (/ (caddr x) len))))))) lst))`
-
+    
     FORTRAN
-    :   A general-purpose, compiled imperative programming language that is especially suited to numeric computation and scientific computing.
-
+    :   A general-purpose, compiled imperative programming language
+        that is especially suited to numeric computation and scientific computing.
+    
         > People are very flexible and learn to adjust to strange surroundings — they can
         > become accustomed to read Lisp and Fortran programs, for example.
         >
         > Leon Sterling and Ehud Shapiro, Art of PROLOG, MIT Press.
-
+    
     PHP
     :   A language with many magical features
         and no architect.
-
+    
         This has never deterred the masses to adopt and its creators improve the language.
-
+    
         > I did not develop the PHP we know today. Dozens, if not hundreds of people, developed PHP.
         > I was simply the first developer.
         >
@@ -272,14 +281,16 @@ Uses the `DefinitionLists` [extension][markdown-definition-lists].
     ```
 
 LISP
-:   A family of computer programming languages with a long history and a distinctive, fully parenthesized prefix notation.
-    Originally specified in 1958, LISP is the second-oldest high-level programming language in widespread use today.
+:   A family of computer programming languages with a long history and a distinctive,
+    fully parenthesized prefix notation. Originally specified in 1958, LISP is
+    the second-oldest high-level programming language in widespread use today.
     Only Fortran is older, by one year.
 
     `#!lisp (apply 'append (mapcar '(lambda ( x ) (list (car x) (cadr x) (cons 40 swd) (cons 41 (setq swd (+ swd (* del (/ (caddr x) len))))))) lst))`
 
 FORTRAN
-:   A general-purpose, compiled imperative programming language that is especially suited to numeric computation and scientific computing.
+:   A general-purpose, compiled imperative programming language
+    that is especially suited to numeric computation and scientific computing.
 
     > People are very flexible and learn to adjust to strange surroundings — they can
     > become accustomed to read Lisp and Fortran programs, for example.
@@ -308,7 +319,8 @@ Uses the `Footnotes` [extension][markdown-footnotes].
 
 ??? info "`Source code`"
     ```
-    Footnotes[^1] have a label[^label-footnote] and content. They are numbered automatically regardless of label[^third-footnote].
+    Footnotes[^1] have a label[^label-footnote] and content.
+    They are numbered automatically regardless of label[^third-footnote].
 
     [^1]: This is the first footnote.
     [^label-footnote]: This is the footnote with the label `[^label-footnote]`. Mind the carrot (read caret).
@@ -326,7 +338,8 @@ Uses the `Footnotes` [extension][markdown-footnotes].
         The end of the **Third Age.**
     ```
 
-Footnotes[^1] have a label[^label-footnote] and content. They are numbered automatically regardless of label[^third-footnote].
+Footnotes[^1] have a label[^label-footnote] and content.
+They are numbered automatically regardless of label[^third-footnote].
 
 [^1]: This is the first footnote.
 [^label-footnote]: This is the footnote with the label `[^label-footnote]`. Mind the carrot (read caret).
