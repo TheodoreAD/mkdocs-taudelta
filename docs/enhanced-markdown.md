@@ -168,9 +168,6 @@ Uses the `Pymdown Tasklist` [extension][pymdown-tasklist].
 
 [pymdown-tasklist]: https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
 
-!!! TODO
-    Fix checkboxes being too low.
-
 ??? info "`Source code`"
     ```
     A `checklist` with `nesting`:
