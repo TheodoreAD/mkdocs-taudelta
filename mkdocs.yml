@@ -21,8 +21,11 @@ repo_url: https://github.com/TheodoreAD/mkdocs-taudelta
 repo_name: TheodoreAD/mkdocs-taudelta
 # TODO: make the edit icon smaller, the rest of the content is now smaller
 edit_uri: edit/master/docs
-docs_dir: gh-pages
+docs_dir: docs
 site_dir: html
+# gh-deploy command settings
+remote_branch: gh-pages
+remote_name: origin
 
 # pip install mkdocs-bootstrap386
 # https://gitlab.com/lramage94/mkdocs-bootstrap386
