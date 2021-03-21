@@ -142,6 +142,9 @@ Uses the `PyMdown Keys` [extension][pymdown-keys].
 
 [pymdown-keys]: https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 
+!!! TODO
+    Fix glyphs being too low in keys.
+
 ??? info "`Source code`"
     ```
     - Windows: ++ctrl+alt+delete++
@@ -164,6 +167,9 @@ Uses the `PyMdown Keys` [extension][pymdown-keys].
 Uses the `Pymdown Tasklist` [extension][pymdown-tasklist].
 
 [pymdown-tasklist]: https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+
+!!! TODO
+    Fix checkboxes being too low.
 
 ??? info "`Source code`"
     ```

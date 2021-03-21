@@ -9,7 +9,7 @@
 :broken_heart: The integration of this feature is still [WIP]. :x:
 
 !!! failure "Oh :shit: this didn't work"
-    I drink neither :fa-coffee: nor :fa-beer:.
+    I drink neither :fontawesome-coffee: nor :fontawesome-beer:.
 
 <https://fontawesome.com/how-to-use/on-the-web/setup/getting-started>
 

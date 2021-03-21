@@ -14,16 +14,20 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ## Basic usage
 
+!!! TODO
+    Fix text being too low in title line.
+
 ### General note
 
-> ??? info "`Source Code`"
->     ```
->     !!! note
->         meow
->
->     !!! seealso
->     ```
+??? info "`Source Code`"
+    ```
+    !!! note
+        meow
 
+    !!! seealso
+    ```
+
+***
 ***
 
 !!! note
@@ -33,15 +37,16 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### No title & custom title (applies to all blocks)
 
-> ??? info "`Source Code`"
->     ```
->     !!! note ""
->         I am no one. I have no title.
->
->     !!! note "This is my personal note"
->         This note is unlike most other notes because it has a custom title.
->     ```
+??? info "`Source Code`"
+    ```
+    !!! note ""
+        I am no one. I have no title.
 
+    !!! note "This is my personal note"
+        This note is unlike most other notes because it has a custom title.
+    ```
+
+***
 ***
 
 !!! note ""
@@ -52,28 +57,29 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Abstract, Information, Tip
 
-> ??? info "`Source Code`"
->     ```
->     !!! abstract
->         woof
->
->     !!! summary
->
->     !!! tldr
->
->     !!! info
->         meow...
->
->     !!! todo
->
->     !!! tip
->         woof
->
->     !!! hint
->
->     !!! important
->     ```
+??? info "`Source Code`"
+    ```
+    !!! abstract
+        woof
 
+    !!! summary
+
+    !!! tldr
+
+    !!! info
+        meow...
+
+    !!! todo
+
+    !!! tip
+        woof
+
+    !!! hint
+
+    !!! important
+    ```
+
+***
 ***
 
 !!! abstract
@@ -97,23 +103,24 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Success, Failure
 
-> ??? info "`Source Code`"
->     ```
->     !!! success
->         meow!
->
->     !!! check
->
->     !!! done
->
->     !!! failure
->         woof... woof.
->
->     !!! fail
->
->     !!! missing
->     ```
+??? info "`Source Code`"
+    ```
+    !!! success
+        meow!
 
+    !!! check
+
+    !!! done
+
+    !!! failure
+        woof... woof.
+
+    !!! fail
+
+    !!! missing
+    ```
+
+***
 ***
 
 !!! success
@@ -132,24 +139,25 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Warning, Danger, Bug
 
-> ??? info "`Source Code`"
->     ```
->     !!! warning
->         woof!
->
->     !!! caution
->
->     !!! attention
->
->     !!! danger
->         woof! woof!
->
->     !!! error
->
->     !!! bug
->         woof...
->     ```
+??? info "`Source Code`"
+    ```
+    !!! warning
+        woof!
 
+    !!! caution
+
+    !!! attention
+
+    !!! danger
+        woof! woof!
+
+    !!! error
+
+    !!! bug
+        woof...
+    ```
+
+***
 ***
 
 !!! warning
@@ -169,27 +177,28 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Question, Example, Quote
 
-> ??? info "`Source Code`"
->     ```
->     !!! question
->         meow?
->
->     !!! help
->
->     !!! faq
->
->     !!! example
->         meow, meow, meow.
->
->     !!! snippet
->         mw
->
->     !!! quote
->         woof woof, woof, woof.
->
->     !!! cite
->     ```
+??? info "`Source Code`"
+    ```
+    !!! question
+        meow?
 
+    !!! help
+
+    !!! faq
+
+    !!! example
+        meow, meow, meow.
+
+    !!! snippet
+        mw
+
+    !!! quote
+        woof woof, woof, woof.
+
+    !!! cite
+    ```
+
+***
 ***
 
 !!! question
@@ -217,19 +226,20 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Collapsible (applies to all blocks)
 
-> ??? info "`Source Code`"
->     ```
->     ??? tip "Collapsible block"
->         Collapsible content initially hidden
->
->     ???+ warning "Collapsible block"
->         Collapsible content initially shown
->
->     ??? tip "Empty collapsible block, initially collapsed"
->
->     ???+ warning "Empty collapsible block, initially expanded"
->     ```
+??? info "`Source Code`"
+    ```
+    ??? tip "Collapsible block"
+        Collapsible content initially hidden
 
+    ???+ warning "Collapsible block"
+        Collapsible content initially shown
+
+    ??? tip "Empty collapsible block, initially collapsed"
+
+    ???+ warning "Empty collapsible block, initially expanded"
+    ```
+
+***
 ***
 
 ??? tip "Collapsible block"
@@ -244,18 +254,19 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### Nested
 
-> ??? info "`Source Code`"
->     ```
->     !!! quote "Ancient"
->         "I am Ozymandias, King of Kings.
->
->         !!! quote "Egypt"
->             If any want to know how great I am and where I lie,
->
->             !!! quote "Nile"
->                 let him outdo me in my work."
->     ```
+??? info "`Source Code`"
+    ```
+    !!! quote "Ancient"
+        "I am Ozymandias, King of Kings.
 
+        !!! quote "Egypt"
+            If any want to know how great I am and where I lie,
+
+            !!! quote "Nile"
+                let him outdo me in my work."
+    ```
+
+***
 ***
 
 !!! quote "Ancient"
@@ -269,22 +280,23 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### With code block as content
 
-> ??? info "`Source Code`"
->     ```
->     !!! example
->         Using the powerful `Superfences` [extension][pymdown-superfences] to render code blocks here:
->
->         ```php hl_lines="3 5" linenums="24"
->         function human_test() {
->             if empty($soul) {
->                 return 'php';
->             } else {
->                 return 'kitty';
->             }
->         }
->         ```
->     ```
+??? info "`Source Code`"
+    ```
+    !!! example
+        Using the powerful `Superfences` [extension][pymdown-superfences] to render code blocks here:
 
+        ```php hl_lines="3 5" linenums="24"
+        function human_test() {
+            if empty($soul) {
+                return 'php';
+            } else {
+                return 'kitty';
+            }
+        }
+        ```
+    ```
+
+***
 ***
 
 !!! example
@@ -304,16 +316,17 @@ Uses the `Admonition` [extension][markdown-admonition].
 
 ### With table as content
 
-> ??? info "`Source Code`"
->     ```
->     !!! example
->         | Center    | Left     | Right       |
->         | :-------: | :------- | ----------: |
->         | Alpha One | B1       | C1          |
->         | A2        | Beta Two | C2          |
->         | A3        | B3       | Gamma Three |
->     ```
+??? info "`Source Code`"
+    ```
+    !!! example
+        | Center    | Left     | Right       |
+        | :-------: | :------- | ----------: |
+        | Alpha One | B1       | C1          |
+        | A2        | Beta Two | C2          |
+        | A3        | B3       | Gamma Three |
+    ```
 
+***
 ***
 
 !!! example

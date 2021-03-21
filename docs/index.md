@@ -67,15 +67,21 @@ Philosophically:
 
 !!! todo
     Create an application that allows users to easily:
+
     * new dedicated documentation site:
+
         * create a skeleton for an example documentation site
         * obtain input from user: origin address including user, new repo name
         * create a new instance of MkDocs Tau Delta using a new repository
+
     * new documentation site as part of an ongoing project:
+
         * obtain input from user: repo address
         * check for existing `docs/` directory, if it already exists warn user and ask for permission to continue
         * add a new instance of MkDocs Tau Delta to an existing repository
+
     * existing documentation site:
+
         * check for existence of `mkdocs.yml` and `docs/extra.css`
         * get the latest `extra.css` and `mkdocs.yml` from the MkDocs Tau Delta repo
         * update local `extra.css` and the extensions section of `mkdocs.yml` with the latest content

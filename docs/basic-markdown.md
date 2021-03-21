@@ -60,6 +60,9 @@ A [Markdown note-keeping tool][boostnote] can be found [here][boostnote].
 
 * * *
 
+!!! TODO
+    Reduce distance between last paragraph and heading
+
 ## Headings followed by paragraphs, surrounded by horizontal rulers
 
 ??? info "`Source Code`"
@@ -626,26 +629,23 @@ or all at the end of your document, like footnotes.
     - \[ square brackets \]
     - \( parentheses \)
     - \# hash mark
-    - \+   plus sign
-    - \-   minus sign (hyphen)
-    - \.   dot
-    - \!   exclamation mark
+    - \+ plus sign
+    - \- minus sign (hyphen)
+    - \. dot
+    - \! exclamation mark
     ```
 
 Markdown provides backslash escapes for the following characters:
 
 - \\ backslash
-- \` backticks \`
+- \` backticks
 - \* asterisks \*
 - \_ underscores \_
 - \{ curly braces \}
 - \[ square brackets \]
 - \( parentheses \)
 - \# hash mark
-- \+   plus sign
-- \-   minus sign (hyphen)
-- \.   dot
-- \!   exclamation mark
-
-!!! error
-    Curly braces don't appear when escaped.
+- \+ plus sign
+- \- minus sign (hyphen)
+- \. dot
+- \! exclamation mark
