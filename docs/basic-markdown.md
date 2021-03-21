@@ -60,9 +60,6 @@ A [Markdown note-keeping tool][boostnote] can be found [here][boostnote].
 
 * * *
 
-!!! TODO
-    Reduce distance between last paragraph and heading
-
 ## Headings followed by paragraphs, surrounded by horizontal rulers
 
 ??? info "`Source Code`"
