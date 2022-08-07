@@ -107,7 +107,7 @@ theme:
 # used to be done using 'pages', now deprecated, new syntax is 'nav'
 #nav:
 # If using the regular nav section, please create a separate file
-INHERIT: mkdocs-pages.yml
+INHERIT: docs/.pages.yml
 # Nav section replaced by awesome pages plugin .pages files in each dir
 # https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
 
