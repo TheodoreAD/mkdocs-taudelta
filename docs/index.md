@@ -82,9 +82,9 @@ Philosophically:
 
     * existing documentation site:
 
-        * check for existence of `mkdocs.yml` and `docs/extra.css`
-        * get the latest `extra.css` and `mkdocs.yml` from the MkDocs Tau Delta repo
-        * update local `extra.css` and the extensions section of `mkdocs.yml` with the latest content
+        * check for existence of `docs/stylesheets`, `docs/javascripts`, and `mkdocs.yml`
+        * get the latest `docs/stylesheets`, `docs/javascripts`, and `mkdocs.yml` from the MkDocs Tau Delta repo
+        * update local `docs/stylesheets`, `docs/javascripts`, and the extensions section of `mkdocs.yml` with the latest content
 
 ### Configuration files
 
@@ -93,7 +93,8 @@ you need to include to have the docs site up and running:
 
 - mandatory:
     - `mkdocs.yml` file for most site settings in `/` (root)
-    - `extra.css` for font size and spacing settings in `/docs/`
+    - `extra.css` for font size and spacing settings in `/docs/stylesheets/`
+    - scripts for supporting various extensions in `/docs/javascripts/`
     - `publish_on_push.yml` for automatic publish on push in GitHub in `/.github/workflows/`
 
 - optional:

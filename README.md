@@ -1,3 +1,3 @@
-# Mkdocs Ta Delta
+# Mkdocs Tau Delta
 
-See the GitHub Pages at: <https://github.com/TheodoreAD/mkdocs-taudelta>
+See the GitHub Pages at: <https://theodoread.github.io/mkdocs-taudelta/>
