@@ -1,0 +1,17 @@
+nav:
+  - Home: index.md
+  - live-editor.md
+  - basic-markdown.md
+  - enhanced-markdown.md
+  - enhanced-markdown-code.md
+  - admonition-blocks.md
+  - mermaid.md
+  - markmap.md
+  - keys.md
+  - emoji.md
+  - unicode.md
+  - material-icons.md
+  - font-awesome.md
+  - charts.md
+  - favicon-and-logo.md
+  - markdown-resources.md
