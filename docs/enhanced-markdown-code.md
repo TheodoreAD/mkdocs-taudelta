@@ -158,7 +158,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
     ````
     === "Bash"
     
-        ``` bash
+        ```bash
         #!/bin/bash
         
         echo "Hello world!"
@@ -166,7 +166,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
     
     === "C"
     
-        ``` c
+        ```c
         #include <stdio.h>
         
         int main(void) {
@@ -176,7 +176,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
     
     === "C++"
     
-        ``` c++
+        ```c++
         #include <iostream>
         
         int main() {
@@ -187,7 +187,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
     
     === "C#"
     
-        ``` c#
+        ```c#
         using System;
         
         class Program {
@@ -200,7 +200,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 === "Bash"
 
-    ``` bash
+    ```bash
     #!/bin/bash
     
     echo "Hello world!"
@@ -208,7 +208,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 === "C"
 
-    ``` c
+    ```c
     #include <stdio.h>
     
     int main(void) {
@@ -218,7 +218,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 === "C++"
 
-    ``` c++
+    ```c++
     #include <iostream>
     
     int main() {
@@ -229,7 +229,7 @@ and the `Pymdown Highlight` [extension][pymdown-highlight].
 
 === "C#"
 
-    ``` c#
+    ```c#
     using System;
     
     class Program {

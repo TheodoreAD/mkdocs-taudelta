@@ -1,8 +1,20 @@
-# Material Icons [STUB]
+# Material Icons
 
 <https://material.io/tools/icons/>
 
-<https://google.github.io/material-design-icons/>
+<https://materialdesignicons.com/>
+
+<https://developers.google.com/fonts/docs/material_icons>
 
 !!! todo
-    add examples
+    add content
+
+:material-fire:
+
+:material-water:
+
+:material-earth:
+
+:material-cross:
+
+:material-skull:

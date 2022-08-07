@@ -17,24 +17,27 @@ Extension sources:
 [mkdocs-yml-example-pymdown]: https://github.com/facelessuser/PyMdown/blob/master/mkdocs.yml
 [mkdocs-yml-example-pymdown-extesnions]: https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
 
-Planned features:
+Incomplete features, enabled but not documented:
 
-- [SaneLists][markdown-sanelists]
-- [NewLineToBreak][markdown-nl2br] (CAUTION: major deviation from basic Markdown)
-- [Critic][pymdown-critic]
-- [MagicLink][pymdown-magiclink]
-- [Snippets][pymdown-snippets] (HIGH PRIORITY)
-- [Arithmatex][pymdown-arithmatex]
+- [Snippets][pymdown-snippets]
 - [BetterEm][pymdown-betterem] (CAUTION: deviation from basic Markdown)
+
+Planned features, not enabled:
+
+- [MagicLink][pymdown-magiclink]
+- [Arithmatex][pymdown-arithmatex]
+- [Critic][pymdown-critic]
+- [SaneLists][markdown-sanelists] (CAUTION: deviation from basic Markdown)
+- [NewLineToBreak][markdown-nl2br] (CAUTION: major deviation from basic Markdown) (would align with StackOverflow and GitHub flavored Markdown)
 - [EscapeAll][pymdown-escapeall]
 
+[pymdown-betterem]: https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
+[pymdown-snippets]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+[pymdown-magiclink]: https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+[pymdown-arithmatex]: https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
+[pymdown-critic]: https://facelessuser.github.io/pymdown-extensions/extensions/critic/
 [markdown-sanelists]: https://python-markdown.github.io/extensions/sane_lists/
 [markdown-nl2br]: https://python-markdown.github.io/extensions/nl2br
-[pymdown-critic]: https://facelessuser.github.io/pymdown-extensions/extensions/critic/
-[pymdown-magiclink]: https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
-[pymdown-snippets]: https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
-[pymdown-arithmatex]: https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/
-[pymdown-betterem]: https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
 [pymdown-escapeall]: https://facelessuser.github.io/pymdown-extensions/extensions/escapeall/
 
 ## Inline text formatting
@@ -142,9 +145,6 @@ Uses the `PyMdown Keys` [extension][pymdown-keys].
 
 [pymdown-keys]: https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 
-!!! TODO
-    Fix glyphs being too low in keys.
-
 ??? info "`Source code`"
     ```
     - Windows: ++ctrl+alt+delete++
@@ -161,6 +161,10 @@ Uses the `PyMdown Keys` [extension][pymdown-keys].
 - Media: ++media++ ++a++ ++d++ ++s++ ++ctrl++ ++y++ ++o++ ++u++
 - Star Trek: ++space++ ++end++
 - wrong command: ++ctrl++ ++break++ ++reset++
+
+See the [full reference][keys_page] on the [dedicated page][keys_page].
+
+[keys_page]: keys.md
 
 ## Checklists
 
@@ -361,12 +365,33 @@ They are numbered automatically regardless of label[^third-footnote].
 
 ## Progress Bars
 
+!!! warning
+    This doesn't currently work. Disabled until further notice.
+
 Uses the `Pymdown ProgressBar` [extension][pymdown-progressbar].
 
 [pymdown-progressbar]: https://facelessuser.github.io/pymdown-extensions/extensions/progressbar/
 
-??? info "`Source code`"
-    ```
+??? note "Non-functional content"
+    ??? info "`Source code`"
+        ```
+        | Test                | Result                                     |
+        | ------------------- | ------------------------------------------ |
+        | Animated: 0%        | [=0% "0%"]{: .candystripe-animate}         |
+        | Animated: 5%        | [=5% "5%"]{: .candystripe-animate}         |
+        | Animated: 25%       | [=25% "25%"]{: .candystripe-animate}       |
+        | Animated: 45%       | [=45% "45%"]{: .candystripe-animate}       |
+        | Animated: 65%       | [=65% "65%"]{: .candystripe-animate}       |
+        | Animated: 85%       | [=85% "85%"]{: .candystripe-animate}       |
+        | Animated: 100%      | [=100% "100%"]{: .candystripe-animate}     |
+        | Division Percentage | [= 212.2/537 "212.2/537 Testing division"] |
+        | No Label            | [= 50%]                                    |
+        | Inline              | Before[= 50% "I'm a block!"]After          |
+        ```
+    
+    !!! error
+        not working despite extension being enabled and the HTML being produced correctly
+    
     | Test                | Result                                     |
     | ------------------- | ------------------------------------------ |
     | Animated: 0%        | [=0% "0%"]{: .candystripe-animate}         |
@@ -379,20 +404,3 @@ Uses the `Pymdown ProgressBar` [extension][pymdown-progressbar].
     | Division Percentage | [= 212.2/537 "212.2/537 Testing division"] |
     | No Label            | [= 50%]                                    |
     | Inline              | Before[= 50% "I'm a block!"]After          |
-    ```
-
-!!! error
-    not working despite extension being enabled and the HTML being produced correctly
-
-| Test                | Result                                     |
-| ------------------- | ------------------------------------------ |
-| Animated: 0%        | [=0% "0%"]{: .candystripe-animate}         |
-| Animated: 5%        | [=5% "5%"]{: .candystripe-animate}         |
-| Animated: 25%       | [=25% "25%"]{: .candystripe-animate}       |
-| Animated: 45%       | [=45% "45%"]{: .candystripe-animate}       |
-| Animated: 65%       | [=65% "65%"]{: .candystripe-animate}       |
-| Animated: 85%       | [=85% "85%"]{: .candystripe-animate}       |
-| Animated: 100%      | [=100% "100%"]{: .candystripe-animate}     |
-| Division Percentage | [= 212.2/537 "212.2/537 Testing division"] |
-| No Label            | [= 50%]                                    |
-| Inline              | Before[= 50% "I'm a block!"]After          |

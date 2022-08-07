@@ -97,8 +97,8 @@ you need to include to have the docs site up and running:
     - `publish_on_push.yml` for automatic publish on push in GitHub in `/.github/workflows/`
 
 - optional:
-    - `favicon.ico` in `/docs/img/`
-    - `logo.svg` in `/docs/img/`
+    - `favicon.ico` in `/docs/assets/`
+    - `logo.svg` in `/docs/assets/`
 
 By adding the files above to your repo, `https://github.com/{{ USER }}/{{ REPO }}`,
 the site should become available at `https://{{ USER }}.github.io/{{ REPO }}`.

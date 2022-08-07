@@ -1,15 +1,20 @@
 # Emoji
 
-MkDocs Tau Delta uses GitHub emoji.
+MkDocs Tau Delta uses [Twitter emoji][twitter_emoji].
 
-A [comprehensive list][emoji_list] was copied from [here][emoji_list] and is displayed below.
+A [comprehensive list][emoji_list] of GitHub emoji was copied from [here][emoji_list] and is displayed below.
 
+!!! todo
+    Update with the [newer list][emoji_list_github] of GitHub emoji which can be found [here][emoji_list_github].
+
+[emoji_list_github]: https://github.com/ikatyang/emoji-cheat-sheet
 [emoji_list]: https://gist.github.com/rxaviers/7360908
+[twitter_emoji]: https://twemoji.twitter.com/
 
 ## People
 
 | Column 1                                                        | Column 2                                                        | Column 3                                    |
-| --------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------- |
+|-----------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------|
 | :bowtie: `:bowtie:`                                             | :smile: `:smile:`                                               | :laughing: `:laughing:`                     |
 | :blush: `:blush:`                                               | :smiley: `:smiley:`                                             | :relaxed: `:relaxed:`                       |
 | :smirk: `:smirk:`                                               | :heart_eyes: `:heart_eyes:`                                     | :kissing_heart: `:kissing_heart:`           |
@@ -123,7 +128,7 @@ A [comprehensive list][emoji_list] was copied from [here][emoji_list] and is dis
 ## Objects
 
 | Column 1                                                            | Column 2                                                    | Column 3                                            |
-| ------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------- |
+|---------------------------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------|
 | :bamboo: `:bamboo:`                                                 | :gift_heart: `:gift_heart:`                                 | :dolls: `:dolls:`                                   |
 | :school_satchel: `:school_satchel:`                                 | :mortar_board: `:mortar_board:`                             | :flags: `:flags:`                                   |
 | :fireworks: `:fireworks:`                                           | :sparkler: `:sparkler:`                                     | :wind_chime: `:wind_chime:`                         |
@@ -215,7 +220,7 @@ A [comprehensive list][emoji_list] was copied from [here][emoji_list] and is dis
 ## Places
 
 | Column 1                                      | Column 2                                              | Column 3                                            |
-| --------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+|-----------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|
 | :house: `:house:`                             | :house_with_garden: `:house_with_garden:`             | :school: `:school:`                                 |
 | :office: `:office:`                           | :post_office: `:post_office:`                         | :hospital: `:hospital:`                             |
 | :bank: `:bank:`                               | :convenience_store: `:convenience_store:`             | :love_hotel: `:love_hotel:`                         |
@@ -256,7 +261,7 @@ A [comprehensive list][emoji_list] was copied from [here][emoji_list] and is dis
 ## Symbols
 
 | Column 1                                                              | Column 2                                                      | Column 3                                                  |
-| --------------------------------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------- |
+|-----------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
 | :one: `:one:`                                                         | :two: `:two:`                                                 | :three: `:three:`                                         |
 | :four: `:four:`                                                       | :five: `:five:`                                               | :six: `:six:`                                             |
 | :seven: `:seven:`                                                     | :eight: `:eight:`                                             | :nine: `:nine:`                                           |

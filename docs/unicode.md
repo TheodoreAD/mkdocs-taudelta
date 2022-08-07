@@ -5,6 +5,9 @@ that can be found [here][unicode-wikipedia-article].
 
 [unicode-wikipedia-article]: https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
+!!! todo
+    Include Unicode emoji from <https://unicode.org/emoji/charts/full-emoji-list.html>
+
 ***
 
 Willpower:
