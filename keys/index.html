@@ -1,0 +1,1834 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Teodor Dumitrescu <teodor.dumitrescu@gmail.com>">
+      
+      
+        <link rel="canonical" href="https://TheodoreAD.github.io/mkdocs-taudelta/keys/">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Keys - MkDocs Tau Delta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#keys" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Tau Delta" class="md-header__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Tau Delta
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Keys
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Tau Delta" class="md-nav__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    MkDocs Tau Delta
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live-editor/" class="md-nav__link">
+        Live Editor
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-markdown/" class="md-nav__link">
+        Basic Markdown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enhanced-markdown/" class="md-nav__link">
+        Enhanced Markdown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enhanced-markdown-code/" class="md-nav__link">
+        Enhanced Markdown Code
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admonition-blocks/" class="md-nav__link">
+        Admonition Blocks
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mermaid/" class="md-nav__link">
+        Mermaid
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markmap/" class="md-nav__link">
+        Markmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Keys
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Keys
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alphanumeric-and-space-keys" class="md-nav__link">
+    Alphanumeric and Space Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punctuation-keys" class="md-nav__link">
+    Punctuation Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-keys" class="md-nav__link">
+    Navigation Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-keys" class="md-nav__link">
+    Editing Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-keys" class="md-nav__link">
+    Action Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeric-keypad-keys" class="md-nav__link">
+    Numeric Keypad Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-keys" class="md-nav__link">
+    Modifier keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-keys" class="md-nav__link">
+    Function keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-keys" class="md-nav__link">
+    Extra Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse" class="md-nav__link">
+    Mouse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emoji/" class="md-nav__link">
+        Emoji
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unicode/" class="md-nav__link">
+        Unicode
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material-icons/" class="md-nav__link">
+        Material Icons
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../font-awesome/" class="md-nav__link">
+        Font Awesome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        Charts [STUB]
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favicon-and-logo/" class="md-nav__link">
+        Favicon and Logo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embedded_video/" class="md-nav__link">
+        Embedded video
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown-resources/" class="md-nav__link">
+        Markdown Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#alphanumeric-and-space-keys" class="md-nav__link">
+    Alphanumeric and Space Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#punctuation-keys" class="md-nav__link">
+    Punctuation Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#navigation-keys" class="md-nav__link">
+    Navigation Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-keys" class="md-nav__link">
+    Editing Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-keys" class="md-nav__link">
+    Action Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numeric-keypad-keys" class="md-nav__link">
+    Numeric Keypad Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modifier-keys" class="md-nav__link">
+    Modifier keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-keys" class="md-nav__link">
+    Function keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-keys" class="md-nav__link">
+    Extra Keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse" class="md-nav__link">
+    Mouse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/TheodoreAD/mkdocs-taudelta/edit/master/docs/keys.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="keys">Keys<a class="headerlink" href="#keys" title="Permanent link">¶</a></h1>
+<p>A reference of keys provided by the <code>PyMdown Keys</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/keys/">extension</a>.</p>
+<h3 id="alphanumeric-and-space-keys">Alphanumeric and Space Keys<a class="headerlink" href="#alphanumeric-and-space-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0</code></td>
+<td><span class="keys"><kbd class="key-0">0</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>1</code></td>
+<td><span class="keys"><kbd class="key-1">1</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><span class="keys"><kbd class="key-2">2</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td><span class="keys"><kbd class="key-3">3</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td><span class="keys"><kbd class="key-4">4</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td><span class="keys"><kbd class="key-5">5</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td><span class="keys"><kbd class="key-6">6</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td><span class="keys"><kbd class="key-7">7</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td><span class="keys"><kbd class="key-8">8</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td><span class="keys"><kbd class="key-9">9</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td><span class="keys"><kbd class="key-a">A</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td><span class="keys"><kbd class="key-b">B</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td><span class="keys"><kbd class="key-c">C</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td><span class="keys"><kbd class="key-d">D</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>e</code></td>
+<td><span class="keys"><kbd class="key-e">E</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f</code></td>
+<td><span class="keys"><kbd class="key-f">F</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td><span class="keys"><kbd class="key-g">G</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>h</code></td>
+<td><span class="keys"><kbd class="key-h">H</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td><span class="keys"><kbd class="key-i">I</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>j</code></td>
+<td><span class="keys"><kbd class="key-j">J</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>k</code></td>
+<td><span class="keys"><kbd class="key-k">K</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td><span class="keys"><kbd class="key-l">L</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td><span class="keys"><kbd class="key-m">M</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td><span class="keys"><kbd class="key-n">N</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td><span class="keys"><kbd class="key-o">O</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td><span class="keys"><kbd class="key-p">P</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td><span class="keys"><kbd class="key-q">Q</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>r</code></td>
+<td><span class="keys"><kbd class="key-r">R</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td><span class="keys"><kbd class="key-s">S</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td><span class="keys"><kbd class="key-t">T</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td><span class="keys"><kbd class="key-u">U</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td><span class="keys"><kbd class="key-v">V</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td><span class="keys"><kbd class="key-w">W</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td><span class="keys"><kbd class="key-x">X</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>y</code></td>
+<td><span class="keys"><kbd class="key-y">Y</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>z</code></td>
+<td><span class="keys"><kbd class="key-z">Z</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>space</code></td>
+<td><span class="keys"><kbd class="key-space">Space</kbd></span></td>
+<td><code>spc</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="punctuation-keys">Punctuation Keys<a class="headerlink" href="#punctuation-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backslash</code></td>
+<td><span class="keys"><kbd class="key-backslash">\</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>bar</code></td>
+<td><span class="keys"><kbd class="key-bar">|</kbd></span></td>
+<td><code>pipe</code></td>
+</tr>
+<tr>
+<td><code>brace-left</code></td>
+<td><span class="keys"><kbd class="key-brace-left">{</kbd></span></td>
+<td><code>open-brace</code></td>
+</tr>
+<tr>
+<td><code>brace-right</code></td>
+<td><span class="keys"><kbd class="key-brace-right">}</kbd></span></td>
+<td><code>close-bracket</code></td>
+</tr>
+<tr>
+<td><code>bracket-left</code></td>
+<td><span class="keys"><kbd class="key-bracket-left">[</kbd></span></td>
+<td><code>open-bracket</code></td>
+</tr>
+<tr>
+<td><code>bracket-right</code></td>
+<td><span class="keys"><kbd class="key-bracket-right">]</kbd></span></td>
+<td><code>close-bracket</code></td>
+</tr>
+<tr>
+<td><code>colon</code></td>
+<td><span class="keys"><kbd class="key-colon">:</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>comma</code></td>
+<td><span class="keys"><kbd class="key-comma">,</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>double-quote</code></td>
+<td><span class="keys"><kbd class="key-double-quote">"</kbd></span></td>
+<td><code>dblquote</code></td>
+</tr>
+<tr>
+<td><code>equal</code></td>
+<td><span class="keys"><kbd class="key-equal">=</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>exclam</code></td>
+<td><span class="keys"><kbd class="key-exclam">!</kbd></span></td>
+<td><code>exclamation</code></td>
+</tr>
+<tr>
+<td><code>grave</code></td>
+<td><span class="keys"><kbd class="key-grave">`</kbd></span></td>
+<td><code>grave-accent</code></td>
+</tr>
+<tr>
+<td><code>greater</code></td>
+<td><span class="keys"><kbd class="key-greater">&gt;</kbd></span></td>
+<td><code>greater-than</code>, <code>gt</code></td>
+</tr>
+<tr>
+<td><code>less</code></td>
+<td><span class="keys"><kbd class="key-less">&lt;</kbd></span></td>
+<td><code>less-than</code>, <code>lt</code></td>
+</tr>
+<tr>
+<td><code>minus</code></td>
+<td><span class="keys"><kbd class="key-minus">-</kbd></span></td>
+<td><code>hyphen</code></td>
+</tr>
+<tr>
+<td><code>period</code></td>
+<td><span class="keys"><kbd class="key-period">.</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>plus</code></td>
+<td><span class="keys"><kbd class="key-plus">+</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>question</code></td>
+<td><span class="keys"><kbd class="key-question">?</kbd></span></td>
+<td><code>question-mark</code></td>
+</tr>
+<tr>
+<td><code>semicolon</code></td>
+<td><span class="keys"><kbd class="key-semicolon">;</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>single-quote</code></td>
+<td><span class="keys"><kbd class="key-single-quote">'</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>slash</code></td>
+<td><span class="keys"><kbd class="key-slash">/</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tilde</code></td>
+<td><span class="keys"><kbd class="key-tilde">~</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>underscore</code></td>
+<td><span class="keys"><kbd class="key-underscore">_</kbd></span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="navigation-keys">Navigation Keys<a class="headerlink" href="#navigation-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>arrow-up</code></td>
+<td><span class="keys"><kbd class="key-arrow-up">Up</kbd></span></td>
+<td><code>up</code></td>
+</tr>
+<tr>
+<td><code>arrow-down</code></td>
+<td><span class="keys"><kbd class="key-arrow-down">Down</kbd></span></td>
+<td><code>down</code></td>
+</tr>
+<tr>
+<td><code>arrow-left</code></td>
+<td><span class="keys"><kbd class="key-arrow-left">Left</kbd></span></td>
+<td><code>left</code></td>
+</tr>
+<tr>
+<td><code>arrow-right</code></td>
+<td><span class="keys"><kbd class="key-arrow-right">Right</kbd></span></td>
+<td><code>right</code></td>
+</tr>
+<tr>
+<td><code>page-up</code></td>
+<td><span class="keys"><kbd class="key-page-up">Page Up</kbd></span></td>
+<td><code>prior</code>, <code>page-up</code>, <code>pg-up</code></td>
+</tr>
+<tr>
+<td><code>page-down</code></td>
+<td><span class="keys"><kbd class="key-page-down">Page Down</kbd></span></td>
+<td><code>next</code>, <code>page-dn</code>, <code>pg-dn</code></td>
+</tr>
+<tr>
+<td><code>home</code></td>
+<td><span class="keys"><kbd class="key-home">Home</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td><span class="keys"><kbd class="key-end">End</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>tab</code></td>
+<td><span class="keys"><kbd class="key-tab">Tab</kbd></span></td>
+<td><code>tabulator</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="editing-keys">Editing Keys<a class="headerlink" href="#editing-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backspace</code></td>
+<td><span class="keys"><kbd class="key-backspace">Backspace</kbd></span></td>
+<td><code>back</code>, <code>bksp</code></td>
+</tr>
+<tr>
+<td><code>delete</code></td>
+<td><span class="keys"><kbd class="key-delete">Del</kbd></span></td>
+<td><code>del</code></td>
+</tr>
+<tr>
+<td><code>insert</code></td>
+<td><span class="keys"><kbd class="key-insert">Ins</kbd></span></td>
+<td><code>ins</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="action-keys">Action Keys<a class="headerlink" href="#action-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>break</code></td>
+<td><span class="keys"><kbd class="key-break">Break</kbd></span></td>
+<td><code>cancel</code></td>
+</tr>
+<tr>
+<td><code>caps-lock</code></td>
+<td><span class="keys"><kbd class="key-caps-lock">Caps Lock</kbd></span></td>
+<td><code>capital</code>, <code>cplk</code></td>
+</tr>
+<tr>
+<td><code>clear</code></td>
+<td><span class="keys"><kbd class="key-clear">Clear</kbd></span></td>
+<td><code>clr</code></td>
+</tr>
+<tr>
+<td><code>eject</code></td>
+<td><span class="keys"><kbd class="key-eject">Eject</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>enter</code></td>
+<td><span class="keys"><kbd class="key-enter">Enter</kbd></span></td>
+<td><code>return</code></td>
+</tr>
+<tr>
+<td><code>escape</code></td>
+<td><span class="keys"><kbd class="key-escape">Esc</kbd></span></td>
+<td><code>esc</code></td>
+</tr>
+<tr>
+<td><code>help</code></td>
+<td><span class="keys"><kbd class="key-help">Help</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>print-screen</code></td>
+<td><span class="keys"><kbd class="key-print-screen">Print Screen</kbd></span></td>
+<td><code>prtsc</code></td>
+</tr>
+<tr>
+<td><code>scroll-lock</code></td>
+<td><span class="keys"><kbd class="key-scroll-lock">Scroll Lock</kbd></span></td>
+<td><code>scroll</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="numeric-keypad-keys">Numeric Keypad Keys<a class="headerlink" href="#numeric-keypad-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>num0</code></td>
+<td><span class="keys"><kbd class="key-num0">Num 0</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num1</code></td>
+<td><span class="keys"><kbd class="key-num1">Num 1</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num2</code></td>
+<td><span class="keys"><kbd class="key-num2">Num 2</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num3</code></td>
+<td><span class="keys"><kbd class="key-num3">Num 3</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num4</code></td>
+<td><span class="keys"><kbd class="key-num4">Num 4</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num5</code></td>
+<td><span class="keys"><kbd class="key-num5">Num 5</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num6</code></td>
+<td><span class="keys"><kbd class="key-num6">Num 6</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num7</code></td>
+<td><span class="keys"><kbd class="key-num7">Num 7</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num8</code></td>
+<td><span class="keys"><kbd class="key-num8">Num 8</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num9</code></td>
+<td><span class="keys"><kbd class="key-num9">Num 9</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num-asterisk</code></td>
+<td><span class="keys"><kbd class="key-num-asterisk">Num *</kbd></span></td>
+<td><code>multiply</code></td>
+</tr>
+<tr>
+<td><code>num-clear</code></td>
+<td><span class="keys"><kbd class="key-num-clear">Num Clear</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num-delete</code></td>
+<td><span class="keys"><kbd class="key-num-delete">Num Del</kbd></span></td>
+<td><code>num-del</code></td>
+</tr>
+<tr>
+<td><code>num-equal</code></td>
+<td><span class="keys"><kbd class="key-num-equal">Num =</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>num-lock</code></td>
+<td><span class="keys"><kbd class="key-num-lock">Num Lock</kbd></span></td>
+<td><code>numlk</code>, <code>numlock</code></td>
+</tr>
+<tr>
+<td><code>num-minus</code></td>
+<td><span class="keys"><kbd class="key-num-minus">Num -</kbd></span></td>
+<td><code>subtract</code></td>
+</tr>
+<tr>
+<td><code>num-plus</code></td>
+<td><span class="keys"><kbd class="key-num-plus">Num +</kbd></span></td>
+<td><code>add</code></td>
+</tr>
+<tr>
+<td><code>num-separator</code></td>
+<td><span class="keys"><kbd class="key-num-separator">Num .</kbd></span></td>
+<td><code>decimal</code>, <code>separator</code></td>
+</tr>
+<tr>
+<td><code>num-slash</code></td>
+<td><span class="keys"><kbd class="key-num-slash">Num /</kbd></span></td>
+<td><code>divide</code></td>
+</tr>
+<tr>
+<td><code>num-enter</code></td>
+<td><span class="keys"><kbd class="key-num-enter">Num Enter</kbd></span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="modifier-keys">Modifier keys<a class="headerlink" href="#modifier-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alt</code></td>
+<td><span class="keys"><kbd class="key-alt">Alt</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>left-alt</code></td>
+<td><span class="keys"><kbd class="key-left-alt">Left Alt</kbd></span></td>
+<td><code>lalt</code></td>
+</tr>
+<tr>
+<td><code>right-alt</code></td>
+<td><span class="keys"><kbd class="key-right-alt">Right Alt</kbd></span></td>
+<td><code>ralt</code></td>
+</tr>
+<tr>
+<td><code>alt-graph</code></td>
+<td><span class="keys"><kbd class="key-alt-graph">AltGr</kbd></span></td>
+<td><code>altgr</code></td>
+</tr>
+<tr>
+<td><code>command</code></td>
+<td><span class="keys"><kbd class="key-command">Cmd</kbd></span></td>
+<td><code>cmd</code></td>
+</tr>
+<tr>
+<td><code>left-command</code></td>
+<td><span class="keys"><kbd class="key-left-command">Left Command</kbd></span></td>
+<td><code>lcommand</code>, <code>lcmd</code>, <code>left-cmd</code></td>
+</tr>
+<tr>
+<td><code>right-command</code></td>
+<td><span class="keys"><kbd class="key-right-command">Right Command</kbd></span></td>
+<td><code>rcommand</code>, <code>rcmd</code>, <code>right-cmd</code></td>
+</tr>
+<tr>
+<td><code>control</code></td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd></span></td>
+<td><code>ctrl</code></td>
+</tr>
+<tr>
+<td><code>left-control</code></td>
+<td><span class="keys"><kbd class="key-left-control">Left Ctrl</kbd></span></td>
+<td><code>lcontrol</code>, <code>lctrl</code>, <code>left-ctrl</code></td>
+</tr>
+<tr>
+<td><code>right-control</code></td>
+<td><span class="keys"><kbd class="key-right-control">Right Ctrl</kbd></span></td>
+<td><code>rcontrol</code>, <code>rctrl</code>, <code>right-ctrl</code></td>
+</tr>
+<tr>
+<td><code>function</code></td>
+<td><span class="keys"><kbd class="key-function">Fn</kbd></span></td>
+<td><code>fn</code></td>
+</tr>
+<tr>
+<td><code>meta</code></td>
+<td><span class="keys"><kbd class="key-meta">Meta</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>left-meta</code></td>
+<td><span class="keys"><kbd class="key-left-meta">Left Meta</kbd></span></td>
+<td><code>lmeta</code></td>
+</tr>
+<tr>
+<td><code>right-meta</code></td>
+<td><span class="keys"><kbd class="key-right-meta">Right Meta</kbd></span></td>
+<td><code>rmeta</code></td>
+</tr>
+<tr>
+<td><code>option</code></td>
+<td><span class="keys"><kbd class="key-option">Option</kbd></span></td>
+<td><code>opt</code></td>
+</tr>
+<tr>
+<td><code>left-option</code></td>
+<td><span class="keys"><kbd class="key-left-option">Left Option</kbd></span></td>
+<td><code>loption</code>, <code>lopt</code>, <code>left-opt</code></td>
+</tr>
+<tr>
+<td><code>right-option</code></td>
+<td><span class="keys"><kbd class="key-right-option">Right Option</kbd></span></td>
+<td><code>roption</code>, <code>ropt</code>, <code>right-opt</code></td>
+</tr>
+<tr>
+<td><code>shift</code></td>
+<td><span class="keys"><kbd class="key-shift">Shift</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>left-shift</code></td>
+<td><span class="keys"><kbd class="key-left-shift">Left Shift</kbd></span></td>
+<td><code>lshift</code></td>
+</tr>
+<tr>
+<td><code>right-shift</code></td>
+<td><span class="keys"><kbd class="key-right-shift">Right Shift</kbd></span></td>
+<td><code>rshift</code></td>
+</tr>
+<tr>
+<td><code>super</code></td>
+<td><span class="keys"><kbd class="key-super">Super</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>left-super</code></td>
+<td><span class="keys"><kbd class="key-left-super">Left Super</kbd></span></td>
+<td><code>lsuper</code></td>
+</tr>
+<tr>
+<td><code>right-super</code></td>
+<td><span class="keys"><kbd class="key-right-super">Right Super</kbd></span></td>
+<td><code>rsuper</code></td>
+</tr>
+<tr>
+<td><code>windows</code></td>
+<td><span class="keys"><kbd class="key-windows">Win</kbd></span></td>
+<td><code>win</code></td>
+</tr>
+<tr>
+<td><code>left-windows</code></td>
+<td><span class="keys"><kbd class="key-left-windows">Left Win</kbd></span></td>
+<td><code>lwindows</code>, <code>left-win</code>, <code>lwin</code></td>
+</tr>
+<tr>
+<td><code>right-windows</code></td>
+<td><span class="keys"><kbd class="key-right-windows">Right Win</kbd></span></td>
+<td><code>rwindows</code>, <code>right-win</code>, <code>rwin</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="function-keys">Function keys<a class="headerlink" href="#function-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>f1</code></td>
+<td><span class="keys"><kbd class="key-f1">F1</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f2</code></td>
+<td><span class="keys"><kbd class="key-f2">F2</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f3</code></td>
+<td><span class="keys"><kbd class="key-f3">F3</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f4</code></td>
+<td><span class="keys"><kbd class="key-f4">F4</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f5</code></td>
+<td><span class="keys"><kbd class="key-f5">F5</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f6</code></td>
+<td><span class="keys"><kbd class="key-f6">F6</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f7</code></td>
+<td><span class="keys"><kbd class="key-f7">F7</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f8</code></td>
+<td><span class="keys"><kbd class="key-f8">F8</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f9</code></td>
+<td><span class="keys"><kbd class="key-f9">F9</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f10</code></td>
+<td><span class="keys"><kbd class="key-f10">F10</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f11</code></td>
+<td><span class="keys"><kbd class="key-f11">F11</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f12</code></td>
+<td><span class="keys"><kbd class="key-f12">F12</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f13</code></td>
+<td><span class="keys"><kbd class="key-f13">F13</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f14</code></td>
+<td><span class="keys"><kbd class="key-f14">F14</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f15</code></td>
+<td><span class="keys"><kbd class="key-f15">F15</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f16</code></td>
+<td><span class="keys"><kbd class="key-f16">F16</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f17</code></td>
+<td><span class="keys"><kbd class="key-f17">F17</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f18</code></td>
+<td><span class="keys"><kbd class="key-f18">F18</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f19</code></td>
+<td><span class="keys"><kbd class="key-f19">F19</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f20</code></td>
+<td><span class="keys"><kbd class="key-f20">F20</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f21</code></td>
+<td><span class="keys"><kbd class="key-f21">F21</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f22</code></td>
+<td><span class="keys"><kbd class="key-f22">F22</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f23</code></td>
+<td><span class="keys"><kbd class="key-f23">F23</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>f24</code></td>
+<td><span class="keys"><kbd class="key-f24">F24</kbd></span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extra-keys">Extra Keys<a class="headerlink" href="#extra-keys" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backtab</code></td>
+<td><span class="keys"><kbd class="key-backtab">Back Tab</kbd></span></td>
+<td><code>bktab</code></td>
+</tr>
+<tr>
+<td><code>browser-back</code></td>
+<td><span class="keys"><kbd class="key-browser-back">Browser Back</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>browser-favorites</code></td>
+<td><span class="keys"><kbd class="key-browser-favorites">Browser Favorites</kbd></span></td>
+<td><code>favorites</code></td>
+</tr>
+<tr>
+<td><code>browser-forward</code></td>
+<td><span class="keys"><kbd class="key-browser-forward">Browser Forward</kbd></span></td>
+<td><code>forward</code></td>
+</tr>
+<tr>
+<td><code>browser-home</code></td>
+<td><span class="keys"><kbd class="key-browser-home">Browser Home</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>browser-refresh</code></td>
+<td><span class="keys"><kbd class="key-browser-refresh">Browser Refresh</kbd></span></td>
+<td><code>refresh</code></td>
+</tr>
+<tr>
+<td><code>browser-search</code></td>
+<td><span class="keys"><kbd class="key-browser-search">Browser Search</kbd></span></td>
+<td><code>search</code></td>
+</tr>
+<tr>
+<td><code>browser-stop</code></td>
+<td><span class="keys"><kbd class="key-browser-stop">Browser Stop</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>copy</code></td>
+<td><span class="keys"><kbd class="key-copy">Copy</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>context-menu</code></td>
+<td><span class="keys"><kbd class="key-context-menu">Menu</kbd></span></td>
+<td><code>apps</code>, <code>menu</code></td>
+</tr>
+<tr>
+<td><code>fingerprint</code></td>
+<td><span class="keys"><kbd class="key-fingerprint">Fingerprint</kbd></span></td>
+<td><code>fingerprint</code></td>
+</tr>
+<tr>
+<td><code>mail</code></td>
+<td><span class="keys"><kbd class="key-mail">Mail</kbd></span></td>
+<td><code>launch-mail</code></td>
+</tr>
+<tr>
+<td><code>media</code></td>
+<td><span class="keys"><kbd class="key-media">Media</kbd></span></td>
+<td><code>launch-media</code></td>
+</tr>
+<tr>
+<td><code>media-next-track</code></td>
+<td><span class="keys"><kbd class="key-media-next-track">Next Track</kbd></span></td>
+<td><code>next-track</code></td>
+</tr>
+<tr>
+<td><code>media-pause</code></td>
+<td><span class="keys"><kbd class="key-media-pause">Pause</kbd></span></td>
+<td><code>pause</code></td>
+</tr>
+<tr>
+<td><code>media-play</code></td>
+<td><span class="keys"><kbd class="key-media-play">Play</kbd></span></td>
+<td><code>play</code></td>
+</tr>
+<tr>
+<td><code>media-play-pause</code></td>
+<td><span class="keys"><kbd class="key-media-play-pause">Play/Pause</kbd></span></td>
+<td><code>play-pause</code></td>
+</tr>
+<tr>
+<td><code>media-prev-track</code></td>
+<td><span class="keys"><kbd class="key-media-prev-track">Previous Track</kbd></span></td>
+<td><code>prev-track</code></td>
+</tr>
+<tr>
+<td><code>media-stop</code></td>
+<td><span class="keys"><kbd class="key-media-stop">Stop</kbd></span></td>
+<td><code>stop</code></td>
+</tr>
+<tr>
+<td><code>power</code></td>
+<td><span class="keys"><kbd class="key-power">Power</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td><span class="keys"><kbd class="key-print">Print</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>reset</code></td>
+<td><span class="keys"><kbd class="key-reset">Reset</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td><span class="keys"><kbd class="key-select">Select</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>sleep</code></td>
+<td><span class="keys"><kbd class="key-sleep">Sleep</kbd></span></td>
+<td></td>
+</tr>
+<tr>
+<td><code>volume-down</code></td>
+<td><span class="keys"><kbd class="key-volume-down">Volume Down</kbd></span></td>
+<td><code>vol-down</code></td>
+</tr>
+<tr>
+<td><code>volume-mute</code></td>
+<td><span class="keys"><kbd class="key-volume-mute">Mute</kbd></span></td>
+<td><code>mute</code></td>
+</tr>
+<tr>
+<td><code>volume-up</code></td>
+<td><span class="keys"><kbd class="key-volume-up">Volume Up</kbd></span></td>
+<td><code>vol-up</code></td>
+</tr>
+<tr>
+<td><code>zoom</code></td>
+<td><span class="keys"><kbd class="key-zoom">Zoom</kbd></span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mouse">Mouse<a class="headerlink" href="#mouse" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Display</th>
+<th>Aliases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>left-button</code></td>
+<td><span class="keys"><kbd class="key-left-button">Left Button</kbd></span></td>
+<td><code>lbutton</code></td>
+</tr>
+<tr>
+<td><code>middle-button</code></td>
+<td><span class="keys"><kbd class="key-middle-button">Middle Button</kbd></span></td>
+<td><code>mbutton</code></td>
+</tr>
+<tr>
+<td><code>right-button</code></td>
+<td><span class="keys"><kbd class="key-right-button">Right Button</kbd></span></td>
+<td><code>rbutton</code></td>
+</tr>
+<tr>
+<td><code>x-button1</code></td>
+<td><span class="keys"><kbd class="key-x-button1">X Button 1</kbd></span></td>
+<td><code>xbutton1</code></td>
+</tr>
+<tr>
+<td><code>x-button2</code></td>
+<td><span class="keys"><kbd class="key-x-button2">X Button 2</kbd></span></td>
+<td><code>xbutton2</code></td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../markmap/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Markmap" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Markmap
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../emoji/" class="md-footer__link md-footer__link--next" aria-label="Next: Emoji" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Emoji
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

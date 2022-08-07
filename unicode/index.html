@@ -1,0 +1,6037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Teodor Dumitrescu <teodor.dumitrescu@gmail.com>">
+      
+      
+        <link rel="canonical" href="https://TheodoreAD.github.io/mkdocs-taudelta/unicode/">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Unicode - MkDocs Tau Delta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unicode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Tau Delta" class="md-header__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Tau Delta
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unicode
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Tau Delta" class="md-nav__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    MkDocs Tau Delta
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live-editor/" class="md-nav__link">
+        Live Editor
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-markdown/" class="md-nav__link">
+        Basic Markdown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enhanced-markdown/" class="md-nav__link">
+        Enhanced Markdown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enhanced-markdown-code/" class="md-nav__link">
+        Enhanced Markdown Code
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admonition-blocks/" class="md-nav__link">
+        Admonition Blocks
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mermaid/" class="md-nav__link">
+        Mermaid
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markmap/" class="md-nav__link">
+        Markmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keys/" class="md-nav__link">
+        Keys
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emoji/" class="md-nav__link">
+        Emoji
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Unicode
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Unicode
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-latin" class="md-nav__link">
+    Basic Latin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-1-supplement" class="md-nav__link">
+    Latin-1 Supplement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-a" class="md-nav__link">
+    Latin Extended-A
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-b" class="md-nav__link">
+    Latin Extended-B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-additional" class="md-nav__link">
+    Latin Extended Additional
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#international-phonetic-alphabet-extensions" class="md-nav__link">
+    International Phonetic Alphabet Extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spacing-modifier-letters" class="md-nav__link">
+    Spacing Modifier Letters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greek-and-coptic" class="md-nav__link">
+    Greek and Coptic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greek-extended" class="md-nav__link">
+    Greek Extended
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyrillic" class="md-nav__link">
+    Cyrillic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-punctuation" class="md-nav__link">
+    General Punctuation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superscripts-and-subscripts" class="md-nav__link">
+    Superscripts and Subscripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currency-symbols" class="md-nav__link">
+    Currency Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#letterlike-symbols" class="md-nav__link">
+    Letterlike Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number-forms" class="md-nav__link">
+    Number Forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrows" class="md-nav__link">
+    Arrows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-symbols" class="md-nav__link">
+    Mathematical symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-technical" class="md-nav__link">
+    Miscellaneous Technical
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enclosed-alphanumerics" class="md-nav__link">
+    Enclosed Alphanumerics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-drawing" class="md-nav__link">
+    Box Drawing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-elements" class="md-nav__link">
+    Block Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-shapes" class="md-nav__link">
+    Geometric Shapes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-shapes-extended" class="md-nav__link">
+    Geometric Shapes Extended
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-symbols" class="md-nav__link">
+    Miscellaneous Symbols
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material-icons/" class="md-nav__link">
+        Material Icons
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../font-awesome/" class="md-nav__link">
+        Font Awesome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        Charts [STUB]
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favicon-and-logo/" class="md-nav__link">
+        Favicon and Logo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embedded_video/" class="md-nav__link">
+        Embedded video
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown-resources/" class="md-nav__link">
+        Markdown Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-latin" class="md-nav__link">
+    Basic Latin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-1-supplement" class="md-nav__link">
+    Latin-1 Supplement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-a" class="md-nav__link">
+    Latin Extended-A
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-b" class="md-nav__link">
+    Latin Extended-B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latin-extended-additional" class="md-nav__link">
+    Latin Extended Additional
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#international-phonetic-alphabet-extensions" class="md-nav__link">
+    International Phonetic Alphabet Extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spacing-modifier-letters" class="md-nav__link">
+    Spacing Modifier Letters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greek-and-coptic" class="md-nav__link">
+    Greek and Coptic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greek-extended" class="md-nav__link">
+    Greek Extended
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cyrillic" class="md-nav__link">
+    Cyrillic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-punctuation" class="md-nav__link">
+    General Punctuation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superscripts-and-subscripts" class="md-nav__link">
+    Superscripts and Subscripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currency-symbols" class="md-nav__link">
+    Currency Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#letterlike-symbols" class="md-nav__link">
+    Letterlike Symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number-forms" class="md-nav__link">
+    Number Forms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrows" class="md-nav__link">
+    Arrows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematical-symbols" class="md-nav__link">
+    Mathematical symbols
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-technical" class="md-nav__link">
+    Miscellaneous Technical
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enclosed-alphanumerics" class="md-nav__link">
+    Enclosed Alphanumerics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-drawing" class="md-nav__link">
+    Box Drawing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-elements" class="md-nav__link">
+    Block Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-shapes" class="md-nav__link">
+    Geometric Shapes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geometric-shapes-extended" class="md-nav__link">
+    Geometric Shapes Extended
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#miscellaneous-symbols" class="md-nav__link">
+    Miscellaneous Symbols
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/TheodoreAD/mkdocs-taudelta/edit/master/docs/unicode.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="unicode">Unicode<a class="headerlink" href="#unicode" title="Permanent link">¶</a></h1>
+<p>All the content on this page is from the <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">Wikipedia article</a>
+that can be found <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters">here</a>.</p>
+<div class="admonition todo">
+<p class="admonition-title">Todo</p>
+<p>Include Unicode emoji from <a href="https://unicode.org/emoji/charts/full-emoji-list.html">https://unicode.org/emoji/charts/full-emoji-list.html</a></p>
+</div>
+<hr/>
+<p>Willpower:</p>
+<p style="font-size: 2em; display: inline-block; color: #777">☐ ☑ ☒ ⚠ ⏱ ⚒ ⛏</p>
+<p>Wisdom:</p>
+<p style="font-size: 2em; display: inline-block; color: #777">♔ ♕ ♖ ♗ ♘ ♙ ♚ ♛ ♜ ♝ ♞ ♟</p>
+<p>Luck:</p>
+<p style="font-size: 2em; display: inline-block; color: #777">♠ ♡ ♢ ♣ ♤ ♥ ♦ ♧ ⚀ ⚁ ⚂ ⚃ ⚄ ⚅</p>
+<p>Karma:</p>
+<p style="font-size: 2em; display: inline-block; color: #777">☠ ☢ ☣ ⛤ ⛧ ⚛ ♱ ⚰ ♻ ☮ ☯</p>
+<hr/>
+<h2 id="basic-latin">Basic Latin<a class="headerlink" href="#basic-latin" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+002x</strong></td>
+<td align="center"></td>
+<td align="center">!</td>
+<td align="center">“</td>
+<td align="center">#</td>
+<td align="center">$</td>
+<td align="center">%</td>
+<td align="center">&amp;</td>
+<td align="center">‘</td>
+<td align="center">(</td>
+<td align="center">)</td>
+<td align="center">*</td>
+<td align="center">+</td>
+<td align="center">,</td>
+<td align="center">-</td>
+<td align="center">.</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td><strong>U+003x</strong></td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td>
+<td align="center">7</td>
+<td align="center">8</td>
+<td align="center">9</td>
+<td align="center">:</td>
+<td align="center">;</td>
+<td align="center">&lt;</td>
+<td align="center">=</td>
+<td align="center">&gt;</td>
+<td align="center">?</td>
+</tr>
+<tr>
+<td><strong>U+004x</strong></td>
+<td align="center">@</td>
+<td align="center">A</td>
+<td align="center">B</td>
+<td align="center">C</td>
+<td align="center">D</td>
+<td align="center">E</td>
+<td align="center">F</td>
+<td align="center">G</td>
+<td align="center">H</td>
+<td align="center">I</td>
+<td align="center">J</td>
+<td align="center">K</td>
+<td align="center">L</td>
+<td align="center">M</td>
+<td align="center">N</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td><strong>U+005x</strong></td>
+<td align="center">P</td>
+<td align="center">Q</td>
+<td align="center">R</td>
+<td align="center">S</td>
+<td align="center">T</td>
+<td align="center">U</td>
+<td align="center">V</td>
+<td align="center">W</td>
+<td align="center">X</td>
+<td align="center">Y</td>
+<td align="center">Z</td>
+<td align="center">[</td>
+<td align="center">\</td>
+<td align="center">]</td>
+<td align="center">^</td>
+<td align="center">_</td>
+</tr>
+<tr>
+<td><strong>U+006x</strong></td>
+<td align="center">`</td>
+<td align="center">a</td>
+<td align="center">b</td>
+<td align="center">c</td>
+<td align="center">d</td>
+<td align="center">e</td>
+<td align="center">f</td>
+<td align="center">g</td>
+<td align="center">h</td>
+<td align="center">i</td>
+<td align="center">j</td>
+<td align="center">k</td>
+<td align="center">l</td>
+<td align="center">m</td>
+<td align="center">n</td>
+<td align="center">o</td>
+</tr>
+<tr>
+<td><strong>U+007x</strong></td>
+<td align="center">p</td>
+<td align="center">q</td>
+<td align="center">r</td>
+<td align="center">s</td>
+<td align="center">t</td>
+<td align="center">u</td>
+<td align="center">v</td>
+<td align="center">w</td>
+<td align="center">x</td>
+<td align="center">y</td>
+<td align="center">z</td>
+<td align="center">{</td>
+<td align="center">|</td>
+<td align="center">}</td>
+<td align="center">~</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="latin-1-supplement">Latin-1 Supplement<a class="headerlink" href="#latin-1-supplement" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+00Ax</strong></td>
+<td align="center"></td>
+<td align="center">¡</td>
+<td align="center">¢</td>
+<td align="center">£</td>
+<td align="center">¤</td>
+<td align="center">¥</td>
+<td align="center">¦</td>
+<td align="center">§</td>
+<td align="center">¨</td>
+<td align="center">©</td>
+<td align="center">ª</td>
+<td align="center">«</td>
+<td align="center">¬</td>
+<td align="center"></td>
+<td align="center">®</td>
+<td align="center">¯</td>
+</tr>
+<tr>
+<td><strong>U+00Bx</strong></td>
+<td align="center">°</td>
+<td align="center">±</td>
+<td align="center">²</td>
+<td align="center">³</td>
+<td align="center">´</td>
+<td align="center">µ</td>
+<td align="center">¶</td>
+<td align="center">·</td>
+<td align="center">¸</td>
+<td align="center">¹</td>
+<td align="center">º</td>
+<td align="center">»</td>
+<td align="center">¼</td>
+<td align="center">½</td>
+<td align="center">¾</td>
+<td align="center">¿</td>
+</tr>
+<tr>
+<td><strong>U+00Cx</strong></td>
+<td align="center">À</td>
+<td align="center">Á</td>
+<td align="center">Â</td>
+<td align="center">Ã</td>
+<td align="center">Ä</td>
+<td align="center">Å</td>
+<td align="center">Æ</td>
+<td align="center">Ç</td>
+<td align="center">È</td>
+<td align="center">É</td>
+<td align="center">Ê</td>
+<td align="center">Ë</td>
+<td align="center">Ì</td>
+<td align="center">Í</td>
+<td align="center">Î</td>
+<td align="center">Ï</td>
+</tr>
+<tr>
+<td><strong>U+00Dx</strong></td>
+<td align="center">Ð</td>
+<td align="center">Ñ</td>
+<td align="center">Ò</td>
+<td align="center">Ó</td>
+<td align="center">Ô</td>
+<td align="center">Õ</td>
+<td align="center">Ö</td>
+<td align="center">×</td>
+<td align="center">Ø</td>
+<td align="center">Ù</td>
+<td align="center">Ú</td>
+<td align="center">Û</td>
+<td align="center">Ü</td>
+<td align="center">Ý</td>
+<td align="center">Þ</td>
+<td align="center">ß</td>
+</tr>
+<tr>
+<td><strong>U+00Ex</strong></td>
+<td align="center">à</td>
+<td align="center">á</td>
+<td align="center">â</td>
+<td align="center">ã</td>
+<td align="center">ä</td>
+<td align="center">å</td>
+<td align="center">æ</td>
+<td align="center">ç</td>
+<td align="center">è</td>
+<td align="center">é</td>
+<td align="center">ê</td>
+<td align="center">ë</td>
+<td align="center">ì</td>
+<td align="center">í</td>
+<td align="center">î</td>
+<td align="center">ï</td>
+</tr>
+<tr>
+<td><strong>U+00Fx</strong></td>
+<td align="center">ð</td>
+<td align="center">ñ</td>
+<td align="center">ò</td>
+<td align="center">ó</td>
+<td align="center">ô</td>
+<td align="center">õ</td>
+<td align="center">ö</td>
+<td align="center">÷</td>
+<td align="center">ø</td>
+<td align="center">ù</td>
+<td align="center">ú</td>
+<td align="center">û</td>
+<td align="center">ü</td>
+<td align="center">ý</td>
+<td align="center">þ</td>
+<td align="center">ÿ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="latin-extended-a">Latin Extended-A<a class="headerlink" href="#latin-extended-a" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+010x</strong></td>
+<td align="center">Ā</td>
+<td align="center">ā</td>
+<td align="center">Ă</td>
+<td align="center">ă</td>
+<td align="center">Ą</td>
+<td align="center">ą</td>
+<td align="center">Ć</td>
+<td align="center">ć</td>
+<td align="center">Ĉ</td>
+<td align="center">ĉ</td>
+<td align="center">Ċ</td>
+<td align="center">ċ</td>
+<td align="center">Č</td>
+<td align="center">č</td>
+<td align="center">Ď</td>
+<td align="center">ď</td>
+</tr>
+<tr>
+<td><strong>U+011x</strong></td>
+<td align="center">Đ</td>
+<td align="center">đ</td>
+<td align="center">Ē</td>
+<td align="center">ē</td>
+<td align="center">Ĕ</td>
+<td align="center">ĕ</td>
+<td align="center">Ė</td>
+<td align="center">ė</td>
+<td align="center">Ę</td>
+<td align="center">ę</td>
+<td align="center">Ě</td>
+<td align="center">ě</td>
+<td align="center">Ĝ</td>
+<td align="center">ĝ</td>
+<td align="center">Ğ</td>
+<td align="center">ğ</td>
+</tr>
+<tr>
+<td><strong>U+012x</strong></td>
+<td align="center">Ġ</td>
+<td align="center">ġ</td>
+<td align="center">Ģ</td>
+<td align="center">ģ</td>
+<td align="center">Ĥ</td>
+<td align="center">ĥ</td>
+<td align="center">Ħ</td>
+<td align="center">ħ</td>
+<td align="center">Ĩ</td>
+<td align="center">ĩ</td>
+<td align="center">Ī</td>
+<td align="center">ī</td>
+<td align="center">Ĭ</td>
+<td align="center">ĭ</td>
+<td align="center">Į</td>
+<td align="center">į</td>
+</tr>
+<tr>
+<td><strong>U+013x</strong></td>
+<td align="center">İ</td>
+<td align="center">ı</td>
+<td align="center">Ĳ</td>
+<td align="center">ĳ</td>
+<td align="center">Ĵ</td>
+<td align="center">ĵ</td>
+<td align="center">Ķ</td>
+<td align="center">ķ</td>
+<td align="center">ĸ</td>
+<td align="center">Ĺ</td>
+<td align="center">ĺ</td>
+<td align="center">Ļ</td>
+<td align="center">ļ</td>
+<td align="center">Ľ</td>
+<td align="center">ľ</td>
+<td align="center">Ŀ</td>
+</tr>
+<tr>
+<td><strong>U+014x</strong></td>
+<td align="center">ŀ</td>
+<td align="center">Ł</td>
+<td align="center">ł</td>
+<td align="center">Ń</td>
+<td align="center">ń</td>
+<td align="center">Ņ</td>
+<td align="center">ņ</td>
+<td align="center">Ň</td>
+<td align="center">ň</td>
+<td align="center">ŉ</td>
+<td align="center">Ŋ</td>
+<td align="center">ŋ</td>
+<td align="center">Ō</td>
+<td align="center">ō</td>
+<td align="center">Ŏ</td>
+<td align="center">ŏ</td>
+</tr>
+<tr>
+<td><strong>U+015x</strong></td>
+<td align="center">Ő</td>
+<td align="center">ő</td>
+<td align="center">Œ</td>
+<td align="center">œ</td>
+<td align="center">Ŕ</td>
+<td align="center">ŕ</td>
+<td align="center">Ŗ</td>
+<td align="center">ŗ</td>
+<td align="center">Ř</td>
+<td align="center">ř</td>
+<td align="center">Ś</td>
+<td align="center">ś</td>
+<td align="center">Ŝ</td>
+<td align="center">ŝ</td>
+<td align="center">Ş</td>
+<td align="center">ş</td>
+</tr>
+<tr>
+<td><strong>U+016x</strong></td>
+<td align="center">Š</td>
+<td align="center">š</td>
+<td align="center">Ţ</td>
+<td align="center">ţ</td>
+<td align="center">Ť</td>
+<td align="center">ť</td>
+<td align="center">Ŧ</td>
+<td align="center">ŧ</td>
+<td align="center">Ũ</td>
+<td align="center">ũ</td>
+<td align="center">Ū</td>
+<td align="center">ū</td>
+<td align="center">Ŭ</td>
+<td align="center">ŭ</td>
+<td align="center">Ů</td>
+<td align="center">ů</td>
+</tr>
+<tr>
+<td><strong>U+017x</strong></td>
+<td align="center">Ű</td>
+<td align="center">ű</td>
+<td align="center">Ų</td>
+<td align="center">ų</td>
+<td align="center">Ŵ</td>
+<td align="center">ŵ</td>
+<td align="center">Ŷ</td>
+<td align="center">ŷ</td>
+<td align="center">Ÿ</td>
+<td align="center">Ź</td>
+<td align="center">ź</td>
+<td align="center">Ż</td>
+<td align="center">ż</td>
+<td align="center">Ž</td>
+<td align="center">ž</td>
+<td align="center">ſ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="latin-extended-b">Latin Extended-B<a class="headerlink" href="#latin-extended-b" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+018x</strong></td>
+<td align="center">ƀ</td>
+<td align="center">Ɓ</td>
+<td align="center">Ƃ</td>
+<td align="center">ƃ</td>
+<td align="center">Ƅ</td>
+<td align="center">ƅ</td>
+<td align="center">Ɔ</td>
+<td align="center">Ƈ</td>
+<td align="center">ƈ</td>
+<td align="center">Ɖ</td>
+<td align="center">Ɗ</td>
+<td align="center">Ƌ</td>
+<td align="center">ƌ</td>
+<td align="center">ƍ</td>
+<td align="center">Ǝ</td>
+<td align="center">Ə</td>
+</tr>
+<tr>
+<td><strong>U+019x</strong></td>
+<td align="center">Ɛ</td>
+<td align="center">Ƒ</td>
+<td align="center">ƒ</td>
+<td align="center">Ɠ</td>
+<td align="center">Ɣ</td>
+<td align="center">ƕ</td>
+<td align="center">Ɩ</td>
+<td align="center">Ɨ</td>
+<td align="center">Ƙ</td>
+<td align="center">ƙ</td>
+<td align="center">ƚ</td>
+<td align="center">ƛ</td>
+<td align="center">Ɯ</td>
+<td align="center">Ɲ</td>
+<td align="center">ƞ</td>
+<td align="center">Ɵ</td>
+</tr>
+<tr>
+<td><strong>U+01Ax</strong></td>
+<td align="center">Ơ</td>
+<td align="center">ơ</td>
+<td align="center">Ƣ</td>
+<td align="center">ƣ</td>
+<td align="center">Ƥ</td>
+<td align="center">ƥ</td>
+<td align="center">Ʀ</td>
+<td align="center">Ƨ</td>
+<td align="center">ƨ</td>
+<td align="center">Ʃ</td>
+<td align="center">ƪ</td>
+<td align="center">ƫ</td>
+<td align="center">Ƭ</td>
+<td align="center">ƭ</td>
+<td align="center">Ʈ</td>
+<td align="center">Ư</td>
+</tr>
+<tr>
+<td><strong>U+01Bx</strong></td>
+<td align="center">ư</td>
+<td align="center">Ʊ</td>
+<td align="center">Ʋ</td>
+<td align="center">Ƴ</td>
+<td align="center">ƴ</td>
+<td align="center">Ƶ</td>
+<td align="center">ƶ</td>
+<td align="center">Ʒ</td>
+<td align="center">Ƹ</td>
+<td align="center">ƹ</td>
+<td align="center">ƺ</td>
+<td align="center">ƻ</td>
+<td align="center">Ƽ</td>
+<td align="center">ƽ</td>
+<td align="center">ƾ</td>
+<td align="center">ƿ</td>
+</tr>
+<tr>
+<td><strong>U+01Cx</strong></td>
+<td align="center">ǀ</td>
+<td align="center">ǁ</td>
+<td align="center">ǂ</td>
+<td align="center">ǃ</td>
+<td align="center">Ǆ</td>
+<td align="center">ǅ</td>
+<td align="center">ǆ</td>
+<td align="center">Ǉ</td>
+<td align="center">ǈ</td>
+<td align="center">ǉ</td>
+<td align="center">Ǌ</td>
+<td align="center">ǋ</td>
+<td align="center">ǌ</td>
+<td align="center">Ǎ</td>
+<td align="center">ǎ</td>
+<td align="center">Ǐ</td>
+</tr>
+<tr>
+<td><strong>U+01Dx</strong></td>
+<td align="center">ǐ</td>
+<td align="center">Ǒ</td>
+<td align="center">ǒ</td>
+<td align="center">Ǔ</td>
+<td align="center">ǔ</td>
+<td align="center">Ǖ</td>
+<td align="center">ǖ</td>
+<td align="center">Ǘ</td>
+<td align="center">ǘ</td>
+<td align="center">Ǚ</td>
+<td align="center">ǚ</td>
+<td align="center">Ǜ</td>
+<td align="center">ǜ</td>
+<td align="center">ǝ</td>
+<td align="center">Ǟ</td>
+<td align="center">ǟ</td>
+</tr>
+<tr>
+<td><strong>U+01Ex</strong></td>
+<td align="center">Ǡ</td>
+<td align="center">ǡ</td>
+<td align="center">Ǣ</td>
+<td align="center">ǣ</td>
+<td align="center">Ǥ</td>
+<td align="center">ǥ</td>
+<td align="center">Ǧ</td>
+<td align="center">ǧ</td>
+<td align="center">Ǩ</td>
+<td align="center">ǩ</td>
+<td align="center">Ǫ</td>
+<td align="center">ǫ</td>
+<td align="center">Ǭ</td>
+<td align="center">ǭ</td>
+<td align="center">Ǯ</td>
+<td align="center">ǯ</td>
+</tr>
+<tr>
+<td><strong>U+01Fx</strong></td>
+<td align="center">ǰ</td>
+<td align="center">Ǳ</td>
+<td align="center">ǲ</td>
+<td align="center">ǳ</td>
+<td align="center">Ǵ</td>
+<td align="center">ǵ</td>
+<td align="center">Ƕ</td>
+<td align="center">Ƿ</td>
+<td align="center">Ǹ</td>
+<td align="center">ǹ</td>
+<td align="center">Ǻ</td>
+<td align="center">ǻ</td>
+<td align="center">Ǽ</td>
+<td align="center">ǽ</td>
+<td align="center">Ǿ</td>
+<td align="center">ǿ</td>
+</tr>
+<tr>
+<td><strong>U+020x</strong></td>
+<td align="center">Ȁ</td>
+<td align="center">ȁ</td>
+<td align="center">Ȃ</td>
+<td align="center">ȃ</td>
+<td align="center">Ȅ</td>
+<td align="center">ȅ</td>
+<td align="center">Ȇ</td>
+<td align="center">ȇ</td>
+<td align="center">Ȉ</td>
+<td align="center">ȉ</td>
+<td align="center">Ȋ</td>
+<td align="center">ȋ</td>
+<td align="center">Ȍ</td>
+<td align="center">ȍ</td>
+<td align="center">Ȏ</td>
+<td align="center">ȏ</td>
+</tr>
+<tr>
+<td><strong>U+021x</strong></td>
+<td align="center">Ȑ</td>
+<td align="center">ȑ</td>
+<td align="center">Ȓ</td>
+<td align="center">ȓ</td>
+<td align="center">Ȕ</td>
+<td align="center">ȕ</td>
+<td align="center">Ȗ</td>
+<td align="center">ȗ</td>
+<td align="center">Ș</td>
+<td align="center">ș</td>
+<td align="center">Ț</td>
+<td align="center">ț</td>
+<td align="center">Ȝ</td>
+<td align="center">ȝ</td>
+<td align="center">Ȟ</td>
+<td align="center">ȟ</td>
+</tr>
+<tr>
+<td><strong>U+022x</strong></td>
+<td align="center">Ƞ</td>
+<td align="center">ȡ</td>
+<td align="center">Ȣ</td>
+<td align="center">ȣ</td>
+<td align="center">Ȥ</td>
+<td align="center">ȥ</td>
+<td align="center">Ȧ</td>
+<td align="center">ȧ</td>
+<td align="center">Ȩ</td>
+<td align="center">ȩ</td>
+<td align="center">Ȫ</td>
+<td align="center">ȫ</td>
+<td align="center">Ȭ</td>
+<td align="center">ȭ</td>
+<td align="center">Ȯ</td>
+<td align="center">ȯ</td>
+</tr>
+<tr>
+<td><strong>U+023x</strong></td>
+<td align="center">Ȱ</td>
+<td align="center">ȱ</td>
+<td align="center">Ȳ</td>
+<td align="center">ȳ</td>
+<td align="center">ȴ</td>
+<td align="center">ȵ</td>
+<td align="center">ȶ</td>
+<td align="center">ȷ</td>
+<td align="center">ȸ</td>
+<td align="center">ȹ</td>
+<td align="center">Ⱥ</td>
+<td align="center">Ȼ</td>
+<td align="center">ȼ</td>
+<td align="center">Ƚ</td>
+<td align="center">Ⱦ</td>
+<td align="center">ȿ</td>
+</tr>
+<tr>
+<td><strong>U+024x</strong></td>
+<td align="center">ɀ</td>
+<td align="center">Ɂ</td>
+<td align="center">ɂ</td>
+<td align="center">Ƀ</td>
+<td align="center">Ʉ</td>
+<td align="center">Ʌ</td>
+<td align="center">Ɇ</td>
+<td align="center">ɇ</td>
+<td align="center">Ɉ</td>
+<td align="center">ɉ</td>
+<td align="center">Ɋ</td>
+<td align="center">ɋ</td>
+<td align="center">Ɍ</td>
+<td align="center">ɍ</td>
+<td align="center">Ɏ</td>
+<td align="center">ɏ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="latin-extended-additional">Latin Extended Additional<a class="headerlink" href="#latin-extended-additional" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+1E0x</strong></td>
+<td align="center">Ḁ</td>
+<td align="center">ḁ</td>
+<td align="center">Ḃ</td>
+<td align="center">ḃ</td>
+<td align="center">Ḅ</td>
+<td align="center">ḅ</td>
+<td align="center">Ḇ</td>
+<td align="center">ḇ</td>
+<td align="center">Ḉ</td>
+<td align="center">ḉ</td>
+<td align="center">Ḋ</td>
+<td align="center">ḋ</td>
+<td align="center">Ḍ</td>
+<td align="center">ḍ</td>
+<td align="center">Ḏ</td>
+<td align="center">ḏ</td>
+</tr>
+<tr>
+<td><strong>U+1E1x</strong></td>
+<td align="center">Ḑ</td>
+<td align="center">ḑ</td>
+<td align="center">Ḓ</td>
+<td align="center">ḓ</td>
+<td align="center">Ḕ</td>
+<td align="center">ḕ</td>
+<td align="center">Ḗ</td>
+<td align="center">ḗ</td>
+<td align="center">Ḙ</td>
+<td align="center">ḙ</td>
+<td align="center">Ḛ</td>
+<td align="center">ḛ</td>
+<td align="center">Ḝ</td>
+<td align="center">ḝ</td>
+<td align="center">Ḟ</td>
+<td align="center">ḟ</td>
+</tr>
+<tr>
+<td><strong>U+1E2x</strong></td>
+<td align="center">Ḡ</td>
+<td align="center">ḡ</td>
+<td align="center">Ḣ</td>
+<td align="center">ḣ</td>
+<td align="center">Ḥ</td>
+<td align="center">ḥ</td>
+<td align="center">Ḧ</td>
+<td align="center">ḧ</td>
+<td align="center">Ḩ</td>
+<td align="center">ḩ</td>
+<td align="center">Ḫ</td>
+<td align="center">ḫ</td>
+<td align="center">Ḭ</td>
+<td align="center">ḭ</td>
+<td align="center">Ḯ</td>
+<td align="center">ḯ</td>
+</tr>
+<tr>
+<td><strong>U+1E3x</strong></td>
+<td align="center">Ḱ</td>
+<td align="center">ḱ</td>
+<td align="center">Ḳ</td>
+<td align="center">ḳ</td>
+<td align="center">Ḵ</td>
+<td align="center">ḵ</td>
+<td align="center">Ḷ</td>
+<td align="center">ḷ</td>
+<td align="center">Ḹ</td>
+<td align="center">ḹ</td>
+<td align="center">Ḻ</td>
+<td align="center">ḻ</td>
+<td align="center">Ḽ</td>
+<td align="center">ḽ</td>
+<td align="center">Ḿ</td>
+<td align="center">ḿ</td>
+</tr>
+<tr>
+<td><strong>U+1E4x</strong></td>
+<td align="center">Ṁ</td>
+<td align="center">ṁ</td>
+<td align="center">Ṃ</td>
+<td align="center">ṃ</td>
+<td align="center">Ṅ</td>
+<td align="center">ṅ</td>
+<td align="center">Ṇ</td>
+<td align="center">ṇ</td>
+<td align="center">Ṉ</td>
+<td align="center">ṉ</td>
+<td align="center">Ṋ</td>
+<td align="center">ṋ</td>
+<td align="center">Ṍ</td>
+<td align="center">ṍ</td>
+<td align="center">Ṏ</td>
+<td align="center">ṏ</td>
+</tr>
+<tr>
+<td><strong>U+1E5x</strong></td>
+<td align="center">Ṑ</td>
+<td align="center">ṑ</td>
+<td align="center">Ṓ</td>
+<td align="center">ṓ</td>
+<td align="center">Ṕ</td>
+<td align="center">ṕ</td>
+<td align="center">Ṗ</td>
+<td align="center">ṗ</td>
+<td align="center">Ṙ</td>
+<td align="center">ṙ</td>
+<td align="center">Ṛ</td>
+<td align="center">ṛ</td>
+<td align="center">Ṝ</td>
+<td align="center">ṝ</td>
+<td align="center">Ṟ</td>
+<td align="center">ṟ</td>
+</tr>
+<tr>
+<td><strong>U+1E6x</strong></td>
+<td align="center">Ṡ</td>
+<td align="center">ṡ</td>
+<td align="center">Ṣ</td>
+<td align="center">ṣ</td>
+<td align="center">Ṥ</td>
+<td align="center">ṥ</td>
+<td align="center">Ṧ</td>
+<td align="center">ṧ</td>
+<td align="center">Ṩ</td>
+<td align="center">ṩ</td>
+<td align="center">Ṫ</td>
+<td align="center">ṫ</td>
+<td align="center">Ṭ</td>
+<td align="center">ṭ</td>
+<td align="center">Ṯ</td>
+<td align="center">ṯ</td>
+</tr>
+<tr>
+<td><strong>U+1E7x</strong></td>
+<td align="center">Ṱ</td>
+<td align="center">ṱ</td>
+<td align="center">Ṳ</td>
+<td align="center">ṳ</td>
+<td align="center">Ṵ</td>
+<td align="center">ṵ</td>
+<td align="center">Ṷ</td>
+<td align="center">ṷ</td>
+<td align="center">Ṹ</td>
+<td align="center">ṹ</td>
+<td align="center">Ṻ</td>
+<td align="center">ṻ</td>
+<td align="center">Ṽ</td>
+<td align="center">ṽ</td>
+<td align="center">Ṿ</td>
+<td align="center">ṿ</td>
+</tr>
+<tr>
+<td><strong>U+1E8x</strong></td>
+<td align="center">Ẁ</td>
+<td align="center">ẁ</td>
+<td align="center">Ẃ</td>
+<td align="center">ẃ</td>
+<td align="center">Ẅ</td>
+<td align="center">ẅ</td>
+<td align="center">Ẇ</td>
+<td align="center">ẇ</td>
+<td align="center">Ẉ</td>
+<td align="center">ẉ</td>
+<td align="center">Ẋ</td>
+<td align="center">ẋ</td>
+<td align="center">Ẍ</td>
+<td align="center">ẍ</td>
+<td align="center">Ẏ</td>
+<td align="center">ẏ</td>
+</tr>
+<tr>
+<td><strong>U+1E9x</strong></td>
+<td align="center">Ẑ</td>
+<td align="center">ẑ</td>
+<td align="center">Ẓ</td>
+<td align="center">ẓ</td>
+<td align="center">Ẕ</td>
+<td align="center">ẕ</td>
+<td align="center">ẖ</td>
+<td align="center">ẗ</td>
+<td align="center">ẘ</td>
+<td align="center">ẙ</td>
+<td align="center">ẚ</td>
+<td align="center">ẛ</td>
+<td align="center">ẜ</td>
+<td align="center">ẝ</td>
+<td align="center">ẞ</td>
+<td align="center">ẟ</td>
+</tr>
+<tr>
+<td><strong>U+1EAx</strong></td>
+<td align="center">Ạ</td>
+<td align="center">ạ</td>
+<td align="center">Ả</td>
+<td align="center">ả</td>
+<td align="center">Ấ</td>
+<td align="center">ấ</td>
+<td align="center">Ầ</td>
+<td align="center">ầ</td>
+<td align="center">Ẩ</td>
+<td align="center">ẩ</td>
+<td align="center">Ẫ</td>
+<td align="center">ẫ</td>
+<td align="center">Ậ</td>
+<td align="center">ậ</td>
+<td align="center">Ắ</td>
+<td align="center">ắ</td>
+</tr>
+<tr>
+<td><strong>U+1EBx</strong></td>
+<td align="center">Ằ</td>
+<td align="center">ằ</td>
+<td align="center">Ẳ</td>
+<td align="center">ẳ</td>
+<td align="center">Ẵ</td>
+<td align="center">ẵ</td>
+<td align="center">Ặ</td>
+<td align="center">ặ</td>
+<td align="center">Ẹ</td>
+<td align="center">ẹ</td>
+<td align="center">Ẻ</td>
+<td align="center">ẻ</td>
+<td align="center">Ẽ</td>
+<td align="center">ẽ</td>
+<td align="center">Ế</td>
+<td align="center">ế</td>
+</tr>
+<tr>
+<td><strong>U+1ECx</strong></td>
+<td align="center">Ề</td>
+<td align="center">ề</td>
+<td align="center">Ể</td>
+<td align="center">ể</td>
+<td align="center">Ễ</td>
+<td align="center">ễ</td>
+<td align="center">Ệ</td>
+<td align="center">ệ</td>
+<td align="center">Ỉ</td>
+<td align="center">ỉ</td>
+<td align="center">Ị</td>
+<td align="center">ị</td>
+<td align="center">Ọ</td>
+<td align="center">ọ</td>
+<td align="center">Ỏ</td>
+<td align="center">ỏ</td>
+</tr>
+<tr>
+<td><strong>U+1EDx</strong></td>
+<td align="center">Ố</td>
+<td align="center">ố</td>
+<td align="center">Ồ</td>
+<td align="center">ồ</td>
+<td align="center">Ổ</td>
+<td align="center">ổ</td>
+<td align="center">Ỗ</td>
+<td align="center">ỗ</td>
+<td align="center">Ộ</td>
+<td align="center">ộ</td>
+<td align="center">Ớ</td>
+<td align="center">ớ</td>
+<td align="center">Ờ</td>
+<td align="center">ờ</td>
+<td align="center">Ở</td>
+<td align="center">ở</td>
+</tr>
+<tr>
+<td><strong>U+1EEx</strong></td>
+<td align="center">Ỡ</td>
+<td align="center">ỡ</td>
+<td align="center">Ợ</td>
+<td align="center">ợ</td>
+<td align="center">Ụ</td>
+<td align="center">ụ</td>
+<td align="center">Ủ</td>
+<td align="center">ủ</td>
+<td align="center">Ứ</td>
+<td align="center">ứ</td>
+<td align="center">Ừ</td>
+<td align="center">ừ</td>
+<td align="center">Ử</td>
+<td align="center">ử</td>
+<td align="center">Ữ</td>
+<td align="center">ữ</td>
+</tr>
+<tr>
+<td><strong>U+1EFx</strong></td>
+<td align="center">Ự</td>
+<td align="center">ự</td>
+<td align="center">Ỳ</td>
+<td align="center">ỳ</td>
+<td align="center">Ỵ</td>
+<td align="center">ỵ</td>
+<td align="center">Ỷ</td>
+<td align="center">ỷ</td>
+<td align="center">Ỹ</td>
+<td align="center">ỹ</td>
+<td align="center">Ỻ</td>
+<td align="center">ỻ</td>
+<td align="center">Ỽ</td>
+<td align="center">ỽ</td>
+<td align="center">Ỿ</td>
+<td align="center">ỿ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="international-phonetic-alphabet-extensions">International Phonetic Alphabet Extensions<a class="headerlink" href="#international-phonetic-alphabet-extensions" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+025x</strong></td>
+<td align="center">ɐ</td>
+<td align="center">ɑ</td>
+<td align="center">ɒ</td>
+<td align="center">ɓ</td>
+<td align="center">ɔ</td>
+<td align="center">ɕ</td>
+<td align="center">ɖ</td>
+<td align="center">ɗ</td>
+<td align="center">ɘ</td>
+<td align="center">ə</td>
+<td align="center">ɚ</td>
+<td align="center">ɛ</td>
+<td align="center">ɜ</td>
+<td align="center">ɝ</td>
+<td align="center">ɞ</td>
+<td align="center">ɟ</td>
+</tr>
+<tr>
+<td><strong>U+026x</strong></td>
+<td align="center">ɠ</td>
+<td align="center">ɡ</td>
+<td align="center">ɢ</td>
+<td align="center">ɣ</td>
+<td align="center">ɤ</td>
+<td align="center">ɥ</td>
+<td align="center">ɦ</td>
+<td align="center">ɧ</td>
+<td align="center">ɨ</td>
+<td align="center">ɩ</td>
+<td align="center">ɪ</td>
+<td align="center">ɫ</td>
+<td align="center">ɬ</td>
+<td align="center">ɭ</td>
+<td align="center">ɮ</td>
+<td align="center">ɯ</td>
+</tr>
+<tr>
+<td><strong>U+027x</strong></td>
+<td align="center">ɰ</td>
+<td align="center">ɱ</td>
+<td align="center">ɲ</td>
+<td align="center">ɳ</td>
+<td align="center">ɴ</td>
+<td align="center">ɵ</td>
+<td align="center">ɶ</td>
+<td align="center">ɷ</td>
+<td align="center">ɸ</td>
+<td align="center">ɹ</td>
+<td align="center">ɺ</td>
+<td align="center">ɻ</td>
+<td align="center">ɼ</td>
+<td align="center">ɽ</td>
+<td align="center">ɾ</td>
+<td align="center">ɿ</td>
+</tr>
+<tr>
+<td><strong>U+028x</strong></td>
+<td align="center">ʀ</td>
+<td align="center">ʁ</td>
+<td align="center">ʂ</td>
+<td align="center">ʃ</td>
+<td align="center">ʄ</td>
+<td align="center">ʅ</td>
+<td align="center">ʆ</td>
+<td align="center">ʇ</td>
+<td align="center">ʈ</td>
+<td align="center">ʉ</td>
+<td align="center">ʊ</td>
+<td align="center">ʋ</td>
+<td align="center">ʌ</td>
+<td align="center">ʍ</td>
+<td align="center">ʎ</td>
+<td align="center">ʏ</td>
+</tr>
+<tr>
+<td><strong>U+029x</strong></td>
+<td align="center">ʐ</td>
+<td align="center">ʑ</td>
+<td align="center">ʒ</td>
+<td align="center">ʓ</td>
+<td align="center">ʔ</td>
+<td align="center">ʕ</td>
+<td align="center">ʖ</td>
+<td align="center">ʗ</td>
+<td align="center">ʘ</td>
+<td align="center">ʙ</td>
+<td align="center">ʚ</td>
+<td align="center">ʛ</td>
+<td align="center">ʜ</td>
+<td align="center">ʝ</td>
+<td align="center">ʞ</td>
+<td align="center">ʟ</td>
+</tr>
+<tr>
+<td><strong>U+02Ax</strong></td>
+<td align="center">ʠ</td>
+<td align="center">ʡ</td>
+<td align="center">ʢ</td>
+<td align="center">ʣ</td>
+<td align="center">ʤ</td>
+<td align="center">ʥ</td>
+<td align="center">ʦ</td>
+<td align="center">ʧ</td>
+<td align="center">ʨ</td>
+<td align="center">ʩ</td>
+<td align="center">ʪ</td>
+<td align="center">ʫ</td>
+<td align="center">ʬ</td>
+<td align="center">ʭ</td>
+<td align="center">ʮ</td>
+<td align="center">ʯ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="spacing-modifier-letters">Spacing Modifier Letters<a class="headerlink" href="#spacing-modifier-letters" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+02Bx</strong></td>
+<td align="center">ʰ</td>
+<td align="center">ʱ</td>
+<td align="center">ʲ</td>
+<td align="center">ʳ</td>
+<td align="center">ʴ</td>
+<td align="center">ʵ</td>
+<td align="center">ʶ</td>
+<td align="center">ʷ</td>
+<td align="center">ʸ</td>
+<td align="center">ʹ</td>
+<td align="center">ʺ</td>
+<td align="center">ʻ</td>
+<td align="center">ʼ</td>
+<td align="center">ʽ</td>
+<td align="center">ʾ</td>
+<td align="center">ʿ</td>
+</tr>
+<tr>
+<td><strong>U+02Cx</strong></td>
+<td align="center">ˀ</td>
+<td align="center">ˁ</td>
+<td align="center">˂</td>
+<td align="center">˃</td>
+<td align="center">˄</td>
+<td align="center">˅</td>
+<td align="center">ˆ</td>
+<td align="center">ˇ</td>
+<td align="center">ˈ</td>
+<td align="center">ˉ</td>
+<td align="center">ˊ</td>
+<td align="center">ˋ</td>
+<td align="center">ˌ</td>
+<td align="center">ˍ</td>
+<td align="center">ˎ</td>
+<td align="center">ˏ</td>
+</tr>
+<tr>
+<td><strong>U+02Dx</strong></td>
+<td align="center">ː</td>
+<td align="center">ˑ</td>
+<td align="center">˒</td>
+<td align="center">˓</td>
+<td align="center">˔</td>
+<td align="center">˕</td>
+<td align="center">˖</td>
+<td align="center">˗</td>
+<td align="center">˘</td>
+<td align="center">˙</td>
+<td align="center">˚</td>
+<td align="center">˛</td>
+<td align="center">˜</td>
+<td align="center">˝</td>
+<td align="center">˞</td>
+<td align="center">˟</td>
+</tr>
+<tr>
+<td><strong>U+02Ex</strong></td>
+<td align="center">ˠ</td>
+<td align="center">ˡ</td>
+<td align="center">ˢ</td>
+<td align="center">ˣ</td>
+<td align="center">ˤ</td>
+<td align="center">˥</td>
+<td align="center">˦</td>
+<td align="center">˧</td>
+<td align="center">˨</td>
+<td align="center">˩</td>
+<td align="center">˪</td>
+<td align="center">˫</td>
+<td align="center">ˬ</td>
+<td align="center">˭</td>
+<td align="center">ˮ</td>
+<td align="center">˯</td>
+</tr>
+<tr>
+<td><strong>U+02Fx</strong></td>
+<td align="center">˰</td>
+<td align="center">˱</td>
+<td align="center">˲</td>
+<td align="center">˳</td>
+<td align="center">˴</td>
+<td align="center">˵</td>
+<td align="center">˶</td>
+<td align="center">˷</td>
+<td align="center">˸</td>
+<td align="center">˹</td>
+<td align="center">˺</td>
+<td align="center">˻</td>
+<td align="center">˼</td>
+<td align="center">˽</td>
+<td align="center">˾</td>
+<td align="center">˿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="greek-and-coptic">Greek and Coptic<a class="headerlink" href="#greek-and-coptic" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+037x</strong></td>
+<td align="center">Ͱ</td>
+<td align="center">ͱ</td>
+<td align="center">Ͳ</td>
+<td align="center">ͳ</td>
+<td align="center">ʹ</td>
+<td align="center">͵</td>
+<td align="center">Ͷ</td>
+<td align="center">ͷ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ͺ</td>
+<td align="center">ͻ</td>
+<td align="center">ͼ</td>
+<td align="center">ͽ</td>
+<td align="center">;</td>
+<td align="center">Ϳ</td>
+</tr>
+<tr>
+<td><strong>U+038x</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">΄</td>
+<td align="center">΅</td>
+<td align="center">Ά</td>
+<td align="center">·</td>
+<td align="center">Έ</td>
+<td align="center">Ή</td>
+<td align="center">Ί</td>
+<td align="center"></td>
+<td align="center">Ό</td>
+<td align="center"></td>
+<td align="center">Ύ</td>
+<td align="center">Ώ</td>
+</tr>
+<tr>
+<td><strong>U+039x</strong></td>
+<td align="center">ΐ</td>
+<td align="center">Α</td>
+<td align="center">Β</td>
+<td align="center">Γ</td>
+<td align="center">Δ</td>
+<td align="center">Ε</td>
+<td align="center">Ζ</td>
+<td align="center">Η</td>
+<td align="center">Θ</td>
+<td align="center">Ι</td>
+<td align="center">Κ</td>
+<td align="center">Λ</td>
+<td align="center">Μ</td>
+<td align="center">Ν</td>
+<td align="center">Ξ</td>
+<td align="center">Ο</td>
+</tr>
+<tr>
+<td><strong>U+03Ax</strong></td>
+<td align="center">Π</td>
+<td align="center">Ρ</td>
+<td align="center"></td>
+<td align="center">Σ</td>
+<td align="center">Τ</td>
+<td align="center">Υ</td>
+<td align="center">Φ</td>
+<td align="center">Χ</td>
+<td align="center">Ψ</td>
+<td align="center">Ω</td>
+<td align="center">Ϊ</td>
+<td align="center">Ϋ</td>
+<td align="center">ά</td>
+<td align="center">έ</td>
+<td align="center">ή</td>
+<td align="center">ί</td>
+</tr>
+<tr>
+<td><strong>U+03Bx</strong></td>
+<td align="center">ΰ</td>
+<td align="center">α</td>
+<td align="center">β</td>
+<td align="center">γ</td>
+<td align="center">δ</td>
+<td align="center">ε</td>
+<td align="center">ζ</td>
+<td align="center">η</td>
+<td align="center">θ</td>
+<td align="center">ι</td>
+<td align="center">κ</td>
+<td align="center">λ</td>
+<td align="center">μ</td>
+<td align="center">ν</td>
+<td align="center">ξ</td>
+<td align="center">ο</td>
+</tr>
+<tr>
+<td><strong>U+03Cx</strong></td>
+<td align="center">π</td>
+<td align="center">ρ</td>
+<td align="center">ς</td>
+<td align="center">σ</td>
+<td align="center">τ</td>
+<td align="center">υ</td>
+<td align="center">φ</td>
+<td align="center">χ</td>
+<td align="center">ψ</td>
+<td align="center">ω</td>
+<td align="center">ϊ</td>
+<td align="center">ϋ</td>
+<td align="center">ό</td>
+<td align="center">ύ</td>
+<td align="center">ώ</td>
+<td align="center">Ϗ</td>
+</tr>
+<tr>
+<td><strong>U+03Dx</strong></td>
+<td align="center">ϐ</td>
+<td align="center">ϑ</td>
+<td align="center">ϒ</td>
+<td align="center">ϓ</td>
+<td align="center">ϔ</td>
+<td align="center">ϕ</td>
+<td align="center">ϖ</td>
+<td align="center">ϗ</td>
+<td align="center">Ϙ</td>
+<td align="center">ϙ</td>
+<td align="center">Ϛ</td>
+<td align="center">ϛ</td>
+<td align="center">Ϝ</td>
+<td align="center">ϝ</td>
+<td align="center">Ϟ</td>
+<td align="center">ϟ</td>
+</tr>
+<tr>
+<td><strong>U+03Ex</strong></td>
+<td align="center">Ϡ</td>
+<td align="center">ϡ</td>
+<td align="center">Ϣ</td>
+<td align="center">ϣ</td>
+<td align="center">Ϥ</td>
+<td align="center">ϥ</td>
+<td align="center">Ϧ</td>
+<td align="center">ϧ</td>
+<td align="center">Ϩ</td>
+<td align="center">ϩ</td>
+<td align="center">Ϫ</td>
+<td align="center">ϫ</td>
+<td align="center">Ϭ</td>
+<td align="center">ϭ</td>
+<td align="center">Ϯ</td>
+<td align="center">ϯ</td>
+</tr>
+<tr>
+<td><strong>U+03Fx</strong></td>
+<td align="center">ϰ</td>
+<td align="center">ϱ</td>
+<td align="center">ϲ</td>
+<td align="center">ϳ</td>
+<td align="center">ϴ</td>
+<td align="center">ϵ</td>
+<td align="center">϶</td>
+<td align="center">Ϸ</td>
+<td align="center">ϸ</td>
+<td align="center">Ϲ</td>
+<td align="center">Ϻ</td>
+<td align="center">ϻ</td>
+<td align="center">ϼ</td>
+<td align="center">Ͻ</td>
+<td align="center">Ͼ</td>
+<td align="center">Ͽ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="greek-extended">Greek Extended<a class="headerlink" href="#greek-extended" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+1F0x</strong></td>
+<td align="center">ἀ</td>
+<td align="center">ἁ</td>
+<td align="center">ἂ</td>
+<td align="center">ἃ</td>
+<td align="center">ἄ</td>
+<td align="center">ἅ</td>
+<td align="center">ἆ</td>
+<td align="center">ἇ</td>
+<td align="center">Ἀ</td>
+<td align="center">Ἁ</td>
+<td align="center">Ἂ</td>
+<td align="center">Ἃ</td>
+<td align="center">Ἄ</td>
+<td align="center">Ἅ</td>
+<td align="center">Ἆ</td>
+<td align="center">Ἇ</td>
+</tr>
+<tr>
+<td><strong>U+1F1x</strong></td>
+<td align="center">ἐ</td>
+<td align="center">ἑ</td>
+<td align="center">ἒ</td>
+<td align="center">ἓ</td>
+<td align="center">ἔ</td>
+<td align="center">ἕ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Ἐ</td>
+<td align="center">Ἑ</td>
+<td align="center">Ἒ</td>
+<td align="center">Ἓ</td>
+<td align="center">Ἔ</td>
+<td align="center">Ἕ</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+1F2x</strong></td>
+<td align="center">ἠ</td>
+<td align="center">ἡ</td>
+<td align="center">ἢ</td>
+<td align="center">ἣ</td>
+<td align="center">ἤ</td>
+<td align="center">ἥ</td>
+<td align="center">ἦ</td>
+<td align="center">ἧ</td>
+<td align="center">Ἠ</td>
+<td align="center">Ἡ</td>
+<td align="center">Ἢ</td>
+<td align="center">Ἣ</td>
+<td align="center">Ἤ</td>
+<td align="center">Ἥ</td>
+<td align="center">Ἦ</td>
+<td align="center">Ἧ</td>
+</tr>
+<tr>
+<td><strong>U+1F3x</strong></td>
+<td align="center">ἰ</td>
+<td align="center">ἱ</td>
+<td align="center">ἲ</td>
+<td align="center">ἳ</td>
+<td align="center">ἴ</td>
+<td align="center">ἵ</td>
+<td align="center">ἶ</td>
+<td align="center">ἷ</td>
+<td align="center">Ἰ</td>
+<td align="center">Ἱ</td>
+<td align="center">Ἲ</td>
+<td align="center">Ἳ</td>
+<td align="center">Ἴ</td>
+<td align="center">Ἵ</td>
+<td align="center">Ἶ</td>
+<td align="center">Ἷ</td>
+</tr>
+<tr>
+<td><strong>U+1F4x</strong></td>
+<td align="center">ὀ</td>
+<td align="center">ὁ</td>
+<td align="center">ὂ</td>
+<td align="center">ὃ</td>
+<td align="center">ὄ</td>
+<td align="center">ὅ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">Ὀ</td>
+<td align="center">Ὁ</td>
+<td align="center">Ὂ</td>
+<td align="center">Ὃ</td>
+<td align="center">Ὄ</td>
+<td align="center">Ὅ</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+1F5x</strong></td>
+<td align="center">ὐ</td>
+<td align="center">ὑ</td>
+<td align="center">ὒ</td>
+<td align="center">ὓ</td>
+<td align="center">ὔ</td>
+<td align="center">ὕ</td>
+<td align="center">ὖ</td>
+<td align="center">ὗ</td>
+<td align="center"></td>
+<td align="center">Ὑ</td>
+<td align="center"></td>
+<td align="center">Ὓ</td>
+<td align="center"></td>
+<td align="center">Ὕ</td>
+<td align="center"></td>
+<td align="center">Ὗ</td>
+</tr>
+<tr>
+<td><strong>U+1F6x</strong></td>
+<td align="center">ὠ</td>
+<td align="center">ὡ</td>
+<td align="center">ὢ</td>
+<td align="center">ὣ</td>
+<td align="center">ὤ</td>
+<td align="center">ὥ</td>
+<td align="center">ὦ</td>
+<td align="center">ὧ</td>
+<td align="center">Ὠ</td>
+<td align="center">Ὡ</td>
+<td align="center">Ὢ</td>
+<td align="center">Ὣ</td>
+<td align="center">Ὤ</td>
+<td align="center">Ὥ</td>
+<td align="center">Ὦ</td>
+<td align="center">Ὧ</td>
+</tr>
+<tr>
+<td><strong>U+1F7x</strong></td>
+<td align="center">ὰ</td>
+<td align="center">ά</td>
+<td align="center">ὲ</td>
+<td align="center">έ</td>
+<td align="center">ὴ</td>
+<td align="center">ή</td>
+<td align="center">ὶ</td>
+<td align="center">ί</td>
+<td align="center">ὸ</td>
+<td align="center">ό</td>
+<td align="center">ὺ</td>
+<td align="center">ύ</td>
+<td align="center">ὼ</td>
+<td align="center">ώ</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+1F8x</strong></td>
+<td align="center">ᾀ</td>
+<td align="center">ᾁ</td>
+<td align="center">ᾂ</td>
+<td align="center">ᾃ</td>
+<td align="center">ᾄ</td>
+<td align="center">ᾅ</td>
+<td align="center">ᾆ</td>
+<td align="center">ᾇ</td>
+<td align="center">ᾈ</td>
+<td align="center">ᾉ</td>
+<td align="center">ᾊ</td>
+<td align="center">ᾋ</td>
+<td align="center">ᾌ</td>
+<td align="center">ᾍ</td>
+<td align="center">ᾎ</td>
+<td align="center">ᾏ</td>
+</tr>
+<tr>
+<td><strong>U+1F9x</strong></td>
+<td align="center">ᾐ</td>
+<td align="center">ᾑ</td>
+<td align="center">ᾒ</td>
+<td align="center">ᾓ</td>
+<td align="center">ᾔ</td>
+<td align="center">ᾕ</td>
+<td align="center">ᾖ</td>
+<td align="center">ᾗ</td>
+<td align="center">ᾘ</td>
+<td align="center">ᾙ</td>
+<td align="center">ᾚ</td>
+<td align="center">ᾛ</td>
+<td align="center">ᾜ</td>
+<td align="center">ᾝ</td>
+<td align="center">ᾞ</td>
+<td align="center">ᾟ</td>
+</tr>
+<tr>
+<td><strong>U+1FAx</strong></td>
+<td align="center">ᾠ</td>
+<td align="center">ᾡ</td>
+<td align="center">ᾢ</td>
+<td align="center">ᾣ</td>
+<td align="center">ᾤ</td>
+<td align="center">ᾥ</td>
+<td align="center">ᾦ</td>
+<td align="center">ᾧ</td>
+<td align="center">ᾨ</td>
+<td align="center">ᾩ</td>
+<td align="center">ᾪ</td>
+<td align="center">ᾫ</td>
+<td align="center">ᾬ</td>
+<td align="center">ᾭ</td>
+<td align="center">ᾮ</td>
+<td align="center">ᾯ</td>
+</tr>
+<tr>
+<td><strong>U+1FBx</strong></td>
+<td align="center">ᾰ</td>
+<td align="center">ᾱ</td>
+<td align="center">ᾲ</td>
+<td align="center">ᾳ</td>
+<td align="center">ᾴ</td>
+<td align="center"></td>
+<td align="center">ᾶ</td>
+<td align="center">ᾷ</td>
+<td align="center">Ᾰ</td>
+<td align="center">Ᾱ</td>
+<td align="center">Ὰ</td>
+<td align="center">Ά</td>
+<td align="center">ᾼ</td>
+<td align="center">᾽</td>
+<td align="center">ι</td>
+<td align="center">᾿</td>
+</tr>
+<tr>
+<td><strong>U+1FCx</strong></td>
+<td align="center">῀</td>
+<td align="center">῁</td>
+<td align="center">ῂ</td>
+<td align="center">ῃ</td>
+<td align="center">ῄ</td>
+<td align="center"></td>
+<td align="center">ῆ</td>
+<td align="center">ῇ</td>
+<td align="center">Ὲ</td>
+<td align="center">Έ</td>
+<td align="center">Ὴ</td>
+<td align="center">Ή</td>
+<td align="center">ῌ</td>
+<td align="center">῍</td>
+<td align="center">῎</td>
+<td align="center">῏</td>
+</tr>
+<tr>
+<td><strong>U+1FDx</strong></td>
+<td align="center">ῐ</td>
+<td align="center">ῑ</td>
+<td align="center">ῒ</td>
+<td align="center">ΐ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ῖ</td>
+<td align="center">ῗ</td>
+<td align="center">Ῐ</td>
+<td align="center">Ῑ</td>
+<td align="center">Ὶ</td>
+<td align="center">Ί</td>
+<td align="center"></td>
+<td align="center">῝</td>
+<td align="center">῞</td>
+<td align="center">῟</td>
+</tr>
+<tr>
+<td><strong>U+1FEx</strong></td>
+<td align="center">ῠ</td>
+<td align="center">ῡ</td>
+<td align="center">ῢ</td>
+<td align="center">ΰ</td>
+<td align="center">ῤ</td>
+<td align="center">ῥ</td>
+<td align="center">ῦ</td>
+<td align="center">ῧ</td>
+<td align="center">Ῠ</td>
+<td align="center">Ῡ</td>
+<td align="center">Ὺ</td>
+<td align="center">Ύ</td>
+<td align="center">Ῥ</td>
+<td align="center">῭</td>
+<td align="center">΅</td>
+<td align="center">`</td>
+</tr>
+<tr>
+<td><strong>U+1FFx</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ῲ</td>
+<td align="center">ῳ</td>
+<td align="center">ῴ</td>
+<td align="center"></td>
+<td align="center">ῶ</td>
+<td align="center">ῷ</td>
+<td align="center">Ὸ</td>
+<td align="center">Ό</td>
+<td align="center">Ὼ</td>
+<td align="center">Ώ</td>
+<td align="center">ῼ</td>
+<td align="center">´</td>
+<td align="center">῾</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cyrillic">Cyrillic<a class="headerlink" href="#cyrillic" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+040x</strong></td>
+<td align="center">Ѐ</td>
+<td align="center">Ё</td>
+<td align="center">Ђ</td>
+<td align="center">Ѓ</td>
+<td align="center">Є</td>
+<td align="center">Ѕ</td>
+<td align="center">І</td>
+<td align="center">Ї</td>
+<td align="center">Ј</td>
+<td align="center">Љ</td>
+<td align="center">Њ</td>
+<td align="center">Ћ</td>
+<td align="center">Ќ</td>
+<td align="center">Ѝ</td>
+<td align="center">Ў</td>
+<td align="center">Џ</td>
+</tr>
+<tr>
+<td><strong>U+041x</strong></td>
+<td align="center">А</td>
+<td align="center">Б</td>
+<td align="center">В</td>
+<td align="center">Г</td>
+<td align="center">Д</td>
+<td align="center">Е</td>
+<td align="center">Ж</td>
+<td align="center">З</td>
+<td align="center">И</td>
+<td align="center">Й</td>
+<td align="center">К</td>
+<td align="center">Л</td>
+<td align="center">М</td>
+<td align="center">Н</td>
+<td align="center">О</td>
+<td align="center">П</td>
+</tr>
+<tr>
+<td><strong>U+042x</strong></td>
+<td align="center">Р</td>
+<td align="center">С</td>
+<td align="center">Т</td>
+<td align="center">У</td>
+<td align="center">Ф</td>
+<td align="center">Х</td>
+<td align="center">Ц</td>
+<td align="center">Ч</td>
+<td align="center">Ш</td>
+<td align="center">Щ</td>
+<td align="center">Ъ</td>
+<td align="center">Ы</td>
+<td align="center">Ь</td>
+<td align="center">Э</td>
+<td align="center">Ю</td>
+<td align="center">Я</td>
+</tr>
+<tr>
+<td><strong>U+043x</strong></td>
+<td align="center">а</td>
+<td align="center">б</td>
+<td align="center">в</td>
+<td align="center">г</td>
+<td align="center">д</td>
+<td align="center">е</td>
+<td align="center">ж</td>
+<td align="center">з</td>
+<td align="center">и</td>
+<td align="center">й</td>
+<td align="center">к</td>
+<td align="center">л</td>
+<td align="center">м</td>
+<td align="center">н</td>
+<td align="center">о</td>
+<td align="center">п</td>
+</tr>
+<tr>
+<td><strong>U+044x</strong></td>
+<td align="center">р</td>
+<td align="center">с</td>
+<td align="center">т</td>
+<td align="center">у</td>
+<td align="center">ф</td>
+<td align="center">х</td>
+<td align="center">ц</td>
+<td align="center">ч</td>
+<td align="center">ш</td>
+<td align="center">щ</td>
+<td align="center">ъ</td>
+<td align="center">ы</td>
+<td align="center">ь</td>
+<td align="center">э</td>
+<td align="center">ю</td>
+<td align="center">я</td>
+</tr>
+<tr>
+<td><strong>U+045x</strong></td>
+<td align="center">ѐ</td>
+<td align="center">ё</td>
+<td align="center">ђ</td>
+<td align="center">ѓ</td>
+<td align="center">є</td>
+<td align="center">ѕ</td>
+<td align="center">і</td>
+<td align="center">ї</td>
+<td align="center">ј</td>
+<td align="center">љ</td>
+<td align="center">њ</td>
+<td align="center">ћ</td>
+<td align="center">ќ</td>
+<td align="center">ѝ</td>
+<td align="center">ў</td>
+<td align="center">џ</td>
+</tr>
+<tr>
+<td><strong>U+046x</strong></td>
+<td align="center">Ѡ</td>
+<td align="center">ѡ</td>
+<td align="center">Ѣ</td>
+<td align="center">ѣ</td>
+<td align="center">Ѥ</td>
+<td align="center">ѥ</td>
+<td align="center">Ѧ</td>
+<td align="center">ѧ</td>
+<td align="center">Ѩ</td>
+<td align="center">ѩ</td>
+<td align="center">Ѫ</td>
+<td align="center">ѫ</td>
+<td align="center">Ѭ</td>
+<td align="center">ѭ</td>
+<td align="center">Ѯ</td>
+<td align="center">ѯ</td>
+</tr>
+<tr>
+<td><strong>U+047x</strong></td>
+<td align="center">Ѱ</td>
+<td align="center">ѱ</td>
+<td align="center">Ѳ</td>
+<td align="center">ѳ</td>
+<td align="center">Ѵ</td>
+<td align="center">ѵ</td>
+<td align="center">Ѷ</td>
+<td align="center">ѷ</td>
+<td align="center">Ѹ</td>
+<td align="center">ѹ</td>
+<td align="center">Ѻ</td>
+<td align="center">ѻ</td>
+<td align="center">Ѽ</td>
+<td align="center">ѽ</td>
+<td align="center">Ѿ</td>
+<td align="center">ѿ</td>
+</tr>
+<tr>
+<td><strong>U+048x</strong></td>
+<td align="center">Ҁ</td>
+<td align="center">ҁ</td>
+<td align="center">҂</td>
+<td align="center">҃</td>
+<td align="center">҄</td>
+<td align="center">҅</td>
+<td align="center">҆</td>
+<td align="center">҇</td>
+<td align="center">҈</td>
+<td align="center">҉</td>
+<td align="center">Ҋ</td>
+<td align="center">ҋ</td>
+<td align="center">Ҍ</td>
+<td align="center">ҍ</td>
+<td align="center">Ҏ</td>
+<td align="center">ҏ</td>
+</tr>
+<tr>
+<td><strong>U+049x</strong></td>
+<td align="center">Ґ</td>
+<td align="center">ґ</td>
+<td align="center">Ғ</td>
+<td align="center">ғ</td>
+<td align="center">Ҕ</td>
+<td align="center">ҕ</td>
+<td align="center">Җ</td>
+<td align="center">җ</td>
+<td align="center">Ҙ</td>
+<td align="center">ҙ</td>
+<td align="center">Қ</td>
+<td align="center">қ</td>
+<td align="center">Ҝ</td>
+<td align="center">ҝ</td>
+<td align="center">Ҟ</td>
+<td align="center">ҟ</td>
+</tr>
+<tr>
+<td><strong>U+04Ax</strong></td>
+<td align="center">Ҡ</td>
+<td align="center">ҡ</td>
+<td align="center">Ң</td>
+<td align="center">ң</td>
+<td align="center">Ҥ</td>
+<td align="center">ҥ</td>
+<td align="center">Ҧ</td>
+<td align="center">ҧ</td>
+<td align="center">Ҩ</td>
+<td align="center">ҩ</td>
+<td align="center">Ҫ</td>
+<td align="center">ҫ</td>
+<td align="center">Ҭ</td>
+<td align="center">ҭ</td>
+<td align="center">Ү</td>
+<td align="center">ү</td>
+</tr>
+<tr>
+<td><strong>U+04Bx</strong></td>
+<td align="center">Ұ</td>
+<td align="center">ұ</td>
+<td align="center">Ҳ</td>
+<td align="center">ҳ</td>
+<td align="center">Ҵ</td>
+<td align="center">ҵ</td>
+<td align="center">Ҷ</td>
+<td align="center">ҷ</td>
+<td align="center">Ҹ</td>
+<td align="center">ҹ</td>
+<td align="center">Һ</td>
+<td align="center">һ</td>
+<td align="center">Ҽ</td>
+<td align="center">ҽ</td>
+<td align="center">Ҿ</td>
+<td align="center">ҿ</td>
+</tr>
+<tr>
+<td><strong>U+04Cx</strong></td>
+<td align="center">Ӏ</td>
+<td align="center">Ӂ</td>
+<td align="center">ӂ</td>
+<td align="center">Ӄ</td>
+<td align="center">ӄ</td>
+<td align="center">Ӆ</td>
+<td align="center">ӆ</td>
+<td align="center">Ӈ</td>
+<td align="center">ӈ</td>
+<td align="center">Ӊ</td>
+<td align="center">ӊ</td>
+<td align="center">Ӌ</td>
+<td align="center">ӌ</td>
+<td align="center">Ӎ</td>
+<td align="center">ӎ</td>
+<td align="center">ӏ</td>
+</tr>
+<tr>
+<td><strong>U+04Dx</strong></td>
+<td align="center">Ӑ</td>
+<td align="center">ӑ</td>
+<td align="center">Ӓ</td>
+<td align="center">ӓ</td>
+<td align="center">Ӕ</td>
+<td align="center">ӕ</td>
+<td align="center">Ӗ</td>
+<td align="center">ӗ</td>
+<td align="center">Ә</td>
+<td align="center">ә</td>
+<td align="center">Ӛ</td>
+<td align="center">ӛ</td>
+<td align="center">Ӝ</td>
+<td align="center">ӝ</td>
+<td align="center">Ӟ</td>
+<td align="center">ӟ</td>
+</tr>
+<tr>
+<td><strong>U+04Ex</strong></td>
+<td align="center">Ӡ</td>
+<td align="center">ӡ</td>
+<td align="center">Ӣ</td>
+<td align="center">ӣ</td>
+<td align="center">Ӥ</td>
+<td align="center">ӥ</td>
+<td align="center">Ӧ</td>
+<td align="center">ӧ</td>
+<td align="center">Ө</td>
+<td align="center">ө</td>
+<td align="center">Ӫ</td>
+<td align="center">ӫ</td>
+<td align="center">Ӭ</td>
+<td align="center">ӭ</td>
+<td align="center">Ӯ</td>
+<td align="center">ӯ</td>
+</tr>
+<tr>
+<td><strong>U+04Fx</strong></td>
+<td align="center">Ӱ</td>
+<td align="center">ӱ</td>
+<td align="center">Ӳ</td>
+<td align="center">ӳ</td>
+<td align="center">Ӵ</td>
+<td align="center">ӵ</td>
+<td align="center">Ӷ</td>
+<td align="center">ӷ</td>
+<td align="center">Ӹ</td>
+<td align="center">ӹ</td>
+<td align="center">Ӻ</td>
+<td align="center">ӻ</td>
+<td align="center">Ӽ</td>
+<td align="center">ӽ</td>
+<td align="center">Ӿ</td>
+<td align="center">ӿ</td>
+</tr>
+</tbody>
+</table>
+<h2 id="general-punctuation">General Punctuation<a class="headerlink" href="#general-punctuation" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+201x</strong></td>
+<td align="center">‐</td>
+<td align="center"></td>
+<td align="center">‒</td>
+<td align="center">–</td>
+<td align="center">—</td>
+<td align="center">―</td>
+<td align="center">‖</td>
+<td align="center">‗</td>
+<td align="center">‘</td>
+<td align="center">’</td>
+<td align="center">‚</td>
+<td align="center">‛</td>
+<td align="center">“</td>
+<td align="center">”</td>
+<td align="center">„</td>
+<td align="center">‟</td>
+</tr>
+<tr>
+<td><strong>U+202x</strong></td>
+<td align="center">†</td>
+<td align="center">‡</td>
+<td align="center">•</td>
+<td align="center">‣</td>
+<td align="center">․</td>
+<td align="center">‥</td>
+<td align="center">…</td>
+<td align="center">‧</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+203x</strong></td>
+<td align="center">‰</td>
+<td align="center">‱</td>
+<td align="center">′</td>
+<td align="center">″</td>
+<td align="center">‴</td>
+<td align="center">‵</td>
+<td align="center">‶</td>
+<td align="center">‷</td>
+<td align="center">‸</td>
+<td align="center">‹</td>
+<td align="center">›</td>
+<td align="center">※</td>
+<td align="center">‼</td>
+<td align="center">‽</td>
+<td align="center">‾</td>
+<td align="center">‿</td>
+</tr>
+<tr>
+<td><strong>U+204x</strong></td>
+<td align="center">⁀</td>
+<td align="center">⁁</td>
+<td align="center">⁂</td>
+<td align="center">⁃</td>
+<td align="center">⁄</td>
+<td align="center">⁅</td>
+<td align="center">⁆</td>
+<td align="center">⁇</td>
+<td align="center">⁈</td>
+<td align="center">⁉</td>
+<td align="center">⁊</td>
+<td align="center">⁋</td>
+<td align="center">⁌</td>
+<td align="center">⁍</td>
+<td align="center">⁎</td>
+<td align="center">⁏</td>
+</tr>
+<tr>
+<td><strong>U+205x</strong></td>
+<td align="center">⁐</td>
+<td align="center">⁑</td>
+<td align="center">⁒</td>
+<td align="center">⁓</td>
+<td align="center">⁔</td>
+<td align="center">⁕</td>
+<td align="center">⁖</td>
+<td align="center">⁗</td>
+<td align="center">⁘</td>
+<td align="center">⁙</td>
+<td align="center">⁚</td>
+<td align="center">⁛</td>
+<td align="center">⁜</td>
+<td align="center">⁝</td>
+<td align="center">⁞</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+206x</strong></td>
+<td align="center"></td>
+<td align="center">ƒ()</td>
+<td align="center">×</td>
+<td align="center">,</td>
+<td align="center">+</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="superscripts-and-subscripts">Superscripts and Subscripts<a class="headerlink" href="#superscripts-and-subscripts" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+207x</strong></td>
+<td align="center">⁰</td>
+<td align="center">ⁱ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">⁴</td>
+<td align="center">⁵</td>
+<td align="center">⁶</td>
+<td align="center">⁷</td>
+<td align="center">⁸</td>
+<td align="center">⁹</td>
+<td align="center">⁺</td>
+<td align="center">⁻</td>
+<td align="center">⁼</td>
+<td align="center">⁽</td>
+<td align="center">⁾</td>
+<td align="center">ⁿ</td>
+</tr>
+<tr>
+<td><strong>U+208x</strong></td>
+<td align="center">₀</td>
+<td align="center">₁</td>
+<td align="center">₂</td>
+<td align="center">₃</td>
+<td align="center">₄</td>
+<td align="center">₅</td>
+<td align="center">₆</td>
+<td align="center">₇</td>
+<td align="center">₈</td>
+<td align="center">₉</td>
+<td align="center">₊</td>
+<td align="center">₋</td>
+<td align="center">₌</td>
+<td align="center">₍</td>
+<td align="center">₎</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><strong>U+209x</strong></td>
+<td align="center">ₐ</td>
+<td align="center">ₑ</td>
+<td align="center">ₒ</td>
+<td align="center">ₓ</td>
+<td align="center">ₔ</td>
+<td align="center">ₕ</td>
+<td align="center">ₖ</td>
+<td align="center">ₗ</td>
+<td align="center">ₘ</td>
+<td align="center">ₙ</td>
+<td align="center">ₚ</td>
+<td align="center">ₛ</td>
+<td align="center">ₜ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="currency-symbols">Currency Symbols<a class="headerlink" href="#currency-symbols" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+20Ax</strong></td>
+<td align="center">₠</td>
+<td align="center">₡</td>
+<td align="center">₢</td>
+<td align="center">₣</td>
+<td align="center">₤</td>
+<td align="center">₥</td>
+<td align="center">₦</td>
+<td align="center">₧</td>
+<td align="center">₨</td>
+<td align="center">₩</td>
+<td align="center">₪</td>
+<td align="center">₫</td>
+<td align="center">€</td>
+<td align="center">₭</td>
+<td align="center">₮</td>
+<td align="center">₯</td>
+</tr>
+<tr>
+<td><strong>U+20Bx</strong></td>
+<td align="center">₰</td>
+<td align="center">₱</td>
+<td align="center">₲</td>
+<td align="center">₳</td>
+<td align="center">₴</td>
+<td align="center">₵</td>
+<td align="center">₶</td>
+<td align="center">₷</td>
+<td align="center">₸</td>
+<td align="center">₹</td>
+<td align="center">₺</td>
+<td align="center">₻</td>
+<td align="center">₼</td>
+<td align="center">₽</td>
+<td align="center">₾</td>
+<td align="center">₿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="letterlike-symbols">Letterlike Symbols<a class="headerlink" href="#letterlike-symbols" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+210x</strong></td>
+<td align="center">℀</td>
+<td align="center">℁</td>
+<td align="center">ℂ</td>
+<td align="center">℃</td>
+<td align="center">℄</td>
+<td align="center">℅</td>
+<td align="center">℆</td>
+<td align="center">ℇ</td>
+<td align="center">℈</td>
+<td align="center">℉</td>
+<td align="center">ℊ</td>
+<td align="center">ℋ</td>
+<td align="center">ℌ</td>
+<td align="center">ℍ</td>
+<td align="center">ℎ</td>
+<td align="center">ℏ</td>
+</tr>
+<tr>
+<td><strong>U+211x</strong></td>
+<td align="center">ℐ</td>
+<td align="center">ℑ</td>
+<td align="center">ℒ</td>
+<td align="center">ℓ</td>
+<td align="center">℔</td>
+<td align="center">ℕ</td>
+<td align="center">№</td>
+<td align="center">℗</td>
+<td align="center">℘</td>
+<td align="center">ℙ</td>
+<td align="center">ℚ</td>
+<td align="center">ℛ</td>
+<td align="center">ℜ</td>
+<td align="center">ℝ</td>
+<td align="center">℞</td>
+<td align="center">℟</td>
+</tr>
+<tr>
+<td><strong>U+212x</strong></td>
+<td align="center">℠</td>
+<td align="center">℡</td>
+<td align="center">™</td>
+<td align="center">℣</td>
+<td align="center">ℤ</td>
+<td align="center">℥</td>
+<td align="center">Ω</td>
+<td align="center">℧</td>
+<td align="center">ℨ</td>
+<td align="center">℩</td>
+<td align="center">K</td>
+<td align="center">Å</td>
+<td align="center">ℬ</td>
+<td align="center">ℭ</td>
+<td align="center">℮</td>
+<td align="center">ℯ</td>
+</tr>
+<tr>
+<td><strong>U+213x</strong></td>
+<td align="center">ℰ</td>
+<td align="center">ℱ</td>
+<td align="center">Ⅎ</td>
+<td align="center">ℳ</td>
+<td align="center">ℴ</td>
+<td align="center">ℵ</td>
+<td align="center">ℶ</td>
+<td align="center">ℷ</td>
+<td align="center">ℸ</td>
+<td align="center">ℹ</td>
+<td align="center">℺</td>
+<td align="center">℻</td>
+<td align="center">ℼ</td>
+<td align="center">ℽ</td>
+<td align="center">ℾ</td>
+<td align="center">ℿ</td>
+</tr>
+<tr>
+<td><strong>U+214x</strong></td>
+<td align="center">⅀</td>
+<td align="center">⅁</td>
+<td align="center">⅂</td>
+<td align="center">⅃</td>
+<td align="center">⅄</td>
+<td align="center">ⅅ</td>
+<td align="center">ⅆ</td>
+<td align="center">ⅇ</td>
+<td align="center">ⅈ</td>
+<td align="center">ⅉ</td>
+<td align="center">⅊</td>
+<td align="center">⅋</td>
+<td align="center">⅌</td>
+<td align="center">⅍</td>
+<td align="center">ⅎ</td>
+<td align="center">⅏</td>
+</tr>
+</tbody>
+</table>
+<h2 id="number-forms">Number Forms<a class="headerlink" href="#number-forms" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+215x</strong></td>
+<td align="center">⅐</td>
+<td align="center">⅑</td>
+<td align="center">⅒</td>
+<td align="center">⅓</td>
+<td align="center">⅔</td>
+<td align="center">⅕</td>
+<td align="center">⅖</td>
+<td align="center">⅗</td>
+<td align="center">⅘</td>
+<td align="center">⅙</td>
+<td align="center">⅚</td>
+<td align="center">⅛</td>
+<td align="center">⅜</td>
+<td align="center">⅝</td>
+<td align="center">⅞</td>
+<td align="center">⅟</td>
+</tr>
+<tr>
+<td><strong>U+216x</strong></td>
+<td align="center">Ⅰ</td>
+<td align="center">Ⅱ</td>
+<td align="center">Ⅲ</td>
+<td align="center">Ⅳ</td>
+<td align="center">Ⅴ</td>
+<td align="center">Ⅵ</td>
+<td align="center">Ⅶ</td>
+<td align="center">Ⅷ</td>
+<td align="center">Ⅸ</td>
+<td align="center">Ⅹ</td>
+<td align="center">Ⅺ</td>
+<td align="center">Ⅻ</td>
+<td align="center">Ⅼ</td>
+<td align="center">Ⅽ</td>
+<td align="center">Ⅾ</td>
+<td align="center">Ⅿ</td>
+</tr>
+<tr>
+<td><strong>U+217x</strong></td>
+<td align="center">ⅰ</td>
+<td align="center">ⅱ</td>
+<td align="center">ⅲ</td>
+<td align="center">ⅳ</td>
+<td align="center">ⅴ</td>
+<td align="center">ⅵ</td>
+<td align="center">ⅶ</td>
+<td align="center">ⅷ</td>
+<td align="center">ⅸ</td>
+<td align="center">ⅹ</td>
+<td align="center">ⅺ</td>
+<td align="center">ⅻ</td>
+<td align="center">ⅼ</td>
+<td align="center">ⅽ</td>
+<td align="center">ⅾ</td>
+<td align="center">ⅿ</td>
+</tr>
+<tr>
+<td><strong>U+218x</strong></td>
+<td align="center">ↀ</td>
+<td align="center">ↁ</td>
+<td align="center">ↂ</td>
+<td align="center">Ↄ</td>
+<td align="center">ↄ</td>
+<td align="center">ↅ</td>
+<td align="center">ↆ</td>
+<td align="center">ↇ</td>
+<td align="center">ↈ</td>
+<td align="center">↉</td>
+<td align="center">↊</td>
+<td align="center">↋</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="arrows">Arrows<a class="headerlink" href="#arrows" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+219x</strong></td>
+<td align="center">←</td>
+<td align="center">↑</td>
+<td align="center">→</td>
+<td align="center">↓</td>
+<td align="center">↔</td>
+<td align="center">↕</td>
+<td align="center">↖</td>
+<td align="center">↗</td>
+<td align="center">↘</td>
+<td align="center">↙</td>
+<td align="center">↚</td>
+<td align="center">↛</td>
+<td align="center">↜</td>
+<td align="center">↝</td>
+<td align="center">↞</td>
+<td align="center">↟</td>
+</tr>
+<tr>
+<td><strong>U+21Ax</strong></td>
+<td align="center">↠</td>
+<td align="center">↡</td>
+<td align="center">↢</td>
+<td align="center">↣</td>
+<td align="center">↤</td>
+<td align="center">↥</td>
+<td align="center">↦</td>
+<td align="center">↧</td>
+<td align="center">↨</td>
+<td align="center">↩</td>
+<td align="center">↪</td>
+<td align="center">↫</td>
+<td align="center">↬</td>
+<td align="center">↭</td>
+<td align="center">↮</td>
+<td align="center">↯</td>
+</tr>
+<tr>
+<td><strong>U+21Bx</strong></td>
+<td align="center">↰</td>
+<td align="center">↱</td>
+<td align="center">↲</td>
+<td align="center">↳</td>
+<td align="center">↴</td>
+<td align="center">↵</td>
+<td align="center">↶</td>
+<td align="center">↷</td>
+<td align="center">↸</td>
+<td align="center">↹</td>
+<td align="center">↺</td>
+<td align="center">↻</td>
+<td align="center">↼</td>
+<td align="center">↽</td>
+<td align="center">↾</td>
+<td align="center">↿</td>
+</tr>
+<tr>
+<td><strong>U+21Cx</strong></td>
+<td align="center">⇀</td>
+<td align="center">⇁</td>
+<td align="center">⇂</td>
+<td align="center">⇃</td>
+<td align="center">⇄</td>
+<td align="center">⇅</td>
+<td align="center">⇆</td>
+<td align="center">⇇</td>
+<td align="center">⇈</td>
+<td align="center">⇉</td>
+<td align="center">⇊</td>
+<td align="center">⇋</td>
+<td align="center">⇌</td>
+<td align="center">⇍</td>
+<td align="center">⇎</td>
+<td align="center">⇏</td>
+</tr>
+<tr>
+<td><strong>U+21Dx</strong></td>
+<td align="center">⇐</td>
+<td align="center">⇑</td>
+<td align="center">⇒</td>
+<td align="center">⇓</td>
+<td align="center">⇔</td>
+<td align="center">⇕</td>
+<td align="center">⇖</td>
+<td align="center">⇗</td>
+<td align="center">⇘</td>
+<td align="center">⇙</td>
+<td align="center">⇚</td>
+<td align="center">⇛</td>
+<td align="center">⇜</td>
+<td align="center">⇝</td>
+<td align="center">⇞</td>
+<td align="center">⇟</td>
+</tr>
+<tr>
+<td><strong>U+21Ex</strong></td>
+<td align="center">⇠</td>
+<td align="center">⇡</td>
+<td align="center">⇢</td>
+<td align="center">⇣</td>
+<td align="center">⇤</td>
+<td align="center">⇥</td>
+<td align="center">⇦</td>
+<td align="center">⇧</td>
+<td align="center">⇨</td>
+<td align="center">⇩</td>
+<td align="center">⇪</td>
+<td align="center">⇫</td>
+<td align="center">⇬</td>
+<td align="center">⇭</td>
+<td align="center">⇮</td>
+<td align="center">⇯</td>
+</tr>
+<tr>
+<td><strong>U+21Fx</strong></td>
+<td align="center">⇰</td>
+<td align="center">⇱</td>
+<td align="center">⇲</td>
+<td align="center">⇳</td>
+<td align="center">⇴</td>
+<td align="center">⇵</td>
+<td align="center">⇶</td>
+<td align="center">⇷</td>
+<td align="center">⇸</td>
+<td align="center">⇹</td>
+<td align="center">⇺</td>
+<td align="center">⇻</td>
+<td align="center">⇼</td>
+<td align="center">⇽</td>
+<td align="center">⇾</td>
+<td align="center">⇿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mathematical-symbols">Mathematical symbols<a class="headerlink" href="#mathematical-symbols" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+220x</strong></td>
+<td align="center">∀</td>
+<td align="center">∁</td>
+<td align="center">∂</td>
+<td align="center">∃</td>
+<td align="center">∄</td>
+<td align="center">∅</td>
+<td align="center">∆</td>
+<td align="center">∇</td>
+<td align="center">∈</td>
+<td align="center">∉</td>
+<td align="center">∊</td>
+<td align="center">∋</td>
+<td align="center">∌</td>
+<td align="center">∍</td>
+<td align="center">∎</td>
+<td align="center">∏</td>
+</tr>
+<tr>
+<td><strong>U+221x</strong></td>
+<td align="center">∐</td>
+<td align="center">∑</td>
+<td align="center">−</td>
+<td align="center">∓</td>
+<td align="center">∔</td>
+<td align="center">∕</td>
+<td align="center">∖</td>
+<td align="center">∗</td>
+<td align="center">∘</td>
+<td align="center">∙</td>
+<td align="center">√</td>
+<td align="center">∛</td>
+<td align="center">∜</td>
+<td align="center">∝</td>
+<td align="center">∞</td>
+<td align="center">∟</td>
+</tr>
+<tr>
+<td><strong>U+222x</strong></td>
+<td align="center">∠</td>
+<td align="center">∡</td>
+<td align="center">∢</td>
+<td align="center">∣</td>
+<td align="center">∤</td>
+<td align="center">∥</td>
+<td align="center">∦</td>
+<td align="center">∧</td>
+<td align="center">∨</td>
+<td align="center">∩</td>
+<td align="center">∪</td>
+<td align="center">∫</td>
+<td align="center">∬</td>
+<td align="center">∭</td>
+<td align="center">∮</td>
+<td align="center">∯</td>
+</tr>
+<tr>
+<td><strong>U+223x</strong></td>
+<td align="center">∰</td>
+<td align="center">∱</td>
+<td align="center">∲</td>
+<td align="center">∳</td>
+<td align="center">∴</td>
+<td align="center">∵</td>
+<td align="center">∶</td>
+<td align="center">∷</td>
+<td align="center">∸</td>
+<td align="center">∹</td>
+<td align="center">∺</td>
+<td align="center">∻</td>
+<td align="center">∼</td>
+<td align="center">∽</td>
+<td align="center">∾</td>
+<td align="center">∿</td>
+</tr>
+<tr>
+<td><strong>U+224x</strong></td>
+<td align="center">≀</td>
+<td align="center">≁</td>
+<td align="center">≂</td>
+<td align="center">≃</td>
+<td align="center">≄</td>
+<td align="center">≅</td>
+<td align="center">≆</td>
+<td align="center">≇</td>
+<td align="center">≈</td>
+<td align="center">≉</td>
+<td align="center">≊</td>
+<td align="center">≋</td>
+<td align="center">≌</td>
+<td align="center">≍</td>
+<td align="center">≎</td>
+<td align="center">≏</td>
+</tr>
+<tr>
+<td><strong>U+225x</strong></td>
+<td align="center">≐</td>
+<td align="center">≑</td>
+<td align="center">≒</td>
+<td align="center">≓</td>
+<td align="center">≔</td>
+<td align="center">≕</td>
+<td align="center">≖</td>
+<td align="center">≗</td>
+<td align="center">≘</td>
+<td align="center">≙</td>
+<td align="center">≚</td>
+<td align="center">≛</td>
+<td align="center">≜</td>
+<td align="center">≝</td>
+<td align="center">≞</td>
+<td align="center">≟</td>
+</tr>
+<tr>
+<td><strong>U+226x</strong></td>
+<td align="center">≠</td>
+<td align="center">≡</td>
+<td align="center">≢</td>
+<td align="center">≣</td>
+<td align="center">≤</td>
+<td align="center">≥</td>
+<td align="center">≦</td>
+<td align="center">≧</td>
+<td align="center">≨</td>
+<td align="center">≩</td>
+<td align="center">≪</td>
+<td align="center">≫</td>
+<td align="center">≬</td>
+<td align="center">≭</td>
+<td align="center">≮</td>
+<td align="center">≯</td>
+</tr>
+<tr>
+<td><strong>U+227x</strong></td>
+<td align="center">≰</td>
+<td align="center">≱</td>
+<td align="center">≲</td>
+<td align="center">≳</td>
+<td align="center">≴</td>
+<td align="center">≵</td>
+<td align="center">≶</td>
+<td align="center">≷</td>
+<td align="center">≸</td>
+<td align="center">≹</td>
+<td align="center">≺</td>
+<td align="center">≻</td>
+<td align="center">≼</td>
+<td align="center">≽</td>
+<td align="center">≾</td>
+<td align="center">≿</td>
+</tr>
+<tr>
+<td><strong>U+228x</strong></td>
+<td align="center">⊀</td>
+<td align="center">⊁</td>
+<td align="center">⊂</td>
+<td align="center">⊃</td>
+<td align="center">⊄</td>
+<td align="center">⊅</td>
+<td align="center">⊆</td>
+<td align="center">⊇</td>
+<td align="center">⊈</td>
+<td align="center">⊉</td>
+<td align="center">⊊</td>
+<td align="center">⊋</td>
+<td align="center">⊌</td>
+<td align="center">⊍</td>
+<td align="center">⊎</td>
+<td align="center">⊏</td>
+</tr>
+<tr>
+<td><strong>U+229x</strong></td>
+<td align="center">⊐</td>
+<td align="center">⊑</td>
+<td align="center">⊒</td>
+<td align="center">⊓</td>
+<td align="center">⊔</td>
+<td align="center">⊕</td>
+<td align="center">⊖</td>
+<td align="center">⊗</td>
+<td align="center">⊘</td>
+<td align="center">⊙</td>
+<td align="center">⊚</td>
+<td align="center">⊛</td>
+<td align="center">⊜</td>
+<td align="center">⊝</td>
+<td align="center">⊞</td>
+<td align="center">⊟</td>
+</tr>
+<tr>
+<td><strong>U+22Ax</strong></td>
+<td align="center">⊠</td>
+<td align="center">⊡</td>
+<td align="center">⊢</td>
+<td align="center">⊣</td>
+<td align="center">⊤</td>
+<td align="center">⊥</td>
+<td align="center">⊦</td>
+<td align="center">⊧</td>
+<td align="center">⊨</td>
+<td align="center">⊩</td>
+<td align="center">⊪</td>
+<td align="center">⊫</td>
+<td align="center">⊬</td>
+<td align="center">⊭</td>
+<td align="center">⊮</td>
+<td align="center">⊯</td>
+</tr>
+<tr>
+<td><strong>U+22Bx</strong></td>
+<td align="center">⊰</td>
+<td align="center">⊱</td>
+<td align="center">⊲</td>
+<td align="center">⊳</td>
+<td align="center">⊴</td>
+<td align="center">⊵</td>
+<td align="center">⊶</td>
+<td align="center">⊷</td>
+<td align="center">⊸</td>
+<td align="center">⊹</td>
+<td align="center">⊺</td>
+<td align="center">⊻</td>
+<td align="center">⊼</td>
+<td align="center">⊽</td>
+<td align="center">⊾</td>
+<td align="center">⊿</td>
+</tr>
+<tr>
+<td><strong>U+22Cx</strong></td>
+<td align="center">⋀</td>
+<td align="center">⋁</td>
+<td align="center">⋂</td>
+<td align="center">⋃</td>
+<td align="center">⋄</td>
+<td align="center">⋅</td>
+<td align="center">⋆</td>
+<td align="center">⋇</td>
+<td align="center">⋈</td>
+<td align="center">⋉</td>
+<td align="center">⋊</td>
+<td align="center">⋋</td>
+<td align="center">⋌</td>
+<td align="center">⋍</td>
+<td align="center">⋎</td>
+<td align="center">⋏</td>
+</tr>
+<tr>
+<td><strong>U+22Dx</strong></td>
+<td align="center">⋐</td>
+<td align="center">⋑</td>
+<td align="center">⋒</td>
+<td align="center">⋓</td>
+<td align="center">⋔</td>
+<td align="center">⋕</td>
+<td align="center">⋖</td>
+<td align="center">⋗</td>
+<td align="center">⋘</td>
+<td align="center">⋙</td>
+<td align="center">⋚</td>
+<td align="center">⋛</td>
+<td align="center">⋜</td>
+<td align="center">⋝</td>
+<td align="center">⋞</td>
+<td align="center">⋟</td>
+</tr>
+<tr>
+<td><strong>U+22Ex</strong></td>
+<td align="center">⋠</td>
+<td align="center">⋡</td>
+<td align="center">⋢</td>
+<td align="center">⋣</td>
+<td align="center">⋤</td>
+<td align="center">⋥</td>
+<td align="center">⋦</td>
+<td align="center">⋧</td>
+<td align="center">⋨</td>
+<td align="center">⋩</td>
+<td align="center">⋪</td>
+<td align="center">⋫</td>
+<td align="center">⋬</td>
+<td align="center">⋭</td>
+<td align="center">⋮</td>
+<td align="center">⋯</td>
+</tr>
+<tr>
+<td><strong>U+22Fx</strong></td>
+<td align="center">⋰</td>
+<td align="center">⋱</td>
+<td align="center">⋲</td>
+<td align="center">⋳</td>
+<td align="center">⋴</td>
+<td align="center">⋵</td>
+<td align="center">⋶</td>
+<td align="center">⋷</td>
+<td align="center">⋸</td>
+<td align="center">⋹</td>
+<td align="center">⋺</td>
+<td align="center">⋻</td>
+<td align="center">⋼</td>
+<td align="center">⋽</td>
+<td align="center">⋾</td>
+<td align="center">⋿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="miscellaneous-technical">Miscellaneous Technical<a class="headerlink" href="#miscellaneous-technical" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+230x</strong></td>
+<td align="center">⌀</td>
+<td align="center">⌁</td>
+<td align="center">⌂</td>
+<td align="center">⌃</td>
+<td align="center">⌄</td>
+<td align="center">⌅</td>
+<td align="center">⌆</td>
+<td align="center">⌇</td>
+<td align="center">⌈</td>
+<td align="center">⌉</td>
+<td align="center">⌊</td>
+<td align="center">⌋</td>
+<td align="center">⌌</td>
+<td align="center">⌍</td>
+<td align="center">⌎</td>
+<td align="center">⌏</td>
+</tr>
+<tr>
+<td><strong>U+231x</strong></td>
+<td align="center">⌐</td>
+<td align="center">⌑</td>
+<td align="center">⌒</td>
+<td align="center">⌓</td>
+<td align="center">⌔</td>
+<td align="center">⌕</td>
+<td align="center">⌖</td>
+<td align="center">⌗</td>
+<td align="center">⌘</td>
+<td align="center">⌙</td>
+<td align="center">⌚</td>
+<td align="center">⌛</td>
+<td align="center">⌜</td>
+<td align="center">⌝</td>
+<td align="center">⌞</td>
+<td align="center">⌟</td>
+</tr>
+<tr>
+<td><strong>U+232x</strong></td>
+<td align="center">⌠</td>
+<td align="center">⌡</td>
+<td align="center">⌢</td>
+<td align="center">⌣</td>
+<td align="center">⌤</td>
+<td align="center">⌥</td>
+<td align="center">⌦</td>
+<td align="center">⌧</td>
+<td align="center">⌨</td>
+<td align="center">〈</td>
+<td align="center">〉</td>
+<td align="center">⌫</td>
+<td align="center">⌬</td>
+<td align="center">⌭</td>
+<td align="center">⌮</td>
+<td align="center">⌯</td>
+</tr>
+<tr>
+<td><strong>U+233x</strong></td>
+<td align="center">⌰</td>
+<td align="center">⌱</td>
+<td align="center">⌲</td>
+<td align="center">⌳</td>
+<td align="center">⌴</td>
+<td align="center">⌵</td>
+<td align="center">⌶</td>
+<td align="center">⌷</td>
+<td align="center">⌸</td>
+<td align="center">⌹</td>
+<td align="center">⌺</td>
+<td align="center">⌻</td>
+<td align="center">⌼</td>
+<td align="center">⌽</td>
+<td align="center">⌾</td>
+<td align="center">⌿</td>
+</tr>
+<tr>
+<td><strong>U+234x</strong></td>
+<td align="center">⍀</td>
+<td align="center">⍁</td>
+<td align="center">⍂</td>
+<td align="center">⍃</td>
+<td align="center">⍄</td>
+<td align="center">⍅</td>
+<td align="center">⍆</td>
+<td align="center">⍇</td>
+<td align="center">⍈</td>
+<td align="center">⍉</td>
+<td align="center">⍊</td>
+<td align="center">⍋</td>
+<td align="center">⍌</td>
+<td align="center">⍍</td>
+<td align="center">⍎</td>
+<td align="center">⍏</td>
+</tr>
+<tr>
+<td><strong>U+235x</strong></td>
+<td align="center">⍐</td>
+<td align="center">⍑</td>
+<td align="center">⍒</td>
+<td align="center">⍓</td>
+<td align="center">⍔</td>
+<td align="center">⍕</td>
+<td align="center">⍖</td>
+<td align="center">⍗</td>
+<td align="center">⍘</td>
+<td align="center">⍙</td>
+<td align="center">⍚</td>
+<td align="center">⍛</td>
+<td align="center">⍜</td>
+<td align="center">⍝</td>
+<td align="center">⍞</td>
+<td align="center">⍟</td>
+</tr>
+<tr>
+<td><strong>U+236x</strong></td>
+<td align="center">⍠</td>
+<td align="center">⍡</td>
+<td align="center">⍢</td>
+<td align="center">⍣</td>
+<td align="center">⍤</td>
+<td align="center">⍥</td>
+<td align="center">⍦</td>
+<td align="center">⍧</td>
+<td align="center">⍨</td>
+<td align="center">⍩</td>
+<td align="center">⍪</td>
+<td align="center">⍫</td>
+<td align="center">⍬</td>
+<td align="center">⍭</td>
+<td align="center">⍮</td>
+<td align="center">⍯</td>
+</tr>
+<tr>
+<td><strong>U+237x</strong></td>
+<td align="center">⍰</td>
+<td align="center">⍱</td>
+<td align="center">⍲</td>
+<td align="center">⍳</td>
+<td align="center">⍴</td>
+<td align="center">⍵</td>
+<td align="center">⍶</td>
+<td align="center">⍷</td>
+<td align="center">⍸</td>
+<td align="center">⍹</td>
+<td align="center">⍺</td>
+<td align="center">⍻</td>
+<td align="center">⍼</td>
+<td align="center">⍽</td>
+<td align="center">⍾</td>
+<td align="center">⍿</td>
+</tr>
+<tr>
+<td><strong>U+238x</strong></td>
+<td align="center">⎀</td>
+<td align="center">⎁</td>
+<td align="center">⎂</td>
+<td align="center">⎃</td>
+<td align="center">⎄</td>
+<td align="center">⎅</td>
+<td align="center">⎆</td>
+<td align="center">⎇</td>
+<td align="center">⎈</td>
+<td align="center">⎉</td>
+<td align="center">⎊</td>
+<td align="center">⎋</td>
+<td align="center">⎌</td>
+<td align="center">⎍</td>
+<td align="center">⎎</td>
+<td align="center">⎏</td>
+</tr>
+<tr>
+<td><strong>U+239x</strong></td>
+<td align="center">⎐</td>
+<td align="center">⎑</td>
+<td align="center">⎒</td>
+<td align="center">⎓</td>
+<td align="center">⎔</td>
+<td align="center">⎕</td>
+<td align="center">⎖</td>
+<td align="center">⎗</td>
+<td align="center">⎘</td>
+<td align="center">⎙</td>
+<td align="center">⎚</td>
+<td align="center">⎛</td>
+<td align="center">⎜</td>
+<td align="center">⎝</td>
+<td align="center">⎞</td>
+<td align="center">⎟</td>
+</tr>
+<tr>
+<td><strong>U+23Ax</strong></td>
+<td align="center">⎠</td>
+<td align="center">⎡</td>
+<td align="center">⎢</td>
+<td align="center">⎣</td>
+<td align="center">⎤</td>
+<td align="center">⎥</td>
+<td align="center">⎦</td>
+<td align="center">⎧</td>
+<td align="center">⎨</td>
+<td align="center">⎩</td>
+<td align="center">⎪</td>
+<td align="center">⎫</td>
+<td align="center">⎬</td>
+<td align="center">⎭</td>
+<td align="center">⎮</td>
+<td align="center">⎯</td>
+</tr>
+<tr>
+<td><strong>U+23Bx</strong></td>
+<td align="center">⎰</td>
+<td align="center">⎱</td>
+<td align="center">⎲</td>
+<td align="center">⎳</td>
+<td align="center">⎴</td>
+<td align="center">⎵</td>
+<td align="center">⎶</td>
+<td align="center">⎷</td>
+<td align="center">⎸</td>
+<td align="center">⎹</td>
+<td align="center">⎺</td>
+<td align="center">⎻</td>
+<td align="center">⎼</td>
+<td align="center">⎽</td>
+<td align="center">⎾</td>
+<td align="center">⎿</td>
+</tr>
+<tr>
+<td><strong>U+23Cx</strong></td>
+<td align="center">⏀</td>
+<td align="center">⏁</td>
+<td align="center">⏂</td>
+<td align="center">⏃</td>
+<td align="center">⏄</td>
+<td align="center">⏅</td>
+<td align="center">⏆</td>
+<td align="center">⏇</td>
+<td align="center">⏈</td>
+<td align="center">⏉</td>
+<td align="center">⏊</td>
+<td align="center">⏋</td>
+<td align="center">⏌</td>
+<td align="center">⏍</td>
+<td align="center">⏎</td>
+<td align="center">⏏</td>
+</tr>
+<tr>
+<td><strong>U+23Dx</strong></td>
+<td align="center">⏐</td>
+<td align="center">⏑</td>
+<td align="center">⏒</td>
+<td align="center">⏓</td>
+<td align="center">⏔</td>
+<td align="center">⏕</td>
+<td align="center">⏖</td>
+<td align="center">⏗</td>
+<td align="center">⏘</td>
+<td align="center">⏙</td>
+<td align="center">⏚</td>
+<td align="center">⏛</td>
+<td align="center">⏜</td>
+<td align="center">⏝</td>
+<td align="center">⏞</td>
+<td align="center">⏟</td>
+</tr>
+<tr>
+<td><strong>U+23Ex</strong></td>
+<td align="center">⏠</td>
+<td align="center">⏡</td>
+<td align="center">⏢</td>
+<td align="center">⏣</td>
+<td align="center">⏤</td>
+<td align="center">⏥</td>
+<td align="center">⏦</td>
+<td align="center">⏧</td>
+<td align="center">⏨</td>
+<td align="center">⏩</td>
+<td align="center">⏪</td>
+<td align="center">⏫</td>
+<td align="center">⏬</td>
+<td align="center">⏭</td>
+<td align="center">⏮</td>
+<td align="center">⏯</td>
+</tr>
+<tr>
+<td><strong>U+23Fx</strong></td>
+<td align="center">⏰</td>
+<td align="center">⏱</td>
+<td align="center">⏲</td>
+<td align="center">⏳</td>
+<td align="center">⏴</td>
+<td align="center">⏵</td>
+<td align="center">⏶</td>
+<td align="center">⏷</td>
+<td align="center">⏸</td>
+<td align="center">⏹</td>
+<td align="center">⏺</td>
+<td align="center">⏻</td>
+<td align="center">⏼</td>
+<td align="center">⏽</td>
+<td align="center">⏾</td>
+<td align="center">⏿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enclosed-alphanumerics">Enclosed Alphanumerics<a class="headerlink" href="#enclosed-alphanumerics" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+246x</strong></td>
+<td align="center">①</td>
+<td align="center">②</td>
+<td align="center">③</td>
+<td align="center">④</td>
+<td align="center">⑤</td>
+<td align="center">⑥</td>
+<td align="center">⑦</td>
+<td align="center">⑧</td>
+<td align="center">⑨</td>
+<td align="center">⑩</td>
+<td align="center">⑪</td>
+<td align="center">⑫</td>
+<td align="center">⑬</td>
+<td align="center">⑭</td>
+<td align="center">⑮</td>
+<td align="center">⑯</td>
+</tr>
+<tr>
+<td><strong>U+247x</strong></td>
+<td align="center">⑰</td>
+<td align="center">⑱</td>
+<td align="center">⑲</td>
+<td align="center">⑳</td>
+<td align="center">⑴</td>
+<td align="center">⑵</td>
+<td align="center">⑶</td>
+<td align="center">⑷</td>
+<td align="center">⑸</td>
+<td align="center">⑹</td>
+<td align="center">⑺</td>
+<td align="center">⑻</td>
+<td align="center">⑼</td>
+<td align="center">⑽</td>
+<td align="center">⑾</td>
+<td align="center">⑿</td>
+</tr>
+<tr>
+<td><strong>U+248x</strong></td>
+<td align="center">⒀</td>
+<td align="center">⒁</td>
+<td align="center">⒂</td>
+<td align="center">⒃</td>
+<td align="center">⒄</td>
+<td align="center">⒅</td>
+<td align="center">⒆</td>
+<td align="center">⒇</td>
+<td align="center">⒈</td>
+<td align="center">⒉</td>
+<td align="center">⒊</td>
+<td align="center">⒋</td>
+<td align="center">⒌</td>
+<td align="center">⒍</td>
+<td align="center">⒎</td>
+<td align="center">⒏</td>
+</tr>
+<tr>
+<td><strong>U+249x</strong></td>
+<td align="center">⒐</td>
+<td align="center">⒑</td>
+<td align="center">⒒</td>
+<td align="center">⒓</td>
+<td align="center">⒔</td>
+<td align="center">⒕</td>
+<td align="center">⒖</td>
+<td align="center">⒗</td>
+<td align="center">⒘</td>
+<td align="center">⒙</td>
+<td align="center">⒚</td>
+<td align="center">⒛</td>
+<td align="center">⒜</td>
+<td align="center">⒝</td>
+<td align="center">⒞</td>
+<td align="center">⒟</td>
+</tr>
+<tr>
+<td><strong>U+24Ax</strong></td>
+<td align="center">⒠</td>
+<td align="center">⒡</td>
+<td align="center">⒢</td>
+<td align="center">⒣</td>
+<td align="center">⒤</td>
+<td align="center">⒥</td>
+<td align="center">⒦</td>
+<td align="center">⒧</td>
+<td align="center">⒨</td>
+<td align="center">⒩</td>
+<td align="center">⒪</td>
+<td align="center">⒫</td>
+<td align="center">⒬</td>
+<td align="center">⒭</td>
+<td align="center">⒮</td>
+<td align="center">⒯</td>
+</tr>
+<tr>
+<td><strong>U+24Bx</strong></td>
+<td align="center">⒰</td>
+<td align="center">⒱</td>
+<td align="center">⒲</td>
+<td align="center">⒳</td>
+<td align="center">⒴</td>
+<td align="center">⒵</td>
+<td align="center">Ⓐ</td>
+<td align="center">Ⓑ</td>
+<td align="center">Ⓒ</td>
+<td align="center">Ⓓ</td>
+<td align="center">Ⓔ</td>
+<td align="center">Ⓕ</td>
+<td align="center">Ⓖ</td>
+<td align="center">Ⓗ</td>
+<td align="center">Ⓘ</td>
+<td align="center">Ⓙ</td>
+</tr>
+<tr>
+<td><strong>U+24Cx</strong></td>
+<td align="center">Ⓚ</td>
+<td align="center">Ⓛ</td>
+<td align="center">Ⓜ</td>
+<td align="center">Ⓝ</td>
+<td align="center">Ⓞ</td>
+<td align="center">Ⓟ</td>
+<td align="center">Ⓠ</td>
+<td align="center">Ⓡ</td>
+<td align="center">Ⓢ</td>
+<td align="center">Ⓣ</td>
+<td align="center">Ⓤ</td>
+<td align="center">Ⓥ</td>
+<td align="center">Ⓦ</td>
+<td align="center">Ⓧ</td>
+<td align="center">Ⓨ</td>
+<td align="center">Ⓩ</td>
+</tr>
+<tr>
+<td><strong>U+24Dx</strong></td>
+<td align="center">ⓐ</td>
+<td align="center">ⓑ</td>
+<td align="center">ⓒ</td>
+<td align="center">ⓓ</td>
+<td align="center">ⓔ</td>
+<td align="center">ⓕ</td>
+<td align="center">ⓖ</td>
+<td align="center">ⓗ</td>
+<td align="center">ⓘ</td>
+<td align="center">ⓙ</td>
+<td align="center">ⓚ</td>
+<td align="center">ⓛ</td>
+<td align="center">ⓜ</td>
+<td align="center">ⓝ</td>
+<td align="center">ⓞ</td>
+<td align="center">ⓟ</td>
+</tr>
+<tr>
+<td><strong>U+24Ex</strong></td>
+<td align="center">ⓠ</td>
+<td align="center">ⓡ</td>
+<td align="center">ⓢ</td>
+<td align="center">ⓣ</td>
+<td align="center">ⓤ</td>
+<td align="center">ⓥ</td>
+<td align="center">ⓦ</td>
+<td align="center">ⓧ</td>
+<td align="center">ⓨ</td>
+<td align="center">ⓩ</td>
+<td align="center">⓪</td>
+<td align="center">⓫</td>
+<td align="center">⓬</td>
+<td align="center">⓭</td>
+<td align="center">⓮</td>
+<td align="center">⓯</td>
+</tr>
+<tr>
+<td><strong>U+24Fx</strong></td>
+<td align="center">⓰</td>
+<td align="center">⓱</td>
+<td align="center">⓲</td>
+<td align="center">⓳</td>
+<td align="center">⓴</td>
+<td align="center">⓵</td>
+<td align="center">⓶</td>
+<td align="center">⓷</td>
+<td align="center">⓸</td>
+<td align="center">⓹</td>
+<td align="center">⓺</td>
+<td align="center">⓻</td>
+<td align="center">⓼</td>
+<td align="center">⓽</td>
+<td align="center">⓾</td>
+<td align="center">⓿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="box-drawing">Box Drawing<a class="headerlink" href="#box-drawing" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+250x</strong></td>
+<td align="center">─</td>
+<td align="center">━</td>
+<td align="center">│</td>
+<td align="center">┃</td>
+<td align="center">┄</td>
+<td align="center">┅</td>
+<td align="center">┆</td>
+<td align="center">┇</td>
+<td align="center">┈</td>
+<td align="center">┉</td>
+<td align="center">┊</td>
+<td align="center">┋</td>
+<td align="center">┌</td>
+<td align="center">┍</td>
+<td align="center">┎</td>
+<td align="center">┏</td>
+</tr>
+<tr>
+<td><strong>U+251x</strong></td>
+<td align="center">┐</td>
+<td align="center">┑</td>
+<td align="center">┒</td>
+<td align="center">┓</td>
+<td align="center">└</td>
+<td align="center">┕</td>
+<td align="center">┖</td>
+<td align="center">┗</td>
+<td align="center">┘</td>
+<td align="center">┙</td>
+<td align="center">┚</td>
+<td align="center">┛</td>
+<td align="center">├</td>
+<td align="center">┝</td>
+<td align="center">┞</td>
+<td align="center">┟</td>
+</tr>
+<tr>
+<td><strong>U+252x</strong></td>
+<td align="center">┠</td>
+<td align="center">┡</td>
+<td align="center">┢</td>
+<td align="center">┣</td>
+<td align="center">┤</td>
+<td align="center">┥</td>
+<td align="center">┦</td>
+<td align="center">┧</td>
+<td align="center">┨</td>
+<td align="center">┩</td>
+<td align="center">┪</td>
+<td align="center">┫</td>
+<td align="center">┬</td>
+<td align="center">┭</td>
+<td align="center">┮</td>
+<td align="center">┯</td>
+</tr>
+<tr>
+<td><strong>U+253x</strong></td>
+<td align="center">┰</td>
+<td align="center">┱</td>
+<td align="center">┲</td>
+<td align="center">┳</td>
+<td align="center">┴</td>
+<td align="center">┵</td>
+<td align="center">┶</td>
+<td align="center">┷</td>
+<td align="center">┸</td>
+<td align="center">┹</td>
+<td align="center">┺</td>
+<td align="center">┻</td>
+<td align="center">┼</td>
+<td align="center">┽</td>
+<td align="center">┾</td>
+<td align="center">┿</td>
+</tr>
+<tr>
+<td><strong>U+254x</strong></td>
+<td align="center">╀</td>
+<td align="center">╁</td>
+<td align="center">╂</td>
+<td align="center">╃</td>
+<td align="center">╄</td>
+<td align="center">╅</td>
+<td align="center">╆</td>
+<td align="center">╇</td>
+<td align="center">╈</td>
+<td align="center">╉</td>
+<td align="center">╊</td>
+<td align="center">╋</td>
+<td align="center">╌</td>
+<td align="center">╍</td>
+<td align="center">╎</td>
+<td align="center">╏</td>
+</tr>
+<tr>
+<td><strong>U+255x</strong></td>
+<td align="center">═</td>
+<td align="center">║</td>
+<td align="center">╒</td>
+<td align="center">╓</td>
+<td align="center">╔</td>
+<td align="center">╕</td>
+<td align="center">╖</td>
+<td align="center">╗</td>
+<td align="center">╘</td>
+<td align="center">╙</td>
+<td align="center">╚</td>
+<td align="center">╛</td>
+<td align="center">╜</td>
+<td align="center">╝</td>
+<td align="center">╞</td>
+<td align="center">╟</td>
+</tr>
+<tr>
+<td><strong>U+256x</strong></td>
+<td align="center">╠</td>
+<td align="center">╡</td>
+<td align="center">╢</td>
+<td align="center">╣</td>
+<td align="center">╤</td>
+<td align="center">╥</td>
+<td align="center">╦</td>
+<td align="center">╧</td>
+<td align="center">╨</td>
+<td align="center">╩</td>
+<td align="center">╪</td>
+<td align="center">╫</td>
+<td align="center">╬</td>
+<td align="center">╭</td>
+<td align="center">╮</td>
+<td align="center">╯</td>
+</tr>
+<tr>
+<td><strong>U+257x</strong></td>
+<td align="center">╰</td>
+<td align="center">╱</td>
+<td align="center">╲</td>
+<td align="center">╳</td>
+<td align="center">╴</td>
+<td align="center">╵</td>
+<td align="center">╶</td>
+<td align="center">╷</td>
+<td align="center">╸</td>
+<td align="center">╹</td>
+<td align="center">╺</td>
+<td align="center">╻</td>
+<td align="center">╼</td>
+<td align="center">╽</td>
+<td align="center">╾</td>
+<td align="center">╿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="block-elements">Block Elements<a class="headerlink" href="#block-elements" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+258x</strong></td>
+<td align="center">▀</td>
+<td align="center">▁</td>
+<td align="center">▂</td>
+<td align="center">▃</td>
+<td align="center">▄</td>
+<td align="center">▅</td>
+<td align="center">▆</td>
+<td align="center">▇</td>
+<td align="center">█</td>
+<td align="center">▉</td>
+<td align="center">▊</td>
+<td align="center">▋</td>
+<td align="center">▌</td>
+<td align="center">▍</td>
+<td align="center">▎</td>
+<td align="center">▏</td>
+</tr>
+<tr>
+<td><strong>U+259x</strong></td>
+<td align="center">▐</td>
+<td align="center">░</td>
+<td align="center">▒</td>
+<td align="center">▓</td>
+<td align="center">▔</td>
+<td align="center">▕</td>
+<td align="center">▖</td>
+<td align="center">▗</td>
+<td align="center">▘</td>
+<td align="center">▙</td>
+<td align="center">▚</td>
+<td align="center">▛</td>
+<td align="center">▜</td>
+<td align="center">▝</td>
+<td align="center">▞</td>
+<td align="center">▟</td>
+</tr>
+</tbody>
+</table>
+<h2 id="geometric-shapes">Geometric Shapes<a class="headerlink" href="#geometric-shapes" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+25Ax</strong></td>
+<td align="center">■</td>
+<td align="center">□</td>
+<td align="center">▢</td>
+<td align="center">▣</td>
+<td align="center">▤</td>
+<td align="center">▥</td>
+<td align="center">▦</td>
+<td align="center">▧</td>
+<td align="center">▨</td>
+<td align="center">▩</td>
+<td align="center">▪</td>
+<td align="center">▫</td>
+<td align="center">▬</td>
+<td align="center">▭</td>
+<td align="center">▮</td>
+<td align="center">▯</td>
+</tr>
+<tr>
+<td><strong>U+25Bx</strong></td>
+<td align="center">▰</td>
+<td align="center">▱</td>
+<td align="center">▲</td>
+<td align="center">△</td>
+<td align="center">▴</td>
+<td align="center">▵</td>
+<td align="center">▶</td>
+<td align="center">▷</td>
+<td align="center">▸</td>
+<td align="center">▹</td>
+<td align="center">►</td>
+<td align="center">▻</td>
+<td align="center">▼</td>
+<td align="center">▽</td>
+<td align="center">▾</td>
+<td align="center">▿</td>
+</tr>
+<tr>
+<td><strong>U+25Cx</strong></td>
+<td align="center">◀</td>
+<td align="center">◁</td>
+<td align="center">◂</td>
+<td align="center">◃</td>
+<td align="center">◄</td>
+<td align="center">◅</td>
+<td align="center">◆</td>
+<td align="center">◇</td>
+<td align="center">◈</td>
+<td align="center">◉</td>
+<td align="center">◊</td>
+<td align="center">○</td>
+<td align="center">◌</td>
+<td align="center">◍</td>
+<td align="center">◎</td>
+<td align="center">●</td>
+</tr>
+<tr>
+<td><strong>U+25Dx</strong></td>
+<td align="center">◐</td>
+<td align="center">◑</td>
+<td align="center">◒</td>
+<td align="center">◓</td>
+<td align="center">◔</td>
+<td align="center">◕</td>
+<td align="center">◖</td>
+<td align="center">◗</td>
+<td align="center">◘</td>
+<td align="center">◙</td>
+<td align="center">◚</td>
+<td align="center">◛</td>
+<td align="center">◜</td>
+<td align="center">◝</td>
+<td align="center">◞</td>
+<td align="center">◟</td>
+</tr>
+<tr>
+<td><strong>U+25Ex</strong></td>
+<td align="center">◠</td>
+<td align="center">◡</td>
+<td align="center">◢</td>
+<td align="center">◣</td>
+<td align="center">◤</td>
+<td align="center">◥</td>
+<td align="center">◦</td>
+<td align="center">◧</td>
+<td align="center">◨</td>
+<td align="center">◩</td>
+<td align="center">◪</td>
+<td align="center">◫</td>
+<td align="center">◬</td>
+<td align="center">◭</td>
+<td align="center">◮</td>
+<td align="center">◯</td>
+</tr>
+<tr>
+<td><strong>U+25Fx</strong></td>
+<td align="center">◰</td>
+<td align="center">◱</td>
+<td align="center">◲</td>
+<td align="center">◳</td>
+<td align="center">◴</td>
+<td align="center">◵</td>
+<td align="center">◶</td>
+<td align="center">◷</td>
+<td align="center">◸</td>
+<td align="center">◹</td>
+<td align="center">◺</td>
+<td align="center">◻</td>
+<td align="center">◼</td>
+<td align="center">◽</td>
+<td align="center">◾</td>
+<td align="center">◿</td>
+</tr>
+</tbody>
+</table>
+<h2 id="geometric-shapes-extended">Geometric Shapes Extended<a class="headerlink" href="#geometric-shapes-extended" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+1F78x</strong></td>
+<td align="center">🞀</td>
+<td align="center">🞁</td>
+<td align="center">🞂</td>
+<td align="center">🞃</td>
+<td align="center">🞄</td>
+<td align="center">🞅</td>
+<td align="center">🞆</td>
+<td align="center">🞇</td>
+<td align="center">🞈</td>
+<td align="center">🞉</td>
+<td align="center">🞊</td>
+<td align="center">🞋</td>
+<td align="center">🞌</td>
+<td align="center">🞍</td>
+<td align="center">🞎</td>
+<td align="center">🞏</td>
+</tr>
+<tr>
+<td><strong>U+1F79x</strong></td>
+<td align="center">🞐</td>
+<td align="center">🞑</td>
+<td align="center">🞒</td>
+<td align="center">🞓</td>
+<td align="center">🞔</td>
+<td align="center">🞕</td>
+<td align="center">🞖</td>
+<td align="center">🞗</td>
+<td align="center">🞘</td>
+<td align="center">🞙</td>
+<td align="center">🞚</td>
+<td align="center">🞛</td>
+<td align="center">🞜</td>
+<td align="center">🞝</td>
+<td align="center">🞞</td>
+<td align="center">🞟</td>
+</tr>
+<tr>
+<td><strong>U+1F7Ax</strong></td>
+<td align="center">🞠</td>
+<td align="center">🞡</td>
+<td align="center">🞢</td>
+<td align="center">🞣</td>
+<td align="center">🞤</td>
+<td align="center">🞥</td>
+<td align="center">🞦</td>
+<td align="center">🞧</td>
+<td align="center">🞨</td>
+<td align="center">🞩</td>
+<td align="center">🞪</td>
+<td align="center">🞫</td>
+<td align="center">🞬</td>
+<td align="center">🞭</td>
+<td align="center">🞮</td>
+<td align="center">🞯</td>
+</tr>
+<tr>
+<td><strong>U+1F7Bx</strong></td>
+<td align="center">🞰</td>
+<td align="center">🞱</td>
+<td align="center">🞲</td>
+<td align="center">🞳</td>
+<td align="center">🞴</td>
+<td align="center">🞵</td>
+<td align="center">🞶</td>
+<td align="center">🞷</td>
+<td align="center">🞸</td>
+<td align="center">🞹</td>
+<td align="center">🞺</td>
+<td align="center">🞻</td>
+<td align="center">🞼</td>
+<td align="center">🞽</td>
+<td align="center">🞾</td>
+<td align="center">🞿</td>
+</tr>
+<tr>
+<td><strong>U+1F7Cx</strong></td>
+<td align="center">🟀</td>
+<td align="center">🟁</td>
+<td align="center">🟂</td>
+<td align="center">🟃</td>
+<td align="center">🟄</td>
+<td align="center">🟅</td>
+<td align="center">🟆</td>
+<td align="center">🟇</td>
+<td align="center">🟈</td>
+<td align="center">🟉</td>
+<td align="center">🟊</td>
+<td align="center">🟋</td>
+<td align="center">🟌</td>
+<td align="center">🟍</td>
+<td align="center">🟎</td>
+<td align="center">🟏</td>
+</tr>
+<tr>
+<td><strong>U+1F7Dx</strong></td>
+<td align="center">🟐</td>
+<td align="center">🟑</td>
+<td align="center">🟒</td>
+<td align="center">🟓</td>
+<td align="center">🟔</td>
+<td align="center">🟕</td>
+<td align="center">🟖</td>
+<td align="center">🟗</td>
+<td align="center">🟘</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="miscellaneous-symbols">Miscellaneous Symbols<a class="headerlink" href="#miscellaneous-symbols" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td align="center">-<strong>0</strong>-</td>
+<td align="center">-<strong>1</strong>-</td>
+<td align="center">-<strong>2</strong>-</td>
+<td align="center">-<strong>3</strong>-</td>
+<td align="center">-<strong>4</strong>-</td>
+<td align="center">-<strong>5</strong>-</td>
+<td align="center">-<strong>6</strong>-</td>
+<td align="center">-<strong>7</strong>-</td>
+<td align="center">-<strong>8</strong>-</td>
+<td align="center">-<strong>9</strong>-</td>
+<td align="center">-<strong>A</strong>-</td>
+<td align="center">-<strong>B</strong>-</td>
+<td align="center">-<strong>C</strong>-</td>
+<td align="center">-<strong>D</strong>-</td>
+<td align="center">-<strong>E</strong>-</td>
+<td align="center">-<strong>F</strong>-</td>
+</tr>
+<tr>
+<td><strong>U+260x</strong></td>
+<td align="center">☀</td>
+<td align="center">☁</td>
+<td align="center">☂</td>
+<td align="center">☃</td>
+<td align="center">☄</td>
+<td align="center">★</td>
+<td align="center">☆</td>
+<td align="center">☇</td>
+<td align="center">☈</td>
+<td align="center">☉</td>
+<td align="center">☊</td>
+<td align="center">☋</td>
+<td align="center">☌</td>
+<td align="center">☍</td>
+<td align="center">☎</td>
+<td align="center">☏</td>
+</tr>
+<tr>
+<td><strong>U+261x</strong></td>
+<td align="center">☐</td>
+<td align="center">☑</td>
+<td align="center">☒</td>
+<td align="center">☓</td>
+<td align="center">☔</td>
+<td align="center">☕</td>
+<td align="center">☖</td>
+<td align="center">☗</td>
+<td align="center">☘</td>
+<td align="center">☙</td>
+<td align="center">☚</td>
+<td align="center">☛</td>
+<td align="center">☜</td>
+<td align="center">☝</td>
+<td align="center">☞</td>
+<td align="center">☟</td>
+</tr>
+<tr>
+<td><strong>U+262x</strong></td>
+<td align="center">☠</td>
+<td align="center">☡</td>
+<td align="center">☢</td>
+<td align="center">☣</td>
+<td align="center">☤</td>
+<td align="center">☥</td>
+<td align="center">☦</td>
+<td align="center">☧</td>
+<td align="center">☨</td>
+<td align="center">☩</td>
+<td align="center">☪</td>
+<td align="center">☫</td>
+<td align="center">☬</td>
+<td align="center">☭</td>
+<td align="center">☮</td>
+<td align="center">☯</td>
+</tr>
+<tr>
+<td><strong>U+263x</strong></td>
+<td align="center">☰</td>
+<td align="center">☱</td>
+<td align="center">☲</td>
+<td align="center">☳</td>
+<td align="center">☴</td>
+<td align="center">☵</td>
+<td align="center">☶</td>
+<td align="center">☷</td>
+<td align="center">☸</td>
+<td align="center">☹</td>
+<td align="center">☺</td>
+<td align="center">☻</td>
+<td align="center">☼</td>
+<td align="center">☽</td>
+<td align="center">☾</td>
+<td align="center">☿</td>
+</tr>
+<tr>
+<td><strong>U+264x</strong></td>
+<td align="center">♀</td>
+<td align="center">♁</td>
+<td align="center">♂</td>
+<td align="center">♃</td>
+<td align="center">♄</td>
+<td align="center">♅</td>
+<td align="center">♆</td>
+<td align="center">♇</td>
+<td align="center">♈</td>
+<td align="center">♉</td>
+<td align="center">♊</td>
+<td align="center">♋</td>
+<td align="center">♌</td>
+<td align="center">♍</td>
+<td align="center">♎</td>
+<td align="center">♏</td>
+</tr>
+<tr>
+<td><strong>U+265x</strong></td>
+<td align="center">♐</td>
+<td align="center">♑</td>
+<td align="center">♒</td>
+<td align="center">♓</td>
+<td align="center">♔</td>
+<td align="center">♕</td>
+<td align="center">♖</td>
+<td align="center">♗</td>
+<td align="center">♘</td>
+<td align="center">♙</td>
+<td align="center">♚</td>
+<td align="center">♛</td>
+<td align="center">♜</td>
+<td align="center">♝</td>
+<td align="center">♞</td>
+<td align="center">♟</td>
+</tr>
+<tr>
+<td><strong>U+266x</strong></td>
+<td align="center">♠</td>
+<td align="center">♡</td>
+<td align="center">♢</td>
+<td align="center">♣</td>
+<td align="center">♤</td>
+<td align="center">♥</td>
+<td align="center">♦</td>
+<td align="center">♧</td>
+<td align="center">♨</td>
+<td align="center">♩</td>
+<td align="center">♪</td>
+<td align="center">♫</td>
+<td align="center">♬</td>
+<td align="center">♭</td>
+<td align="center">♮</td>
+<td align="center">♯</td>
+</tr>
+<tr>
+<td><strong>U+267x</strong></td>
+<td align="center">♰</td>
+<td align="center">♱</td>
+<td align="center">♲</td>
+<td align="center">♳</td>
+<td align="center">♴</td>
+<td align="center">♵</td>
+<td align="center">♶</td>
+<td align="center">♷</td>
+<td align="center">♸</td>
+<td align="center">♹</td>
+<td align="center">♺</td>
+<td align="center">♻</td>
+<td align="center">♼</td>
+<td align="center">♽</td>
+<td align="center">♾</td>
+<td align="center">♿</td>
+</tr>
+<tr>
+<td><strong>U+268x</strong></td>
+<td align="center">⚀</td>
+<td align="center">⚁</td>
+<td align="center">⚂</td>
+<td align="center">⚃</td>
+<td align="center">⚄</td>
+<td align="center">⚅</td>
+<td align="center">⚆</td>
+<td align="center">⚇</td>
+<td align="center">⚈</td>
+<td align="center">⚉</td>
+<td align="center">⚊</td>
+<td align="center">⚋</td>
+<td align="center">⚌</td>
+<td align="center">⚍</td>
+<td align="center">⚎</td>
+<td align="center">⚏</td>
+</tr>
+<tr>
+<td><strong>U+269x</strong></td>
+<td align="center">⚐</td>
+<td align="center">⚑</td>
+<td align="center">⚒</td>
+<td align="center">⚓</td>
+<td align="center">⚔</td>
+<td align="center">⚕</td>
+<td align="center">⚖</td>
+<td align="center">⚗</td>
+<td align="center">⚘</td>
+<td align="center">⚙</td>
+<td align="center">⚚</td>
+<td align="center">⚛</td>
+<td align="center">⚜</td>
+<td align="center">⚝</td>
+<td align="center">⚞</td>
+<td align="center">⚟</td>
+</tr>
+<tr>
+<td><strong>U+26Ax</strong></td>
+<td align="center">⚠</td>
+<td align="center">⚡</td>
+<td align="center">⚢</td>
+<td align="center">⚣</td>
+<td align="center">⚤</td>
+<td align="center">⚥</td>
+<td align="center">⚦</td>
+<td align="center">⚧</td>
+<td align="center">⚨</td>
+<td align="center">⚩</td>
+<td align="center">⚪</td>
+<td align="center">⚫</td>
+<td align="center">⚬</td>
+<td align="center">⚭</td>
+<td align="center">⚮</td>
+<td align="center">⚯</td>
+</tr>
+<tr>
+<td><strong>U+26Bx</strong></td>
+<td align="center">⚰</td>
+<td align="center">⚱</td>
+<td align="center">⚲</td>
+<td align="center">⚳</td>
+<td align="center">⚴</td>
+<td align="center">⚵</td>
+<td align="center">⚶</td>
+<td align="center">⚷</td>
+<td align="center">⚸</td>
+<td align="center">⚹</td>
+<td align="center">⚺</td>
+<td align="center">⚻</td>
+<td align="center">⚼</td>
+<td align="center">⚽</td>
+<td align="center">⚾</td>
+<td align="center">⚿</td>
+</tr>
+<tr>
+<td><strong>U+26Cx</strong></td>
+<td align="center">⛀</td>
+<td align="center">⛁</td>
+<td align="center">⛂</td>
+<td align="center">⛃</td>
+<td align="center">⛄</td>
+<td align="center">⛅</td>
+<td align="center">⛆</td>
+<td align="center">⛇</td>
+<td align="center">⛈</td>
+<td align="center">⛉</td>
+<td align="center">⛊</td>
+<td align="center">⛋</td>
+<td align="center">⛌</td>
+<td align="center">⛍</td>
+<td align="center">⛎</td>
+<td align="center">⛏</td>
+</tr>
+<tr>
+<td><strong>U+26Dx</strong></td>
+<td align="center">⛐</td>
+<td align="center">⛑</td>
+<td align="center">⛒</td>
+<td align="center">⛓</td>
+<td align="center">⛔</td>
+<td align="center">⛕</td>
+<td align="center">⛖</td>
+<td align="center">⛗</td>
+<td align="center">⛘</td>
+<td align="center">⛙</td>
+<td align="center">⛚</td>
+<td align="center">⛛</td>
+<td align="center">⛜</td>
+<td align="center">⛝</td>
+<td align="center">⛞</td>
+<td align="center">⛟</td>
+</tr>
+<tr>
+<td><strong>U+26Ex</strong></td>
+<td align="center">⛠</td>
+<td align="center">⛡</td>
+<td align="center">⛢</td>
+<td align="center">⛣</td>
+<td align="center">⛤</td>
+<td align="center">⛥</td>
+<td align="center">⛦</td>
+<td align="center">⛧</td>
+<td align="center">⛨</td>
+<td align="center">⛩</td>
+<td align="center">⛪</td>
+<td align="center">⛫</td>
+<td align="center">⛬</td>
+<td align="center">⛭</td>
+<td align="center">⛮</td>
+<td align="center">⛯</td>
+</tr>
+<tr>
+<td><strong>U+26Fx</strong></td>
+<td align="center">⛰</td>
+<td align="center">⛱</td>
+<td align="center">⛲</td>
+<td align="center">⛳</td>
+<td align="center">⛴</td>
+<td align="center">⛵</td>
+<td align="center">⛶</td>
+<td align="center">⛷</td>
+<td align="center">⛸</td>
+<td align="center">⛹</td>
+<td align="center">⛺</td>
+<td align="center">⛻</td>
+<td align="center">⛼</td>
+<td align="center">⛽</td>
+<td align="center">⛾</td>
+<td align="center">⛿</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../emoji/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Emoji" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Emoji
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../material-icons/" class="md-footer__link md-footer__link--next" aria-label="Next: Material Icons" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Material Icons
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
