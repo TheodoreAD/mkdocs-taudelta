@@ -1,0 +1,1200 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Teodor Dumitrescu <teodor.dumitrescu@gmail.com>">
+      
+      
+        <link rel="canonical" href="https://TheodoreAD.github.io/mkdocs-taudelta/enhanced-markdown/">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Enhanced Markdown - MkDocs Tau Delta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enhanced-markdown" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MkDocs Tau Delta" class="md-header__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs Tau Delta
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Enhanced Markdown
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MkDocs Tau Delta" class="md-nav__button md-logo" aria-label="MkDocs Tau Delta" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="logo">
+
+    </a>
+    MkDocs Tau Delta
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheodoreAD/mkdocs-taudelta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheodoreAD/mkdocs-taudelta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live-editor/" class="md-nav__link">
+        Live Editor
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-markdown/" class="md-nav__link">
+        Basic Markdown
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Enhanced Markdown
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Enhanced Markdown
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inline-text-formatting" class="md-nav__link">
+    Inline text formatting
+  </a>
+  
+    <nav class="md-nav" aria-label="Inline text formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscript-and-superscript" class="md-nav__link">
+    Subscript and Superscript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting" class="md-nav__link">
+    Highlighting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-characters" class="md-nav__link">
+    Special characters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-keys" class="md-nav__link">
+    Keyboard keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklists" class="md-nav__link">
+    Checklists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations-and-definition-lists" class="md-nav__link">
+    Abbreviations and Definition Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progress-bars" class="md-nav__link">
+    Progress Bars
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enhanced-markdown-code/" class="md-nav__link">
+        Enhanced Markdown Code
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admonition-blocks/" class="md-nav__link">
+        Admonition Blocks
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mermaid/" class="md-nav__link">
+        Mermaid
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markmap/" class="md-nav__link">
+        Markmap
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../keys/" class="md-nav__link">
+        Keys
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emoji/" class="md-nav__link">
+        Emoji
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unicode/" class="md-nav__link">
+        Unicode
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material-icons/" class="md-nav__link">
+        Material Icons
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../font-awesome/" class="md-nav__link">
+        Font Awesome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charts/" class="md-nav__link">
+        Charts [STUB]
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../favicon-and-logo/" class="md-nav__link">
+        Favicon and Logo
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../embedded_video/" class="md-nav__link">
+        Embedded video
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown-resources/" class="md-nav__link">
+        Markdown Resources
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inline-text-formatting" class="md-nav__link">
+    Inline text formatting
+  </a>
+  
+    <nav class="md-nav" aria-label="Inline text formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscript-and-superscript" class="md-nav__link">
+    Subscript and Superscript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#highlighting" class="md-nav__link">
+    Highlighting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-characters" class="md-nav__link">
+    Special characters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-keys" class="md-nav__link">
+    Keyboard keys
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklists" class="md-nav__link">
+    Checklists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations-and-definition-lists" class="md-nav__link">
+    Abbreviations and Definition Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#progress-bars" class="md-nav__link">
+    Progress Bars
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/TheodoreAD/mkdocs-taudelta/edit/master/docs/enhanced-markdown.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="enhanced-markdown">Enhanced Markdown<a class="headerlink" href="#enhanced-markdown" title="Permanent link">¶</a></h1>
+<p>Extension sources:</p>
+<ul>
+<li><code>Markdown</code> extension <a href="https://python-markdown.github.io/extensions/">documentation</a></li>
+<li><code>PyMdown</code> extension <a href="https://facelessuser.github.io/pymdown-extensions/">documentation</a>, <a href="https://github.com/facelessuser/pymdown-extensions">repository</a>
+  and <a href="https://squidfunk.github.io/mkdocs-material/extensions/pymdown/">related MkDocs documentation</a></li>
+<li>test <code>.md</code> file from the <code>PyMdown</code> <a href="https://github.com/facelessuser/PyMdown/blob/master/examples/example.md">repository</a></li>
+<li>example <code>mkdocs.yml</code> files from the <code>PyMdown</code> <a href="https://github.com/facelessuser/PyMdown/blob/master/mkdocs.yml">repository</a>
+  and the <code>pymdown-extensions</code> <a href="https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml">repository</a></li>
+</ul>
+<p>Incomplete features, enabled but not documented:</p>
+<ul>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/snippets/">Snippets</a></li>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/betterem/">BetterEm</a> (CAUTION: deviation from basic Markdown)</li>
+</ul>
+<p>Planned features, not enabled:</p>
+<ul>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">MagicLink</a></li>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/">Arithmatex</a></li>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/critic/">Critic</a></li>
+<li><a href="https://python-markdown.github.io/extensions/sane_lists/">SaneLists</a> (CAUTION: deviation from basic Markdown)</li>
+<li><a href="https://python-markdown.github.io/extensions/nl2br">NewLineToBreak</a> (CAUTION: major deviation from basic Markdown) (would align with StackOverflow and GitHub flavored Markdown)</li>
+<li><a href="https://facelessuser.github.io/pymdown-extensions/extensions/escapeall/">EscapeAll</a></li>
+</ul>
+<h2 id="inline-text-formatting">Inline text formatting<a class="headerlink" href="#inline-text-formatting" title="Permanent link">¶</a></h2>
+<h3 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">¶</a></h3>
+<p>Uses the <code>PyMdown Caret</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/caret/">extension</a> and the <code>PyMdown Tilde</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/tilde/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>- inserted text is displayed as ^^underlined^^ and has the `&lt;ins&gt;` HTML tag
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>- deleted text is displayed as ~~strikethrough~~ and has the `&lt;del&gt;` HTML tag
+</code></pre></div>
+</details>
+<ul>
+<li>inserted text is displayed as <ins>underlined</ins> and has the <code>&lt;ins&gt;</code> HTML tag</li>
+<li>deleted text is displayed as <del>strikethrough</del> and has the <code>&lt;del&gt;</code> HTML tag</li>
+</ul>
+<h3 id="subscript-and-superscript">Subscript and Superscript<a class="headerlink" href="#subscript-and-superscript" title="Permanent link">¶</a></h3>
+<p>Uses the <code>PyMdown Caret</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/caret/">extension</a>
+and the <code>PyMdown Tilde</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/tilde/">extension</a> (syntax follows Pandoc style).</p>
+<details class="info">
+<summary><code>Source Code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>- chemistry is fun: CH~3~CH~2~OH [ClO~2~]^+^
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>- math is fun (even without [LaTeX][pymdown-arithmatex]): x^2^ + y^2^ = 4; a~1~ + a~2~ + ... + a~n-1~ = a~n~
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>- math is beautiful: e^i\ ·\ π^ + 1 = 0
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>- superscript^with spaces won't work^, but superscript^\ with\ escaped\ spaces\ will\ work^
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>- subscript~with spaces won't work~ but subscript~\ with\ escaped\ spaces\ will\ work~
+</code></pre></div>
+</details>
+<ul>
+<li>chemistry is fun: CH<sub>3</sub>CH<sub>2</sub>OH [ClO<sub>2</sub>]<sup>+</sup></li>
+<li>math is fun (even without <a href="https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/">LaTeX</a>): x<sup>2</sup> + y<sup>2</sup> = 4; a<sub>1</sub> + a<sub>2</sub> + … + a<sub>n-1</sub> = a<sub>n</sub></li>
+<li>math is beautiful: e<sup>i · π</sup> + 1 = 0</li>
+<li>superscript^with spaces won’t work^, but superscript<sup> with escaped spaces will work</sup></li>
+<li>subscript~with spaces won’t work~ but subscript<sub> with escaped spaces will work</sub></li>
+</ul>
+<h3 id="highlighting">Highlighting<a class="headerlink" href="#highlighting" title="Permanent link">¶</a></h3>
+<p>Uses the <code>PyMdown Mark</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/mark/">extension</a>.</p>
+<details class="info">
+<summary><code>Source Code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>- someone is `highlighting` random ==bits== of ==text== all ==over== the place
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>- marking is smart even when its markers are ==used==inside==a==sentence==
+</code></pre></div>
+</details>
+<ul>
+<li>someone is <code>highlighting</code> random <mark>bits</mark> of <mark>text</mark> all <mark>over</mark> the place</li>
+<li>marking is smart even when its markers are <mark>used==inside==a==sentence</mark></li>
+</ul>
+<h2 id="special-characters">Special characters<a class="headerlink" href="#special-characters" title="Permanent link">¶</a></h2>
+<p>Uses the <code>Smarty</code> <a href="https://python-markdown.github.io/extensions/smarty/">extension</a>.</p>
+<details class="info">
+<summary><code>Source Code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>- 'a `left-single-quote` to the left and a `right-single-quote` to the right'
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>- "a `left-double-quote` to the left and a `right-double-quote` to the right"
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>- `[DISABLED]` `&lt;&lt;`a `left-angle-quote` to the left and a `right-angle-quote` to the right`&gt;&gt;`
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>- an `ellipsis` at the very end...
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>- an `ndash` is longer than -- say -- a `hyphen`
+<a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a>- an `mdash` is longer than --- say --- an `ndash`
+</code></pre></div>
+</details>
+<ul>
+<li>‘a <code>left-single-quote</code> to the left and a <code>right-single-quote</code> to the right’</li>
+<li>“a <code>left-double-quote</code> to the left and a <code>right-double-quote</code> to the right”</li>
+<li><code>[DISABLED]</code> <code>&lt;&lt;</code>a <code>left-angle-quote</code> to the left and a <code>right-angle-quote</code> to the right<code>&gt;&gt;</code></li>
+<li>an <code>ellipsis</code> at the very end…</li>
+<li>an <code>ndash</code> is longer than – say – a <code>hyphen</code></li>
+<li>an <code>mdash</code> is longer than — say — an <code>ndash</code></li>
+</ul>
+<hr/>
+<p>Uses the <code>PyMdown Smart Symbols</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/">extension</a>.</p>
+<details class="info">
+<summary><code>Source Code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>- this creative work is `Copyright` (c) `Trademark` (tm) `Registered` (r) and free to reproduce
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>- to direct mail to an addressee not at the usual place of receipt, use the `care of` notation c/o
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>- with things being `not equal,` X =/= Y, things are something `plus or minus` another thing, X = Y +/- Z
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>- a `right arrow` --&gt; points to a `double arrow` &lt;--&gt; which also points to a `left arrow` &lt;--
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>- `fractions` galore: 1/2 1/4 3/4 1/3 2/3 1/5 2/5 3/5 4/5 1/6 5/6 1/8 3/8 5/8 7/8
+<a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>- `ordinals` galore: 1st 2nd 3rd 4th 5th 10th; 1,000th 1,000th and bazillionth doesn't work
+</code></pre></div>
+</details>
+<ul>
+<li>this creative work is <code>Copyright</code> © <code>Trademark</code> ™ <code>Registered</code> ® and free to reproduce</li>
+<li>to direct mail to an addressee not at the usual place of receipt, use the <code>care of</code> notation ℅</li>
+<li>with things being <code>not equal,</code> X ≠ Y, things are something <code>plus or minus</code> another thing, X = Y ± Z</li>
+<li>a <code>right arrow</code> → points to a <code>double arrow</code> ↔ which also points to a <code>left arrow</code> ←</li>
+<li><code>fractions</code> galore: ½ ¼ ¾ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅛ ⅜ ⅝ ⅞</li>
+<li><code>ordinals</code> galore: 1<sup>st</sup> 2<sup>nd</sup> 3<sup>rd</sup> 4<sup>th</sup> 5<sup>th</sup> 10<sup>th</sup>; 1,000th 1,000th and bazillionth doesn’t work</li>
+</ul>
+<h2 id="keyboard-keys">Keyboard keys<a class="headerlink" href="#keyboard-keys" title="Permanent link">¶</a></h2>
+<p>Uses the <code>PyMdown Keys</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/keys/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>- Windows: ++ctrl+alt+delete++
+<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>- Office: ++ctrl+c++ ++ctrl+v++
+<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>- Mac: ++cmd++
+<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>- Media: ++media++ ++a++ ++d++ ++s++ ++ctrl++ ++y++ ++o++ ++u++
+<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a>- Star Trek: ++space++ ++end++
+<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a>- wrong command: ++ctrl++ ++break++ ++reset++
+</code></pre></div>
+</details>
+<ul>
+<li>Windows: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>＋</span><kbd class="key-alt">Alt</kbd><span>＋</span><kbd class="key-delete">Del</kbd></span></li>
+<li>Office: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>＋</span><kbd class="key-c">C</kbd></span> <span class="keys"><kbd class="key-control">Ctrl</kbd><span>＋</span><kbd class="key-v">V</kbd></span></li>
+<li>Mac: <span class="keys"><kbd class="key-command">Cmd</kbd></span></li>
+<li>Media: <span class="keys"><kbd class="key-media">Media</kbd></span> <span class="keys"><kbd class="key-a">A</kbd></span> <span class="keys"><kbd class="key-d">D</kbd></span> <span class="keys"><kbd class="key-s">S</kbd></span> <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <span class="keys"><kbd class="key-y">Y</kbd></span> <span class="keys"><kbd class="key-o">O</kbd></span> <span class="keys"><kbd class="key-u">U</kbd></span></li>
+<li>Star Trek: <span class="keys"><kbd class="key-space">Space</kbd></span> <span class="keys"><kbd class="key-end">End</kbd></span></li>
+<li>wrong command: <span class="keys"><kbd class="key-control">Ctrl</kbd></span> <span class="keys"><kbd class="key-break">Break</kbd></span> <span class="keys"><kbd class="key-reset">Reset</kbd></span></li>
+</ul>
+<p>See the <a href="../keys/">full reference</a> on the <a href="../keys/">dedicated page</a>.</p>
+<h2 id="checklists">Checklists<a class="headerlink" href="#checklists" title="Permanent link">¶</a></h2>
+<p>Uses the <code>Pymdown Tasklist</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>A `checklist` with `nesting`:
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>
+<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>- [x] checked item
+<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>- [ ] unchecked item
+<a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>    - [ ] unchecked sub-item
+<a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>    - [x] checked sub-item
+<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a>        - [ ] unchecked sub-sub-item
+<a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a>        - [x] checked sub-sub-item
+<a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a>    - [ ] unchecked sub-item
+<a href="#__codelineno-6-10" id="__codelineno-6-10" name="__codelineno-6-10"></a>- [ ] unchecked item
+<a href="#__codelineno-6-11" id="__codelineno-6-11" name="__codelineno-6-11"></a>
+<a href="#__codelineno-6-12" id="__codelineno-6-12" name="__codelineno-6-12"></a>Another `checklist` with `nesting`:
+<a href="#__codelineno-6-13" id="__codelineno-6-13" name="__codelineno-6-13"></a>
+<a href="#__codelineno-6-14" id="__codelineno-6-14" name="__codelineno-6-14"></a>- [x] checked item
+<a href="#__codelineno-6-15" id="__codelineno-6-15" name="__codelineno-6-15"></a>  - [ ] unchecked sub-item
+<a href="#__codelineno-6-16" id="__codelineno-6-16" name="__codelineno-6-16"></a>    - [x] checked sub-sub-item
+<a href="#__codelineno-6-17" id="__codelineno-6-17" name="__codelineno-6-17"></a>  - [ ] unchecked sub-item
+<a href="#__codelineno-6-18" id="__codelineno-6-18" name="__codelineno-6-18"></a>- [x] checked item
+</code></pre></div>
+</details>
+<p>A <code>checklist</code> with <code>nesting</code>:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked item</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked item<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked sub-item</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked sub-item<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked sub-sub-item</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked sub-sub-item</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked sub-item</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked item</li>
+</ul>
+<p>A <code>checklist</code> with <code>nesting</code> inside Admonition block:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked item</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked sub-item<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked sub-sub-item</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> unchecked sub-item</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"/><span class="task-list-indicator"></span></label> checked item</li>
+</ul>
+</div>
+<h2 id="abbreviations-and-definition-lists">Abbreviations and Definition Lists<a class="headerlink" href="#abbreviations-and-definition-lists" title="Permanent link">¶</a></h2>
+<p>Uses the <code>Abbreviations</code> <a href="https://python-markdown.github.io/extensions/abbreviations/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>Bewildering *[abbreviations][abbreviation-disambiguation]* such as Mssr. and its jocund plural, Mssrs.,
+<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>*[initialisms][abbreviation-disambiguation]* such as PHP or
+<a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>*[acronyms][abbreviation-disambiguation]* such as ATLAS, LISP and FORTRAN
+<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>can be defined and end up inside `&lt;abbr&gt;` tags.
+<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a>
+<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a>*[Mssr]: Monsieur
+<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a>*[Mssrs]: Messieurs
+<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a>*[PHP]: "Personal Home Page" and later the recursive acronym "PHP: Hypertext Preprocessor"
+<a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a>*[ATLAS]: "A Toroidal LHC ApparatuS": one of the seven particle detector experiments constructed at the LHC (Large Hadron Collider), a particle accelerator at CERN (the European Organization for Nuclear Research) in Switzerland
+</code></pre></div>
+</details>
+<p>Bewildering <em><a href="http://acronym-guide.com/difference-between-acronyms-and-abbreviations.html">abbreviations</a></em> such as <abbr title="Monsieur">Mssr</abbr>. and its jocund plural, <abbr title="Messieurs">Mssrs</abbr>.,
+<em><a href="http://acronym-guide.com/difference-between-acronyms-and-abbreviations.html">initialisms</a></em> such as <abbr title='"Personal Home Page" and later the recursive acronym "PHP: Hypertext Preprocessor"'>PHP</abbr> or
+<em><a href="http://acronym-guide.com/difference-between-acronyms-and-abbreviations.html">acronyms</a></em> such as <abbr title='"A Toroidal LHC ApparatuS": one of the seven particle detector experiments constructed at the LHC (Large Hadron Collider), a particle accelerator at CERN (the European Organization for Nuclear Research) in Switzerland'>ATLAS</abbr>, <abbr title="LISt Processor">LISP</abbr> and <abbr title="FORmula TRANslation">FORTRAN</abbr>
+can be defined and end up inside <code>&lt;abbr&gt;</code> tags.</p>
+<hr/>
+<p>Uses the <code>DefinitionLists</code> <a href="https://python-markdown.github.io/extensions/definition_lists/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>LISP
+<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>:   A family of computer programming languages with a long history and a distinctive,
+<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>    fully parenthesized prefix notation. Originally specified in 1958, LISP is
+<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>    the second-oldest high-level programming language in widespread use today.
+<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>    Only Fortran is older, by one year.
+<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a>
+<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a>    `#!lisp (apply 'append (mapcar '(lambda ( x ) (list (car x) (cadr x) (cons 40 swd) (cons 41 (setq swd (+ swd (* del (/ (caddr x) len))))))) lst))`
+<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>
+<a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a>FORTRAN
+<a href="#__codelineno-8-10" id="__codelineno-8-10" name="__codelineno-8-10"></a>:   A general-purpose, compiled imperative programming language
+<a href="#__codelineno-8-11" id="__codelineno-8-11" name="__codelineno-8-11"></a>    that is especially suited to numeric computation and scientific computing.
+<a href="#__codelineno-8-12" id="__codelineno-8-12" name="__codelineno-8-12"></a>
+<a href="#__codelineno-8-13" id="__codelineno-8-13" name="__codelineno-8-13"></a>    &gt; People are very flexible and learn to adjust to strange surroundings — they can
+<a href="#__codelineno-8-14" id="__codelineno-8-14" name="__codelineno-8-14"></a>    &gt; become accustomed to read Lisp and Fortran programs, for example.
+<a href="#__codelineno-8-15" id="__codelineno-8-15" name="__codelineno-8-15"></a>    &gt;
+<a href="#__codelineno-8-16" id="__codelineno-8-16" name="__codelineno-8-16"></a>    &gt; Leon Sterling and Ehud Shapiro, Art of PROLOG, MIT Press.
+<a href="#__codelineno-8-17" id="__codelineno-8-17" name="__codelineno-8-17"></a>
+<a href="#__codelineno-8-18" id="__codelineno-8-18" name="__codelineno-8-18"></a>PHP
+<a href="#__codelineno-8-19" id="__codelineno-8-19" name="__codelineno-8-19"></a>:   A language with many magical features
+<a href="#__codelineno-8-20" id="__codelineno-8-20" name="__codelineno-8-20"></a>    and no architect.
+<a href="#__codelineno-8-21" id="__codelineno-8-21" name="__codelineno-8-21"></a>
+<a href="#__codelineno-8-22" id="__codelineno-8-22" name="__codelineno-8-22"></a>    This has never deterred the masses to adopt and its creators improve the language.
+<a href="#__codelineno-8-23" id="__codelineno-8-23" name="__codelineno-8-23"></a>
+<a href="#__codelineno-8-24" id="__codelineno-8-24" name="__codelineno-8-24"></a>    &gt; I did not develop the PHP we know today. Dozens, if not hundreds of people, developed PHP.
+<a href="#__codelineno-8-25" id="__codelineno-8-25" name="__codelineno-8-25"></a>    &gt; I was simply the first developer.
+<a href="#__codelineno-8-26" id="__codelineno-8-26" name="__codelineno-8-26"></a>    &gt;
+<a href="#__codelineno-8-27" id="__codelineno-8-27" name="__codelineno-8-27"></a>    &gt; I don't know how to stop it, there was never any intent to write a programming language [...]
+<a href="#__codelineno-8-28" id="__codelineno-8-28" name="__codelineno-8-28"></a>    &gt; I have absolutely no idea how to write a programming language, I just kept adding the next logical step on the way.
+<a href="#__codelineno-8-29" id="__codelineno-8-29" name="__codelineno-8-29"></a>    &gt;
+<a href="#__codelineno-8-30" id="__codelineno-8-30" name="__codelineno-8-30"></a>    &gt; Rasmus Lerdorf
+</code></pre></div>
+</details>
+<dl>
+<dt><abbr title="LISt Processor">LISP</abbr></dt>
+<dd>
+<p>A family of computer programming languages with a long history and a distinctive,
+fully parenthesized prefix notation. Originally specified in 1958, <abbr title="LISt Processor">LISP</abbr> is
+the second-oldest high-level programming language in widespread use today.
+Only Fortran is older, by one year.</p>
+<p><code class="highlight"><span class="p">(</span><span class="nb">apply</span><span class="w"> </span><span class="ss">'append</span><span class="w"> </span><span class="p">(</span><span class="nb">mapcar</span><span class="w"> </span><span class="o">'</span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">cadr</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">40</span><span class="w"> </span><span class="nv">swd</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">41</span><span class="w"> </span><span class="p">(</span><span class="k">setq</span><span class="w"> </span><span class="nv">swd</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">swd</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="nv">del</span><span class="w"> </span><span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="p">(</span><span class="nb">caddr</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"> </span><span class="nv">len</span><span class="p">)))))))</span><span class="w"> </span><span class="nv">lst</span><span class="p">))</span><span class="w"></span></code></p>
+</dd>
+<dt><abbr title="FORmula TRANslation">FORTRAN</abbr></dt>
+<dd>
+<p>A general-purpose, compiled imperative programming language
+that is especially suited to numeric computation and scientific computing.</p>
+<blockquote>
+<p>People are very flexible and learn to adjust to strange surroundings — they can
+become accustomed to read Lisp and Fortran programs, for example.</p>
+<p>Leon Sterling and Ehud Shapiro, Art of PROLOG, MIT Press.</p>
+</blockquote>
+</dd>
+<dt><abbr title='"Personal Home Page" and later the recursive acronym "PHP: Hypertext Preprocessor"'>PHP</abbr></dt>
+<dd>
+<p>A language with many magical features
+and no architect.</p>
+<p>This has never deterred the masses to adopt and its creators improve the language.</p>
+<blockquote>
+<p>I did not develop the <abbr title='"Personal Home Page" and later the recursive acronym "PHP: Hypertext Preprocessor"'>PHP</abbr> we know today. Dozens, if not hundreds of people, developed <abbr title='"Personal Home Page" and later the recursive acronym "PHP: Hypertext Preprocessor"'>PHP</abbr>.
+I was simply the first developer.</p>
+<p>I don’t know how to stop it, there was never any intent to write a programming language […]
+I have absolutely no idea how to write a programming language, I just kept adding the next logical step on the way.</p>
+<p>Rasmus Lerdorf</p>
+</blockquote>
+</dd>
+</dl>
+<h2 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">¶</a></h2>
+<p>Uses the <code>Footnotes</code> <a href="https://python-markdown.github.io/extensions/footnotes/">extension</a>.</p>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>Footnotes[^1] have a label[^label-footnote] and content.
+<a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>They are numbered automatically regardless of label[^third-footnote].
+<a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a>[^1]: This is the first footnote.
+<a href="#__codelineno-9-5" id="__codelineno-9-5" name="__codelineno-9-5"></a>[^label-footnote]: This is the footnote with the label `[^label-footnote]`. Mind the carrot (read caret).
+<a href="#__codelineno-9-6" id="__codelineno-9-6" name="__codelineno-9-6"></a>[^third-footnote]:
+<a href="#__codelineno-9-7" id="__codelineno-9-7" name="__codelineno-9-7"></a>    This is the third and final footnote. This is its *first* paragraph.
+<a href="#__codelineno-9-8" id="__codelineno-9-8" name="__codelineno-9-8"></a>
+<a href="#__codelineno-9-9" id="__codelineno-9-9" name="__codelineno-9-9"></a>    It is preceded by `3.` even though its label is `[^third-footnote]`.
+<a href="#__codelineno-9-10" id="__codelineno-9-10" name="__codelineno-9-10"></a>    This is its *second* paragraph.
+<a href="#__codelineno-9-11" id="__codelineno-9-11" name="__codelineno-9-11"></a>
+<a href="#__codelineno-9-12" id="__codelineno-9-12" name="__codelineno-9-12"></a>    &gt; Fascinating facts may be found
+<a href="#__codelineno-9-13" id="__codelineno-9-13" name="__codelineno-9-13"></a>    &gt; quoted within a `blockquote.`
+<a href="#__codelineno-9-14" id="__codelineno-9-14" name="__codelineno-9-14"></a>
+<a href="#__codelineno-9-15" id="__codelineno-9-15" name="__codelineno-9-15"></a>        code has been recorded to live inside footnotes
+<a href="#__codelineno-9-16" id="__codelineno-9-16" name="__codelineno-9-16"></a>
+<a href="#__codelineno-9-17" id="__codelineno-9-17" name="__codelineno-9-17"></a>    The end of the **Third Age.**
+</code></pre></div>
+</details>
+<p>Footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> have a label<sup id="fnref:label-footnote"><a class="footnote-ref" href="#fn:label-footnote">2</a></sup> and content.
+They are numbered automatically regardless of label<sup id="fnref:third-footnote"><a class="footnote-ref" href="#fn:third-footnote">3</a></sup>.</p>
+<h2 id="progress-bars">Progress Bars<a class="headerlink" href="#progress-bars" title="Permanent link">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This doesn’t currently work. Disabled until further notice.</p>
+</div>
+<p>Uses the <code>Pymdown ProgressBar</code> <a href="https://facelessuser.github.io/pymdown-extensions/extensions/progressbar/">extension</a>.</p>
+<details class="note">
+<summary>Non-functional content</summary>
+<details class="info">
+<summary><code>Source code</code></summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>| Test                | Result                                     |
+<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>| ------------------- | ------------------------------------------ |
+<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>| Animated: 0%        | [=0% "0%"]{: .candystripe-animate}         |
+<a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a>| Animated: 5%        | [=5% "5%"]{: .candystripe-animate}         |
+<a href="#__codelineno-10-5" id="__codelineno-10-5" name="__codelineno-10-5"></a>| Animated: 25%       | [=25% "25%"]{: .candystripe-animate}       |
+<a href="#__codelineno-10-6" id="__codelineno-10-6" name="__codelineno-10-6"></a>| Animated: 45%       | [=45% "45%"]{: .candystripe-animate}       |
+<a href="#__codelineno-10-7" id="__codelineno-10-7" name="__codelineno-10-7"></a>| Animated: 65%       | [=65% "65%"]{: .candystripe-animate}       |
+<a href="#__codelineno-10-8" id="__codelineno-10-8" name="__codelineno-10-8"></a>| Animated: 85%       | [=85% "85%"]{: .candystripe-animate}       |
+<a href="#__codelineno-10-9" id="__codelineno-10-9" name="__codelineno-10-9"></a>| Animated: 100%      | [=100% "100%"]{: .candystripe-animate}     |
+<a href="#__codelineno-10-10" id="__codelineno-10-10" name="__codelineno-10-10"></a>| Division Percentage | [= 212.2/537 "212.2/537 Testing division"] |
+<a href="#__codelineno-10-11" id="__codelineno-10-11" name="__codelineno-10-11"></a>| No Label            | [= 50%]                                    |
+<a href="#__codelineno-10-12" id="__codelineno-10-12" name="__codelineno-10-12"></a>| Inline              | Before[= 50% "I'm a block!"]After          |
+</code></pre></div>
+</details>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>not working despite extension being enabled and the HTML being produced correctly</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animated: 0%</td>
+<td>[=0% “0%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 5%</td>
+<td>[=5% “5%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 25%</td>
+<td>[=25% “25%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 45%</td>
+<td>[=45% “45%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 65%</td>
+<td>[=65% “65%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 85%</td>
+<td>[=85% “85%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 100%</td>
+<td>[=100% “100%”]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Division Percentage</td>
+<td>[= 212.2/537 “212.2/537 Testing division”]</td>
+</tr>
+<tr>
+<td>No Label</td>
+<td>[= 50%]</td>
+</tr>
+<tr>
+<td>Inline</td>
+<td>Before[= 50% “I’m a block!”]After</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>This is the first footnote. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:label-footnote">
+<p>This is the footnote with the label <code>[^label-footnote]</code>. Mind the carrot (read caret). <a class="footnote-backref" href="#fnref:label-footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:third-footnote">
+<p>This is the third and final footnote. This is its <em>first</em> paragraph.</p>
+<p>It is preceded by <code>3.</code> even though its label is <code>[^third-footnote]</code>.
+This is its <em>second</em> paragraph.</p>
+<blockquote>
+<p>Fascinating facts may be found
+quoted within a <code>blockquote.</code></p>
+</blockquote>
+<div class="highlight"><pre><span></span><code>code has been recorded to live inside footnotes
+</code></pre></div>
+<p>The end of the <strong>Third Age.</strong> <a class="footnote-backref" href="#fnref:third-footnote" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../basic-markdown/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Basic Markdown" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Basic Markdown
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../enhanced-markdown-code/" class="md-footer__link md-footer__link--next" aria-label="Next: Enhanced Markdown Code" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Enhanced Markdown Code
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
