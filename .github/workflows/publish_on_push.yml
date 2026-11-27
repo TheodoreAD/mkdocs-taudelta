@@ -7,13 +7,23 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # mkdocs gh-deploy pushes the built site to the gh-pages branch
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          python-version: 3.9
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+          persist-credentials: true # gh-deploy pushes gh-pages with them; no artifact is uploaded
+      # uv installs any CPython on any runner image. setup-python only offers versions built for the
+      # runner's OS release, and Ubuntu 26.04 runners have no 3.9, which failed every run from
+      # 2026-11-27. 3.10 because requirements.txt pins 2022 packages (PyYAML 6.0, mkdocs 1.3) that
+      # ship wheels for it; a newer interpreter would mean refreshing those pins.
+      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - run: uv venv --python 3.10
+      - run: uv pip install -r requirements.txt
+      # The venv's own binary: the repo's pyproject.toml asks for a newer Python than the pins
+      # allow, so `uv run` would try to sync the project instead.
+      - run: .venv/bin/mkdocs gh-deploy --force
